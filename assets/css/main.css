@@ -3278,7 +3278,7 @@
 		}
 
 		#header nav {
-			position: absolute;
+			position: fixed;
 			right: 1em;
 			top: 0;
 		}
