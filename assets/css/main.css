@@ -57,11 +57,22 @@
 		box-sizing: border-box;
 	}
 
+	#image1{
+		
+		margin-left:10%;
+		margin-right:10%;
+		width: 80%;
+		max-height: 400px;
+		
+}
+
 /* Containers */
 
 	.container {
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 80%;
+		max-height:400px;
 	}
 
 	.container.\31 25\25 {
