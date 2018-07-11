@@ -17,6 +17,11 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	
+	html, body {
+		margin: 0 1.25%;
+	}
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -24,6 +29,7 @@
 
 	body {
 		line-height: 1;
+		overflow-x: hidden;
 	}
 
 	ol, ul {
@@ -3277,7 +3283,7 @@
 		}
 
 		#header nav {
-			position: absolute;
+			position: fixed;
 			right: 1em;
 			top: 0;
 		}
@@ -4028,7 +4034,7 @@
 .end { margin-right: 0 !important; }
 /* Column Grids End */
 
-.wrapper1 {  width: 1480px; margin: 50px auto; position: relative;}
+.wrapper1 {  width: 100%; margin: 50px auto; position: relative;}
 .counter { background-color: cadetblue; padding: 20px 0; border-radius: 5px;}
 .count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
 .count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
