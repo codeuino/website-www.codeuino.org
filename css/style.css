@@ -1697,3 +1697,165 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*Footer CSS*/
+/*Footer*/
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.flex-container .about{
+  width: 31%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+/*About Section*/
+
+#footer .flex-container .about h3{
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+#footer .flex-container .about p{
+  font-size: 16px;
+  text-align: left;
+  color: #828282;
+}
+
+#footer .flex-container .about .item{
+  display: inline;
+}
+
+ul li {
+  color: #f1f1f1;
+}
+
+.social-buttons ul li a i:hover{
+  background-color: #F73859;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.social-buttons ul{
+  padding: 0;
+  text-align: left;
+}
+
+
+.item{
+  margin: 0 10px 10px 0;
+}
+
+
+/*Links Section*/
+
+.flex-container .links{
+  width: 31%;
+  margin: 10px auto;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+#footer .flex-container .links h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fab{
+  font-size: 18px;
+  background-color: #4e4353;
+  color: white;
+  width: 35px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.links ul{
+  font-size: 16px;
+  padding-left: 0;
+}
+
+.links ul li a{
+  color: #828282;
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  background-color: #ffffff;
+  color: #F73859;
+  transition: all 0.3s;
+}
+
+.links h3{
+  text-align: center;
+}
+
+.links ul{
+  text-align: center;
+}
+
+.links ul li{
+  color: white;
+}
+
+/*Subscribe Section*/
+
+.flex-container .subscribe{
+  width: 31%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+#footer .flex-container .subscribe h3 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+#footer .flex-container .subscribe .field{
+  border: none;
+  background-color: #4e4353;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+#footer .flex-container .subscribe .submit{
+  text-transform: uppercase;
+  border: none;
+  background-color: #f04765;
+  color: #ffffff;
+  display: block;
+  margin-top: 10px;
+  width: 28%;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+#footer .flex-container .subscribe .submit:hover{
+  background-color: #F73859;
+  color: white;
+  transition: all 0.3ms;
+}
+
+input{
+  color: white;
+}
