@@ -174,12 +174,16 @@ body {
       outline-width: 0;
       background: rgba(31, 134, 252, 0.15);
       transition: background 0.5s; }
+  #stick-left{
+    padding-left: 0px; }
   .popup-style .col2 label {
     padding-left: 8px;
     font-size: 15px;
-    color: #444; }
+    color: #444; }  
   .popup-style .col2 .ccv {
-    width: 40%; }
+    width: 100%; }
+  .popup-style .col2 .amount{
+    width:100%; }
   .popup-style .col2 .buy {
     width: 260px;
     height: 50px;
