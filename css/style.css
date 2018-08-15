@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -1843,7 +1843,7 @@ ul li {
   color: #ffffff;
   display: block;
   margin-top: 10px;
-  width: 35%; 
+  width: 35%;
   padding: 8px;
   font-size: 16px;
   font-weight: bold;
@@ -1858,4 +1858,8 @@ ul li {
 
 input{
   color: white;
+}
+
+.black-input{
+  color: #b3b3b3;
 }
