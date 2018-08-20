@@ -1835,21 +1835,7 @@ ul li {
   font-size: 16px;
   outline: none;
 }
-.submit
-{
-  text-transform: uppercase;
-  border: none;
-  background-color: #111;
-  color: #ffffff;
-  display: block;
-  margin-top: 10px;
-  width: 35%;
-  padding: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  outline: none;
-  padding: ;
-}
+
 #footer .flex-container .subscribe .submit{
   text-transform: uppercase;
   border: none;
