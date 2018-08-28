@@ -1859,3 +1859,18 @@ ul li {
 input{
   color: white;
 }
+
+@media ( max-width :377px){
+    #footer .flex-container .subscribe .submit{
+        width: 75%;
+    }
+}
+/* width of submit button increased to make it responsive*/
+@media ( max-width :377px){
+    #footer .flex-container .about p{
+        font-size: 12px;
+        text-align: left;
+        color: #828282;
+    }
+}
+/* font size reduced of <p> tag of about section of footer to make it responsive*/
