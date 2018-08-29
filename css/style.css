@@ -1860,17 +1860,35 @@ input{
   color: white;
 }
 
-@media ( max-width :377px){
-    #footer .flex-container .subscribe .submit{
-        width: 75%;
+@media ( max-width : 420px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .flex-container .about{
+        width: 92%;
+        margin: 10px auto;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .flex-container .links{
+        width: 92%;
+        margin: 10px auto;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .flex-container .subscribe{
+        width: 92%;
+        margin: 10px auto;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
     }
 }
-/* width of submit button increased to make it responsive*/
-@media ( max-width :377px){
-    #footer .flex-container .about p{
-        font-size: 12px;
-        text-align: left;
-        color: #828282;
-    }
-}
-/* font size reduced of <p> tag of about section of footer to make it responsive*/
