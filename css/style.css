@@ -1859,3 +1859,36 @@ ul li {
 input{
   color: white;
 }
+
+@media ( max-width : 420px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .flex-container .about{
+        width: 92%;
+        margin: 10px auto;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .flex-container .links{
+        width: 92%;
+        margin: 10px auto;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .flex-container .subscribe{
+        width: 92%;
+        margin: 10px auto;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+    }
+}
