@@ -1879,10 +1879,12 @@ input{
         font-size: 20px;
     }
     .flex-container .links{
-        width: 92%;
-        margin: 10px auto;
-        line-height: 24px;
-        font-size: 20px;
+      visibility: hidden;
+      display: none;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
     }
     .flex-container .subscribe{
         width: 92%;
