@@ -1,7 +1,8 @@
 # CODEUINO  
 
 
-# NOTE - Currently a new version of this website is being build from scratch. So please refer to this Repo and try solving and opening issues here. https://github.com/codeuino/website-V2
+<h2>NOTE - Currently a new version of this website is being build from scratch. So please refer to this Repo and try solving and opening issues here. https://github.com/codeuino/website-V2 </h2>
+
 ## Opening an issue
 You should usually open an issue in the following situations:
 
