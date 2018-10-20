@@ -32,15 +32,28 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
+	<!-- PopUp CSS-->
+    <link rel="stylesheet" href="css/donation-popup.css">
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+	<!-- popup script -->
+	<script>
+        $(document).ready(function () {
+            $("#donate-us").click(function () {
+                $('#myModal').modal('show');
+            });
+        });
+    </script>
 
 	</head>
 	<body>
@@ -192,6 +205,74 @@
     </div>
 </div>
 	</div>
+<div class="container">
+    <!--<h2>Large Modal</h2>-->
+    <!-- Trigger the modal with a button -->
+    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="height: 413px; background: #F0F5F9">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!--<h4 class="modal-title">Modal Header</h4>-->
+                </div>
+                <div class="modal-body">
+                    <!--POPUP-->
+                    <div class="popup-style" id="popup">
+                        <div class="col1">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="type">
+                                        <img class="bankid"/>
+                                    </div>
+                                    <span class="chip"></span>
+                                    <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+                                    <div class="date"><span class="date_value">MM / YYYY</span></div>
+                                    <span class="fullname">FULL NAME</span>
+                                </div>
+                                <div class="back">
+                                    <div class="magnetic"></div>
+                                    <div class="bar"></div>
+                                    <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+                                    <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of Random corporation. <br> If found please return to Random Bank of Random corporation - 21968 Paris, Verdi Street, 34 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <label>Card Number</label>
+                            <input class="number" type="text" ng-model="ncard" maxlength="19"
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                            <label>Cardholder name</label>
+                            <input class="inputname" type="text" placeholder=""/>
+                            <label>Expiry date</label>
+                            <input class="expire" type="text" placeholder="MM / YYYY"/>
+                            <div class="row">
+                                <div class="col-md-7"> 
+                            <label>Security Number</label>
+                            <input class="ccv" type="text" placeholder="CVV" maxlength="3"
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                               </div>
+                               <div class="col-md-5">
+                            <label id="stick-left">Amount($)</label>
+                            <input class="amount" type="text" maxlength="8"
+                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                               </div>
+                               </div>
+                            <button class="buy"><i class="material-icons">lock</i> Pay </button>
+                        </div>
+                    </div>
+                    <!--POPUP END-->
+                </div>
+                <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END POPUP-->
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -212,6 +293,8 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Donation popup  -->
+	<script src="js/donation-popup.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
