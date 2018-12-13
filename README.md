@@ -1,4 +1,4 @@
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/codeuino/website-www.codeuino.org/blob/master/LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 # CODEUINO  
 
 
