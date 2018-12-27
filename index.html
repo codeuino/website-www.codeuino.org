@@ -1,476 +1,588 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Codeuino</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Codeuino-An Open Source Non-Profit Organisation,founded by Jaskirat Singh an Open Source maniac. Codeuino develops various Open Source Softwares that tends to benefits all the people around. The organisation acts as a guiding hand in the process and provides resources and infrastructure."/>
-    <meta name="keywords"
-          content="codeuino, opensource, donut, chat platform, certificate generator"/>
-   
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
-    <meta name="twitter:card" content=""/>
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="images/codeunio.jpeg" type="image/x-icon">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-
-    <!-- PopUp CSS-->
-    <link rel="stylesheet" href="css/donation-popup.css">
-
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-
-    <![endif]-->
-
-    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-
-    <!-- jQuery UI-->
-    <script src="js/jquery-ui.min.js"></script>
-
-    <!-- POPUP SCRIPT-->
-    <script>
-        $(document).ready(function () {
-            $("#donate-us").click(function () {
-                $('#myModal').modal('show');
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .more {
-            font-family: 'Markazi Text', serif;
-            float: right;
-            margin-right: 200px;
-            font-size: 30px
-        }
-
-        .more:hover {
-            color: #F79F1F;
-            cursor: pointer;
-        }
-    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/mainPage.css" rel="stylesheet">
+    <link href="css/land.css" rel="stylesheet">
 </head>
+
 <body>
-
-<div class="fh5co-loader"></div>
-
-<div id="page">
-    <nav class="fh5co-nav" role="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-2 text-left">
-                    <div id="fh5co-logo"><a href="index.html">CODEUINO<span>.</span></a></div>
-                </div>
-                <div class="col-xs-10 text-right menu-1">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-
-
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="about.html">Team</a></li>
-                        <li><a href="#fh5co-started" id="donate-us">Donate Us</a></li>
-                        <li><a href="http://wiki.codeuino.org/">Wiki</a></li>
-                        <li><a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ">Get Involved</a></li>
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand font-weight-bold text-uppercase" href="#">CODEUINO <b class="red-text">.</b></a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-end" id="basicExampleNav">
+                    <ul class="navbar-nav nav-flex-icons">
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Donate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Wiki</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Get Involved</a>
+                            </li>
+                        </ul>
                     </ul>
                 </div>
+                <!-- Collapsible content -->
             </div>
-
-        </div>
-    </nav>
-
-    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);"
-            data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 text-left">
-                    <div style="text-align:center" class="display-t">
-                        <div class="display-tc animate-box" data-animate-effect="fadeInUp">
-                            <center><h1 class="mb30">Enter into Codeuino</h1>
-                                <p>In true open source development,
-                                    there's lots of visibility all the
-                                    way through the development process.</p></center>
-                            <p>
-
-                            </p>
+        </nav>
+        <!--/.Navbar-->
+        <div class="view intro-2">
+            <div class="full-bg-img">
+                <div class="mask rgba-indigo-slight flex-center">
+                    <div class="container">
+                        <div class="white-text text-center wow fadeInUp">
+                            <h2>Codeuino</h2>
+                            <br>
+                            <h4>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. </h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-
-    <div id="fh5co-services" class="fh5co-bg-section border-bottom">
-        <div class="container">
-            <div class="row row-pb-md">
-                <div class="col-md-8 col-md-offset-2 text-left animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-heading">
-                        <span>We're expert</span>
-                        <h2>What We Do</h2>
-                        <p>Well, it’s been long that we have been spreading the word “Open Source” across the globe but
-                            now it’s time to put are saying on Actions. So, we are currently running up an Organisation
-                            named as “CODEUINO” after interacting with lots of people including potential contributors
-                            around the world. It is a non-profit organisation that helps to bring amazing people
-                            together to create, develop, design and make things with Open Technologies and share work
-                            for the benefit of all..</p>
+    <!--Main Navigation-->
+    <!--Main Layout-->
+    <main>
+        <div class="cotainer-fluid con1">
+            <div class="container">
+                <div class="row pt-5 pb-5 justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-lg-8 col-md-8 padding-0">
+                        <h6><small class="text-muted">We're Expert</small></h6>
+                        <h1 class="display-4">What We Do</h1>
+                        <p>
+                            Well, it’s been long that we have been spreading the word “Open Source” across the globe but now it’s time to put 
+                            are saying on Actions. So, we are currently running up an Organisation named as “CODEUINO” after interacting with 
+                            lots of people including potential contributors around the world. It is a non-profit organisation that helps to bring 
+                            amazing people together to create, develop, design and make things with Open Technologies and share work for the 
+                            benefit of all..
+                        </p>
                     </div>
+                    <!--Grid column-->
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 ">
-                    <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                        <span class="icon">
-                            <i class="fa fa-users" aria-hidden="true"></i>
-
-                        </span>
-                        <h3>Bringing developers together</h3>
-                        <p>Have any issue that seems headache and you have limited contacts.No issues our community help
-                            you to explore and interact with people around world and see their way of solution to your
-                            problems.</p>
-                     <!--   <p><a href="#">Learn more</a></p> -->
+                <!--Grid row-->
+                <div class="row mt-5 mb-5 pb-5 justify-content-center">
+                     <!--Grid column-->
+                    <div class="col-lg-4 col-md-4">
+                        <div class="view overlay">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+                            </br>
+                            </br>
+                            <div class="mask flex-center rgba-red-strong">
+                                <p class="white-text">Strong overlay</p>
+                            </div>
+                        </div>           
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 ">
-                    <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                        <span class="icon">
-                        <i class="fa fa-desktop" aria-hidden="true"></i>
-                        </span>
-                        <h3>Enticing Hackathons </h3>
-                        <p>Showcase your talent and win some exciting goodies. If you don't win dont't get dissappointed
-                            as you will have tons of learning new tech. </p>
-                    <!--    <p><a href="#">Learn more</a></p> -->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-4">
+                        <div class="view overlay">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+                            </br>
+                            </br>
+                            <div class="mask flex-center rgba-red-strong">
+                                <p class="white-text">Strong overlay</p>
+                            </div>
+                        </div>           
                     </div>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-md-4 col-sm-6 ">
-                    <div class="feature-center animate-box" data-animate-effect="fadeInUp">
-                        <span class="icon">
-                            <i class="fa fa-building-o" aria-hidden="true"></i>
-
-                        </span>
-                        <h3>Organisation interaction</h3>
-                        <p>Interact with organisation and explore their technologies and become an asset to their
-                            organisation.Sorting organisation according to your tech stack no problem we are here to
-                            help you.</p>
-                   <!--     <p><a href="#">Learn more</a></p> -->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-4">
+                        <div class="view overlay">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid " alt="smaple image">
+                            </br>
+                            </br>
+                            <div class="mask flex-center rgba-red-strong">
+                                <p class="white-text">Strong overlay</p>
+                            </div>
+                        </div>           
                     </div>
+                    <!--Grid column-->
                 </div>
-                <div class="clearfix visible-md-block"></div>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="fh5co-project">
-        <div class="container">
-            <div class="row row-pb-md">
-                <div class="col-md-8 col-md-offset-2 text-left fh5co-heading  animate-box">
-                    <span>Want Some Cool Stuff</span>
-                    <h2>Recent Projects</h2>
-                    <p>Our organisation focus in integration of developers and helping them with their problems and at
-                        same time providing them oppurtunities to interact with people all over world</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                    <a href="https://github.com/codeuino/Social-Platform-Donut"><img src="images/social.PNG" alt="Screenshot of Social-Platform-Donut"
-                                     class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Donut</h3>
-                            <p>Social plateform </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                    <a href="https://github.com/codeuino/chat-platform"><img src="images/chat.png" alt="Screenshot of Codeuino chat-platform"
-                                     class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Chat plateform</h3>
-                            <p>Old way,with our touch</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                    <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/cop.jpg" alt="Screenshot of Codeuino Certificate-Generator"
-                                     class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Certificate Generator</h3>
-                            <p>A token of apprectiation from us</p>
-                        </div>
-                    </a>
-                </div>
-
+                <!--Grid row-->
             </div>
         </div>
-        <div id="more">
-            <transition name="fade">
-                <a href="Projects.html" class="more">More Projects...</a>
-            </transition>
+        <div class="cotainer-fluid con2">
+            <div class="container">
+                <div class="row pt-5 pb-5 justify-content-center text-center">
+                    <!--Grid column-->
+                    <div class="col-lg-8 col-md-8 padding-0">
+                        <h1 class="display-4">What We Do</h1>
+                        <p>
+                            Well, it’s been long that we have been spreading the word “Open Source” across the globe but now it’s time to put 
+                            are saying on Actions. So, we are currently running up an Organisation named as “CODEUINO” after interacting with 
+                            lots of people including potential contributors around the world. It is a non-profit organisation that helps to bring 
+                            amazing people together to create, develop, design and make things with Open Technologies and share work for the 
+                            benefit of all..
+                        </p>
+                        <button type="button" class="btn btn-info">Info</button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
         </div>
-    </div>
+        <div class="cotainer-fluid con1">
+            <div class="container">
+                <div class="row pt-5 pb-5 justify-content-center text-center">
+                    <!--Grid column-->
+                    <div class="col-lg-8 col-md-8 padding-0">
+                        <h3>What We Do</h3>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+                <div class="row mt-5 mb-5 pb-5 justify-content-center">
+                    <!-- Card deck -->
+                    <div class="card-deck">
 
-
-    <div id="fh5co-blog" class="fh5co-bg-section">
-        <div class="container">
-            <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
-                <div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
-                    <span>Thoughts &amp; Ideas</span>
-                    <h2>GET INVOLVED</h2>
-    <p  style="font-family:verdana; color:black;">Believe in something larger than yourself get involved in the big ideas of your time.                   
-                    <br>Want to become part of our family then JOIN us. CODEUINO is a friendly and welcoming community.
-                        Getting involved is a great way to learn skills, have fun, and help to create Free Software.</p>
+                        <!-- Card -->
+                        <div class="card mb-4">
                     
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-post">
-
-                        <h3><a href="#">Join our slack Channel</a></h3>
-                        <p class="author"><img src="images/slack.png"
-                                               alt="slack logo">
-                                    Don't Wait, Connect right now  .
-                                    Get united in a common goal  </p>
-                        <form>
-    <a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ" class="btn btn-danger">Join Us</a>
-  
-                        </form>
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+                            <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                    
+                        <!--Card content-->
+                        <div class="card-body">
+                    
+                            <!--Title-->
+                            <h4 class="card-title">Card title</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                    
+                        </div>
+                    
+                        </div>
+                        <!-- Card -->
+                    
+                        <!-- Card -->
+                        <div class="card mb-4">
+                    
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+                            <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                    
+                        <!--Card content-->
+                        <div class="card-body">
+                    
+                            <!--Title-->
+                            <h4 class="card-title">Card title</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                    
+                        </div>
+                    
+                        </div>
+                        <!-- Card -->
+                    
+                        <!-- Card -->
+                        <div class="card mb-4">
+                    
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+                            <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                    
+                        <!--Card content-->
+                        <div class="card-body">
+                    
+                            <!--Title-->
+                            <h4 class="card-title">Card title</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                    
+                        </div>
+                    
+                        </div>
+                        <!-- Card -->
+                    
                     </div>
+                    <!-- Card deck -->
                 </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <div class="row mt-5 mb-5 pb-5 justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-6">
+                            <!-- Card -->
+                            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-
-                <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-post">
-
-                        <h3><a href="#">Documentation</a></h3>
-                        <p class="author"><img src="images/code.png" alt="Codeuino logo">Help to maintain CODEUINO's user and developer documentation. </p>
-
-                  <button type="submit" class="btn btn-danger"  onclick="window.location.href='https://github.com/codeuino/codeuino-docs'">Contribute to documentation</button>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-post">
-
-                        <h3><a href="#">Engagement Team</a></h3>
-                        <p class="author"><img src="images/slack.png"
-                                               alt="slack logo"> Works on marketing, outreach, events and websites. It wants your help!</p>
-                        <form>
-<a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ" class="btn btn-danger">Join Engagement Team</a>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="fh5co-started" style="background-image:url('./images/back.jpg')">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>Donate to help us grow more</h2>
-                    <p>We need your donations in running our softwares. Your Monetary support will help us to grow and
-                        contribute more. Moreover it will also help us to create new horizons across the globe.</p>
-                    <p>
-                        <button type="submit" class="btn btn-primary">Donate Us</button>
-                    </p>
-
-
-
-
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-
-
-<!--Footer-->
-<div id="footer">
-    <div class="flex-container">
-        <div class="about">
-            <h3>CODEUINO</h3>
-            <p>Codeuino-An Open Source Non-Profit Organisation, founded by Jaskirat Singh an Open Source maniac.
-                Codeuino develops various Open Source Softwares that tends to benefit all the people around.
-                The organisation acts as a guiding hand in the process and provides resources and infrastructure.
-            </p>
-            <div class="social-buttons">
-                <ul>
-                    <li class="item"><a href="https://www.facebook.com/codeuino/"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="item"><a href="https://twitter.com/codeuino"><i class="fab fa-twitter"></i></a></li>
-                    <li class="item"><a href="https://in.linkedin.com/company/codeuino"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="links">
-            <h3>USEFUL LINKS </h3>
-            <ul>
-                <li><a href="https://github.com/codeuino">Github</a></li>
-                <li><a href="http://codeuino.org/Projects.html">Projects</a></li>
-                <li><a href="https://github.com/codeuino/codeuino-docs/blob/master/CODE%20OF%20CONDUCT.md">Code of Conduct</a></li>
-                <li><a href="http://codeuino.org/about.html">About</a></li>
-            </ul>
-        </div>
-        <div class="subscribe">
-            <h3>SUBSCRIBE</h3>
-            <form action="https://groups.google.com/forum/#!forum/codeuino-devel/join">
-                <input class="field" type="text" placeholder="Your name">
-                <input class="field" type="email" placeholder="Email">
-                <button type="submit" class="submit btn btn-dange">SUBMIT</button> <!-- Changes -->
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- POPUP -->
-<div class="container">
-    <!--<h2>Large Modal</h2>-->
-    <!-- Trigger the modal with a button -->
-    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>-->
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="height: 413px; background: #F0F5F9">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <!--<h4 class="modal-title">Modal Header</h4>-->
-                </div>
-                <div class="modal-body">
-                    <!--POPUP-->
-                    <div class="popup-style" id="popup">
-                        <div class="col1">
-                            <div class="card">
-                                <div class="front">
-                                    <div class="type">
-                                        <img class="bankid"/>
-                                    </div>
-                                    <span class="chip"></span>
-                                    <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
-                                    <div class="date"><span class="date_value">MM / YYYY</span></div>
-                                    <span class="fullname">FULL NAME</span>
+                                <!-- Content -->
+                                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                <div>
+                                    <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+                                    <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                                    optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                                    Odit sed qui, dolorum!.</p>
+                                    <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
                                 </div>
-                                <div class="back">
-                                    <div class="magnetic"></div>
-                                    <div class="bar"></div>
-                                    <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
-                                    <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of Random corporation. <br> If found please return to Random Bank of Random corporation - 21968 Paris, Verdi Street, 34 </span>
+                                </div>
+                            
+                            </div>
+                            <!-- Card -->           
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-6">
+                            <!-- Card -->
+                            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+                                <!-- Content -->
+                                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                <div>
+                                    <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+                                    <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                                    optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                                    Odit sed qui, dolorum!.</p>
+                                    <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+                                </div>
+                                </div>
+                            
+                            </div>
+                            <!-- Card -->           
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+            </div>
+        </div>
+        <div class="cotainer-fluid con2">
+            <div class="container">
+                <div class="row pt-2 pb-5 justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-lg-12 col-md-12 padding-0 text-center">
+                        <h3>What We Do</h3>
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="view">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                <h3 class="h3-responsive">Light mask</h3>
+                                <p>First text</p>
                                 </div>
                             </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                <h3 class="h3-responsive">Strong mask</h3>
+                                <p>Secondary text</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                <h3 class="h3-responsive">Slight mask</h3>
+                                <p>Third text</p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
                         </div>
-                        <div class="col2">
-                            <label>Card Number</label>
-                            <input class="number" type="text" ng-model="ncard" maxlength="19"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-                            <label>Cardholder name</label>
-                            <input class="inputname" type="text" placeholder=""/>
-                            <label>Expiry date</label>
-                            <input class="expire" type="text" placeholder="MM / YYYY"/>
-                            <div class="row">
-                                <div class="col-md-7"> 
-                            <label>Security Number</label>
-                            <input class="ccv" type="text" placeholder="CVV" maxlength="3"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-                               </div>
-                               <div class="col-md-5">
-                            <label id="stick-left">Amount($)</label>
-                            <input class="amount" type="text" maxlength="8"
-                                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-                               </div>
-                               </div>
-                            <button class="buy"><i class="material-icons">lock</i> Pay </button>
-                        </div>
+                        <!--/.Carousel Wrapper-->
                     </div>
-                    <!--POPUP END-->
                 </div>
-                <!--<div class="modal-footer">-->
-                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                <!--</div>-->
+                <!--Grid row-->
             </div>
         </div>
-    </div>
-</div>
-<!-- END POPUP-->
+        <div class="cotainer-fluid con1">
+                <div class="container">
+                    <!-- Grid row -->
+                    <div class="row pt-5 pb-5 justify-content-center">
 
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
+                        <!-- Grid column -->
+                        <div class="col-md-12 mb-3">
+                    
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid z-depth-1" alt="Responsive image">
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                    </div>
+                    <!-- Grid row -->
+                    
+                    <!-- Grid row -->
+                    <div class="row">
+                    
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12 mb-3">
+                    
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(115).jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-3">
+                    
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(116).jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-3">
+                    
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(117).jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                    </div>
+                    <!-- Grid row -->
+                    
+                    <!-- Grid row -->
+                    <div class="row">
+                    
+                        <!-- Grid column -->
+                        <div class="col-md-6 mb-3">
+                    
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img(117).jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                        <!-- Grid column -->
+                        <div class="col-md-6 mb-3">
+                    
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img(129).jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </div>
+    </main>
+    <!--Main Layout-->
 
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- countTo -->
-<script src="js/jquery.countTo.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<!-- Stellar -->
-<script src="js/jquery.stellar.min.js"></script>
-<!-- Donation PopUp-->
-<script src="js/donation-popup.js"></script>
-<!-- Main -->
-<script src="js/main.js"></script>
+    <!--Footer-->
+    <footer class="page-footer font-small unique-color-dark pt-0">
 
+            <!-- Social buttons -->
+            <div class="primary-color">
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+    
+                        <!--Grid column-->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <!--Facebook-->
+                            <a class="fb-ic ml-0">
+                                <i class="fa fa-facebook white-text mr-4"> </i>
+                            </a>
+                            <!--Twitter-->
+                            <a class="tw-ic">
+                                <i class="fa fa-twitter white-text mr-4"> </i>
+                            </a>
+                            <!--Google +-->
+                            <a class="gplus-ic">
+                                <i class="fa fa-google-plus white-text mr-4"> </i>
+                            </a>
+                            <!--Linkedin-->
+                            <a class="li-ic">
+                                <i class="fa fa-linkedin white-text mr-4"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic">
+                                <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                            </a>
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+                </div>
+            </div>
+            <!-- Social buttons -->
+    
+            <!--Footer Links-->
+            <div class="container mt-5 text-center text-md-left">
+                <div class="row mt-3">
+    
+                    <!--First column-->
+                    <div class="col-md-3 col-lg-4 col-xl-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <strong>Company name</strong>
+                        </h6>
+                        <hr class="deep-purple accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <!--/.First column-->
+    
+                    <!--Second column-->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <strong>Products</strong>
+                        </h6>
+                        <hr class="deep-purple accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a href="#!">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <!--/.Second column-->
+    
+                    <!--Third column-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <strong>Useful links</strong>
+                        </h6>
+                        <hr class="deep-purple accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#!">Help</a>
+                        </p>
+                    </div>
+                    <!--/.Third column-->
+    
+                    <!--Fourth column-->
+                    <div class="col-md-4 col-lg-3 col-xl-3">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <strong>Contact</strong>
+                        </h6>
+                        <hr class="deep-purple accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!--/.Fourth column-->
+    
+                </div>
+            </div>
+            <!--/.Footer Links-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
 </body>
+
 </html>
