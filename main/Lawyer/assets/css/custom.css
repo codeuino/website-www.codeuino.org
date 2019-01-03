@@ -1,26 +1,57 @@
 /* Add here all your css styles (customizations) */
 
 .owl-buttons {
-  display: none !important;
+    display: none !important;
 }
 
 #our-cases .container {
-  padding-top: 10px !important;
-  padding-bottom: 70px !important;
+    padding-top: 10px !important;
+    padding-bottom: 70px !important;
 }
 
-#testimonials .container .sponsors{
-	width: 100%!important;
+#testimonials .container .sponsors {
+    width: 40%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sponsors li a{
-	padding: 0 10px!important;
+.sponsors li a {
+    padding: 0 10px !important;
 }
 
-.sponsors li{
-	height: 121px!important;
+.sponsors li {
+    height: 121px !important;
+    width: 50%;
 }
 
-.sponsors li a img{
-	height: 121px;
+.sponsors li a img {
+    height: 121px;
+}
+
+.our-team-v4-start{
+	background: #4d4354 url(../img-temp/Our-Team.jpg) no-repeat 50% 0 / cover;
+}
+
+.g-mb-40{
+	margin-bottom: 10px !important;
+}
+
+hr{
+	margin: 0 0;
+}
+
+@media (max-width: 768px) {
+    .sponsors li {
+        height: 121px !important;
+        width: 50%;
+    }
+
+	#testimonials .container .sponsors {
+	    width: 85%;
+    }
+
+	.sponsors li a img {
+	height: 90px;
+	}
 }
