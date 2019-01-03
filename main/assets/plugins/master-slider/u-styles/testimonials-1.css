@@ -1,0 +1,50 @@
+.master-slider {
+	-moz-transform: translate3d(0,0,1px);
+}
+.ms-staff-carousel {
+	/*max-width:880px;*/
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.ms-staff-carousel .ms-view {
+	overflow: visible;
+	background-color: transparent;
+}
+.ms-staff-carousel .ms-nav-prev,
+.ms-staff-carousel .ms-nav-next {
+	background: url(arrows.png) white no-repeat -7px -57px;
+	width: 35px;
+	height: 40px;
+	left: -35px;
+	margin-top: -17px;
+	box-shadow: 0px 1px 0px 0px rgb(190, 190, 190);
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+.ms-staff-carousel .ms-nav-next {
+	background-position: -6px -7px;
+	right: -35px;
+	left: auto;
+}
+.ms-staff-carousel .ms-staff-info {
+/*	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;*/
+	padding: 50px 30px 50px;
+	background: #31353e;
+}
+.ms-slide-info {
+	position: static;
+}
+.ms-staff-carousel.ms-round .ms-nav-prev,
+.ms-staff-carousel.ms-round .ms-nav-next {
+	background-color: transparent;
+	box-shadow : none;
+	left: -45px;
+}
+.ms-staff-carousel.ms-round .ms-nav-next {
+	left: auto;
+	right: -45px
+}

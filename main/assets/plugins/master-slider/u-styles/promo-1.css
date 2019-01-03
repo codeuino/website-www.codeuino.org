@@ -1,0 +1,94 @@
+/* View Styles */
+.ms-promo-1 {
+	background: #ccc;
+	color: #fff;
+}
+.ms-promo-1 .ms-slide:after,
+.ms-promo-1 .ms-thumb-frame:before {
+	content: "";
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.ms-promo-1 .ms-thumb-frame {
+	opacity: 1;
+	position: relative;
+}
+.ms-promo-1 .ms-thumb-frame-selected:after {
+	content: "";
+	display: block;
+	background: #e74c3c;
+	height: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.ms-promo-1 .ms-anim-layers {
+	position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .ms-promo-1 .ms-anim-layers {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .ms-promo-1 .ms-anim-layers {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .ms-promo-1 .ms-anim-layers {
+    width: 1170px;
+  }
+}
+
+/* Travel Font Styles */
+.ms-promo-travel-price {
+	text-transform: uppercase;
+	display: inline-block;
+	background: #31353e;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 10px;
+}
+.ms-promo-travel-price strong {
+	color: #e74c3c;
+}
+.ms-promo-travel-place {
+	color: #fff;
+	font-size: 76px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.ms-promo-travel-description {
+	max-width: 550px;
+	font-size: 18px;
+	color: rgba(255,255,255,.7);
+}
+@media (max-width: 1024px) {
+	.ms-promo-travel-description {
+		font-size: 14px !important;
+		line-height: 1.4 !important;
+	}
+}
+@media (max-width: 900px) {
+	.ms-promo-travel-price {
+		font-size: 14px !important;
+		line-height: 1 !important;
+	}
+}
+@media (max-width: 800px) {
+	.ms-promo-travel-price,
+	.ms-promo-travel-place,
+	.ms-promo-travel-description {
+		left: 20px !important;
+	}
+}

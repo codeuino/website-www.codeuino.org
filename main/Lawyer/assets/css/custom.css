@@ -1,0 +1,26 @@
+/* Add here all your css styles (customizations) */
+
+.owl-buttons {
+  display: none !important;
+}
+
+#our-cases .container {
+  padding-top: 10px !important;
+  padding-bottom: 70px !important;
+}
+
+#testimonials .container .sponsors{
+	width: 100%!important;
+}
+
+.sponsors li a{
+	padding: 0 10px!important;
+}
+
+.sponsors li{
+	height: 121px!important;
+}
+
+.sponsors li a img{
+	height: 121px;
+}
