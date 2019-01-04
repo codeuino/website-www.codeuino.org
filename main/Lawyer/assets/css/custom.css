@@ -1,0 +1,92 @@
+/* Add here all your css styles (customizations) */
+
+.owl-buttons {
+    display: none !important;
+}
+
+#our-cases .container {
+    padding-top: 10px !important;
+    padding-bottom: 70px !important;
+}
+
+#testimonials .container .sponsors {
+    width: 40%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsors li a {
+    padding: 0 10px !important;
+}
+
+.sponsors li {
+    height: 121px !important;
+    width: 50%;
+}
+
+.sponsors li a img {
+    height: 121px;
+}
+
+.our-team-v4-start{
+	background: #4d4354 url(../img-temp/Our-Team.jpg) no-repeat 50% 0 / cover;
+}
+
+.g-mb-40{
+	margin-bottom: 10px !important;
+}
+
+hr{
+	margin: 0 0;
+}
+
+/*Projects*/
+
+.g-heading-v9.text-center:after{
+	left: 44%!important;
+}
+
+.g-heading-v9:after{
+	width: 143px!important;
+}
+
+#blog{
+	margin-top: 60px;
+}
+
+#blog h2, #blog2 h2{
+	font-weight: 700;
+	font-size: 40px;
+}
+
+#testimonials{
+	margin-top: 90px;
+}
+
+.g-pb-40{
+	padding-bottom: 0;
+}
+
+.g-pt-100{
+	padding-top: 60px!important;
+}
+
+#testimonials .container .g-mb-70{
+	margin-bottom: 30px!important;
+}
+
+@media (max-width: 768px) {
+    .sponsors li {
+        height: 121px !important;
+        width: 50%;
+    }
+
+	#testimonials .container .sponsors {
+	    width: 85%;
+    }
+
+	.sponsors li a img {
+	height: 90px;
+	}
+}
