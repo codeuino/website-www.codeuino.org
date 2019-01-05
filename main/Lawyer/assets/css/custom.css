@@ -4,9 +4,26 @@
     display: none !important;
 }
 
+.ta-js{
+	text-align: justify;
+}
+
+.fs-18{
+	font-size: 18px;
+}
+
+.fs-16{
+	font-size: 16px;
+}
+
 #our-cases .container {
     padding-top: 10px !important;
     padding-bottom: 70px !important;
+}
+
+#testimonials{
+	margin-top: 0!important;
+	padding-bottom: 60px;
 }
 
 #testimonials .container .sponsors {
@@ -29,8 +46,20 @@
     height: 121px;
 }
 
+.caption-outer img{
+	height: 233.33px!important;
+}
+
+#blog .lawyer-post img{
+	height: 240px!important;
+}
+
 .our-team-v4-start{
 	background: #4d4354 url(../img-temp/Our-Team.jpg) no-repeat 50% 0 / cover;
+}
+
+.our-team-v4-member-wrapper img{
+	height: 450px!important;
 }
 
 .g-mb-40{
@@ -64,12 +93,12 @@ hr{
 	margin-top: 60px;
 }
 
-#blog h2, #blog2 h2{
+#blog h2, #blog2 h2, #blog3 h2{
 	font-weight: 700;
 	font-size: 40px;
 }
 
-#testimonials{
+#getInvolved, #projects{
 	margin-top: 90px;
 }
 
@@ -90,6 +119,15 @@ hr{
 #getInvolved p{
 	font-size: 18px;
 	margin-bottom: 0;
+}
+
+#getInvolved .container .fs-16 p{
+	font-size: 16px!important;
+}
+
+#getInvolved .footer-section p{
+	font-size: 14px;
+	margin-bottom: 30px!important;
 }
 
 #getInvolved-content{
