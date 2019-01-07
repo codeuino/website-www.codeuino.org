@@ -2,7 +2,162 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c071b2ff-146b-41e8-9f68-741d8aa2dac8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/bg/11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/bg/14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/bg/18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/bg/19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/bg/25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/bg/7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/breadcrumbs/img1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/breadcrumbs/img2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/breadcrumbs/img3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/amazon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/behance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/blogger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/deviantart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/dribbble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/dropbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/evernote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/forrst.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/googleplus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/jolicloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/last-fm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/picasa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/pintrest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/spotify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/stumbleupon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/tumblr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/vimeo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/vk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/wordpress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/xing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/yahoo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/icons/social/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/patterns/16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/patterns/5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/patterns/breadcrumbs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/patterns/gridtile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/img/team/faces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/backstretch/jquery.backstretch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/circles-master/circles.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/counter/jquery.counterup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/counter/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/img/cbp-loading-popup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/img/cbp-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/img/cbp-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio-2.0.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/hover-effects/css/custom-hover-effects.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/hover-effects/css/hover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/jquery-appear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/christmas/webfont/fonts/cristmas.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/christmas/webfont/fonts/cristmas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/christmas/webfont/fonts/cristmas.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/christmas/webfont/fonts/cristmas.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/christmas/webfont/fonts/cristmasd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/clothes/webfont/fonts/clothes.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/clothes/webfont/fonts/clothes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/clothes/webfont/fonts/clothes.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/clothes/webfont/fonts/clothes.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/clothes/webfont/fonts/clothesd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/communication/webfont/fonts/communication-48-x-48.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/communication/webfont/fonts/communication-48-x-48.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/communication/webfont/fonts/communication-48-x-48.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/communication/webfont/fonts/communication-48-x-48.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/communication/webfont/fonts/communication-48-x-48d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/education/webfont/fonts/education-48.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/education/webfont/fonts/education-48.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/education/webfont/fonts/education-48.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/education/webfont/fonts/education-48.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/education/webfont/fonts/education-48d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/electronics/webfont/fonts/electronics.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/electronics/webfont/fonts/electronics.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/electronics/webfont/fonts/electronics.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/electronics/webfont/fonts/electronics.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/electronics/webfont/fonts/electronicsd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/finance/webfont/fonts/finance.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/finance/webfont/fonts/finance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/finance/webfont/fonts/finance.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/finance/webfont/fonts/finance.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/finance/webfont/fonts/financed41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/food/webfont/fonts/food-48.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/food/webfont/fonts/food-48.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/food/webfont/fonts/food-48.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/food/webfont/fonts/food-48.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/food/webfont/fonts/food-48d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/furniture/webfont/fonts/furniture.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/furniture/webfont/fonts/furniture.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/furniture/webfont/fonts/furniture.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/furniture/webfont/fonts/furniture.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/furniture/webfont/fonts/furnitured41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/hotel-restaurant/webfont/fonts/hotel-restaurant.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/hotel-restaurant/webfont/fonts/hotel-restaurant.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/hotel-restaurant/webfont/fonts/hotel-restaurant.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/hotel-restaurant/webfont/fonts/hotel-restaurant.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/hotel-restaurant/webfont/fonts/hotel-restaurantd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/media/webfont/fonts/media.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/media/webfont/fonts/media.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/media/webfont/fonts/media.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/media/webfont/fonts/media.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/media/webfont/fonts/mediad41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/medical/webfont/fonts/medical-and-health.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/medical/webfont/fonts/medical-and-health.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/medical/webfont/fonts/medical-and-health.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/medical/webfont/fonts/medical-and-health.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/medical/webfont/fonts/medical-and-healthd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/music/webfont/fonts/music.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/music/webfont/fonts/music.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/music/webfont/fonts/music.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/music/webfont/fonts/music.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/music/webfont/fonts/musicd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/real-estate/webfont/fonts/real-estate.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/real-estate/webfont/fonts/real-estate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/real-estate/webfont/fonts/real-estate.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/real-estate/webfont/fonts/real-estate.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/real-estate/webfont/fonts/real-estated41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/science/webfont/fonts/science.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/science/webfont/fonts/science.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/science/webfont/fonts/science.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/science/webfont/fonts/science.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/science/webfont/fonts/scienced41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/sports/webfont/fonts/sports-48-x-48.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/sports/webfont/fonts/sports-48-x-48.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/sports/webfont/fonts/sports-48-x-48.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/sports/webfont/fonts/sports-48-x-48.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/sports/webfont/fonts/sports-48-x-48d41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/transport/webfont/fonts/transport.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/transport/webfont/fonts/transport.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/transport/webfont/fonts/transport.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/transport/webfont/fonts/transport.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/transport/webfont/fonts/transportd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/travel/webfont/fonts/travel.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/travel/webfont/fonts/travel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/travel/webfont/fonts/travel.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/travel/webfont/fonts/travel.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/travel/webfont/fonts/traveld41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/weather/webfont/fonts/weather.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/weather/webfont/fonts/weather.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/weather/webfont/fonts/weather.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/weather/webfont/fonts/weather.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/line-icons-pro/weather/webfont/fonts/weatherd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/pace/pace-flash.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/pace/pace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/shhos/shhos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/shhos/shhos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/wow/dist/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/assets/plugins/wow/wow-ini-themes.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,25 +171,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="566">
+              <caret line="581" column="12" selection-start-line="581" selection-start-column="12" selection-end-line="615" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>main</find>
+      <find>Get In Touch</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +196,7 @@
       <list>
         <option value="$PROJECT_DIR$/main/Lawyer/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -70,11 +223,6 @@
             <path>
               <item name="website-www.codeuino.org" type="b2602c69:ProjectViewProjectNode" />
               <item name="website-www.codeuino.org" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="website-www.codeuino.org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-www.codeuino.org" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -125,13 +273,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1594000" />
+    <option name="totallyTimeSpent" value="1804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14135703" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -146,10 +293,12 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,10 +311,24 @@
     <entry file="file://$PROJECT_DIR$/main/Lawyer/assets/plugins/master-slider/masterslider/style/blank.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="581" column="12" selection-start-line="581" selection-start-column="12" selection-end-line="615" selection-end-column="18" />
         </state>
       </provider>
     </entry>

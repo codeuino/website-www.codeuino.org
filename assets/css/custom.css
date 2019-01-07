@@ -75,6 +75,13 @@
 	margin-right: auto;
 }
 
+#irc{
+	border:0; 
+	width:88%; 
+	height:498px; 
+	padding-top: 60px;
+}
+
 hr{
 	margin: 0 0;
 }
@@ -174,6 +181,19 @@ ul{
 }
 
 @media (max-width: 768px) {
+	.pb-15{
+		padding-bottom: 20px;
+	}
+	#blog h2{
+		font-size: 30px;
+	}
+	.pr-pl-0{
+		padding-right: 15px!important;
+		padding-left: 15px!important;
+	}
+	.g-heading-v9.text-center:after{
+	    left: 31%!important;
+	}
     .sponsors li {
         height: 121px !important;
         width: 50%;
@@ -185,5 +205,12 @@ ul{
 
 	.sponsors li a img {
 	height: 90px;
+	}
+
+	#irc{
+	    border: 0;
+	    width: 100%;
+	    height: 398px;
+	    padding-top: 0px;
 	}
 }
