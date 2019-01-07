@@ -1,1 +1,1 @@
-<?php include_once("main/Lawyer/index.html"); ?>
+<?php include_once("index.html"); ?>
