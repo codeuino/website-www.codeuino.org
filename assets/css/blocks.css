@@ -1,199 +1,18 @@
 /*
- * Template Name: Unify - Responsive Bootstrap Template
- * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
- * Version: 1.9
- * Author: @htmlstream
- * Website: http://htmlstream.com
+* Template Name: Unify - Responsive Bootstrap Template
+* Version: 1.9
+* Author: @htmlstream
+* Website: http://htmlstream.com
 */
 
-/*[-----*** TABLE OF CONTENT ***-----]
-
-1- Promo Blocks
-2- Breadcrumbs
-  2.1- Breadcrumbs v1
-  2.2- Breadcrumbs v2
-  2.3- Breadcrumbs v3
-3- Image Hover Effects
-4- Block Grid
-  4.1-Block Grid v1
-  4.2-Block Grid v2
-5- Services Box v1
-6- Service Block
-  6.1- Service Block v1
-  6.2- Service Block v2
-  6.3- Service Block v3
-  6.4- Service Block v4
-  6.5- Service Block v5
-  6.6- Service Block v6
-  6.7- Service Block v7
-  6.8- Service Block v8
-7- Process
-8- Team
-8.1- Team v1
-8.2- Team v2
-8.3- Team v3
-8.4- Team v4
-8.5- Team v5
-8.6- Team v6
-8.7- Team v7
-9- Call To Action
-  9.1- Call To Action v1
-  9.2- Call To Action v2
-10- Portfolio Box
-  10.1- Portfolio Box v1
-11- Portfolio Feature v2
-12- Thumbnail
-13- Image Backgrounds
-  13.1- Image Backgrounds v1
-  13.2- Image Backgrounds v2
-14- Parallax Quote
-15- Parallax Team
-16- Parallax Counter
-  16.1- Parallax Counter v1
-  16.2- Parallax Counter v2
-  16.3- Parallax Counter v3
-  16.4- Parallax Counter v4
-17- Flat Background Block
-18- Flat Testimonials
-19- Testimonials
-  19.1- Testimonials v4
-  19.2- Testimonials v5
-  19.3- Testimonials v6
-20- Featured Blog
-21- Blog Comments
-22- Quote
-22.1- Quote v2
-23- Team Social
-24- Box Shadows
-25- Interactive Slider
-  25.1- Interactive Slider v1
-  25.2- Interactive Slider v2
-26- Blog Trending
-27- Blog Latest Posts
-28- Blog Photostream
-29- Newsletter
-30- Blog Post Quote
-31- Blog Post Author
-32- Blog Comments
-33- News
-  33.1- News v1
-  33.2- News v2
-  33.3- News v3
-34- Blog Grid
-35- Blog Thumb
-36- Shop-subscribe
--------------------------------------------------------------*/
-
-/*--------------------------------------------------
-    [1. Promo Blocks]
-----------------------------------------------------*/
-/*Promo Background Images*/
-.promo-bg-pattern-v1-dark {
-  background: url(../img/patterns/5.png) repeat;
-}
-
-.promo-bg-pattern-v1-light {
-  background: url(../img/patterns/16.png) repeat;
-}
-
-/*Promo Background Images*/
-.promo-bg-img-v1 {
-  background: url(../img/bg/img1.jpg) no-repeat;
-  background-size: cover;
-}
-.promo-bg-img-v2 {
-  background: url(../img/bg/img5.jpg) no-repeat;
-  background-size: cover;
-}
-.promo-bg-img-v3 {
-  background: url(../img/bg/img10.jpg) no-repeat;
-  background-size: cover;
-}
-.promo-bg-img-v4 {
-  background: url(../img/bg/img11.jpg) no-repeat;
-  background-size: cover;
-}
-.promo-bg-img-v5 {
-  background: url(../img/bg/img6.jpg) no-repeat;
-  background-size: cover;
-}
-
-/*Promo Background Fixed*/
-.promo-bg-fixed {
-  background-attachment: fixed;
-}
-
-/*Promo Texts v1*/
-.promo-text-v1 {
-  padding: 3px 0;
-  font-size: 20px;
-  font-weight: 600;
-  display: inline-block;
-  border-bottom: solid 2px #fff;
-}
-
-.promo-text-v1.color-dark {
-  border-color: #555;
-}
-
-/*Promo Texts v2*/
-.promo-text-v2 {
-  font-size: 55px;
-  font-weight: 600;
-  line-height: 63px;
-}
-
-/*Promo Video Icon*/
-.promo-video-icon-wrap {
-  width: 64px;
-  height: 64px;
-  font-size: 18px;
-  line-height: 70px;
-  display: inline-block;
-  transition: all .3s ease-in-out;
-}
-
-.promo-video-icon-wrap:hover {
-  color: #333;
-  text-decoration: none;
-}
-
-.promo-video-icon-wrap.color-light {
-  color: #333;
-  background: rgba(255,255,255,1);
-}
-.promo-video-icon-wrap.color-light:hover {
-  background: rgba(255,255,255,.9);
-}
-
-.promo-video-icon-wrap.color-dark {
-  color: #fff;
-  background: rgba(0,0,0,.8);
-}
-.promo-video-icon-wrap.color-dark:hover {
-  color: #fff;
-  background: rgba(0,0,0,.9);
-}
-
-.promo-video-icon {
-  left: 3px;
-  position: relative;
-}
-
-/*--------------------------------------------------
-    [2. Breadcrumbs]
-----------------------------------------------------*/
+/*Breadcrumbs
+------------------------------------*/
 /*Default Breadcrumbs*/
 .breadcrumbs {
   overflow: hidden;
   padding: 10px 0 6px;
   border-bottom: solid 1px #eee;
-  background: url(../img/patterns/breadcrumbs.png) repeat;
-}
-
-.video-business-img1 {
-  background: url(../video/youtube-business/video-business-img1.jpg) no-repeat center;
-  background-size: cover; /*Scales the background image to be as large as possible*/
+  background: url(../../../assets/img/patterns/breadcrumbs.html) repeat;
 }
 
 .breadcrumbs h1 {
@@ -294,7 +113,7 @@
 .breadcrumbs-v1 {
   padding: 100px 0;
   position: relative;
-  background: url(../img/breadcrumbs/img1.jpg) center no-repeat;
+  background: url(../../../assets/img/breadcrumbs/img1.html) center no-repeat;
   background-size: cover; /*Scales the background image to be as large as possible*/
 }
 
@@ -345,7 +164,7 @@
 .breadcrumbs-v2 {
   text-align: center;
   position: relative;
-  background: url(../img/bg/11.jpg) no-repeat center;
+  background: url(../../../assets/img/bg/11.html) no-repeat center;
 }
 
 .breadcrumbs-v2-in {
@@ -385,19 +204,19 @@
 }
 
 .breadcrumbs-v3.img-v1 {
-  background: url(../img/breadcrumbs/img1.jpg) no-repeat;
+  background: url(../../../assets/img/breadcrumbs/img1.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.img-v2 {
-  background: url(../img/breadcrumbs/img2.jpg) no-repeat;
+  background: url(../../../assets/img/breadcrumbs/img2.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.img-v3 {
-  background: url(../img/breadcrumbs/img3.jpg) no-repeat;
+  background: url(../../../assets/img/breadcrumbs/img3.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -450,9 +269,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [3. Image Hover Effects]
-----------------------------------------------------*/
+/*Image Hover Effects
+------------------------------------*/
 /*Image Hover v1*/
 .img-hover-v1 span {
   display: block;
@@ -500,9 +318,6 @@
   -webkit-filter: grayscale(0);
 }
 
-/*--------------------------------------------------
-    [4. Block Grid]
-----------------------------------------------------*/
 /*Block Grid v1
 ------------------------------------*/
 .block-grid-v1 {
@@ -619,9 +434,6 @@
   font-size: 16px;
 }
 
-/*--------------------------------------------------
-    [5. Services Box]
-----------------------------------------------------*/
 /*Services Box v1
 ------------------------------------*/
 .service-box-v1 .service-block {
@@ -666,9 +478,6 @@
   border-top: none;
 }
 
-/*--------------------------------------------------
-    [6. Service Block ]
-----------------------------------------------------*/
 /*Service Block v1
 ------------------------------------*/
 .service-block-v1 {
@@ -956,9 +765,6 @@
   background: #72c02c;
 }
 
-/*--------------------------------------------------
-    [7. Process]
-----------------------------------------------------*/
 /*Process v1
 ------------------------------------*/
 .process-v1 .process-in {
@@ -1021,9 +827,6 @@
   }
 }
 
-/*--------------------------------------------------
-    [8. Team]
-----------------------------------------------------*/
 /*Team v1
 ------------------------------------*/
 .team-v1 ul {
@@ -1618,9 +1421,6 @@
   }
 }
 
-/*--------------------------------------------------
-    [9. Call To Action]
-----------------------------------------------------*/
 /*Call To Action v1
 ------------------------------------*/
 .call-action-v1 p {
@@ -1628,10 +1428,6 @@
   font-size: 18px;
   font-weight: 200;
   margin-bottom: 0;
-}
-
-.call-action-v1.call-action-v1-boxed {
-  padding: 0 25px;
 }
 
 .call-action-v1 .call-action-v1-box {
@@ -1647,7 +1443,6 @@
 }
 
 .call-action-v1 .call-action-v1-in.inner-btn {
-  padding-top: 1px;
   min-width: 250px;
   text-align: right;
 }
@@ -1669,7 +1464,7 @@
 .call-action-v2 {
   padding: 50px 0;
   text-align: center;
-  background: url(../img/patterns/16.png);
+  background: url(../../../assets/img/patterns/16.html);
 }
 
 .call-action-v2 h2 {
@@ -1688,9 +1483,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [10. Portfolio Box]
-----------------------------------------------------*/
+/*Portfolio Box
+------------------------------------*/
 /*Portfolio Box*/
 @media (min-width: 991px) and (max-width: 1199px) {
   .portfolio-box {
@@ -1902,9 +1696,8 @@
   -webkit-backface-visibility: hidden; /*For Chrome*/
 }
 
-/*--------------------------------------------------
-    [11. Portfolio Feature v2]
-----------------------------------------------------*/
+/*Portfolio Feature v2
+------------------------------------*/
 .portfolio-box-v2 {
     margin: 0 0 60px;
 }
@@ -1992,9 +1785,6 @@
     background: #72c02c;
 }
 
-/*--------------------------------------------------
-    [12. Thumbnail]
-----------------------------------------------------*/
 /*Thumbnail v1
 ------------------------------------*/
 .thumbnails-v1 .thumbnail-img {
@@ -2017,9 +1807,6 @@
   text-transform: uppercase;
 }
 
-/*--------------------------------------------------
-    [13. Image Backgrounds]
-----------------------------------------------------*/
 /*Image Backgrounds v1
 ------------------------------------*/
 .bg-image-v1 {
@@ -2027,8 +1814,7 @@
   height: auto;
   padding: 50px 0;
   position: relative;
-  background: url(../img/bg/11.jpg) repeat fixed;
-  background-size: cover;
+  background: url(../../../assets/img/bg/11.html) repeat fixed;
 }
 
 .bg-image-v1:before {
@@ -2048,7 +1834,7 @@
   height: auto;
   padding: 50px 0;
   position: relative;
-  background: url(../img/bg/7.jpg) repeat fixed;
+  background: url(../../../assets/img/bg/7.html) repeat fixed;
 }
 
 .bg-image-v2:before {
@@ -2077,15 +1863,14 @@
   color: #eee !important;
 }
 
-/*--------------------------------------------------
-    [14. Parallax Quote]
-----------------------------------------------------*/
+/*Parallax Quote
+------------------------------------*/
 .parallax-quote {
   color: #fff;
   padding: 100px 0;
   position: relative;
   text-align: center;
-  background: url(../img/team/faces.jpg) 50% 0 repeat fixed;
+  background: url(../../../assets/img/team/faces.html) 50% 0 repeat fixed;
 }
 
 .parallax-quote:after {
@@ -2105,7 +1890,7 @@
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../img/patterns/gridtile.png) repeat;
+  background: url(../../../assets/img/patterns/gridtile.html) repeat;
 }
 
 /*Parallax Quote Inner*/
@@ -2189,11 +1974,10 @@
   }
 }
 
-/*--------------------------------------------------
-    [15. Parallax Team]
-----------------------------------------------------*/
+/*Parallax Team
+------------------------------------*/
 .parallax-team {
-  background: url(../img/team/faces.jpg) 50% 0 repeat fixed;
+  background: url(../../../assets/img/team/faces.html) 50% 0 repeat fixed;
 }
 
 .parallax-team,
@@ -2214,7 +1998,7 @@
 
 /*Parallax Team*/
 .parallax-team {
-  background: url(../img/team/faces.jpg) 50% 0 repeat fixed;
+  background: url(../../../assets/img/team/faces.html) 50% 0 repeat fixed;
 }
 
 .parallax-team,
@@ -2226,18 +2010,17 @@
   background: rgba(0,0,0,0.8);
 }
 
-/*--------------------------------------------------
-    [16. Parallax Counter]
-----------------------------------------------------*/
+/*Parallax Counter
+------------------------------------*/
 .parallax-bg {
-  background: url(../img/patterns/5.png) repeat fixed;
+  background: url(../../../assets/img/patterns/5.html) repeat fixed;
 }
 
 /*Parallax Counter
 ------------------------------------*/
 .parallax-counter {
   padding: 30px 0;
-  background: url(../img/patterns/5.png) repeat fixed;
+  background: url(../../../assets/img/patterns/5.html) repeat fixed;
 }
 
 .parallax-counter .counters {
@@ -2255,12 +2038,11 @@
   font-size: 48px;
 }
 
-
 /*Parallax Counter v1
 ------------------------------------*/
 .parallax-counter-v1 {
   padding: 60px 0;
-  background: url(../img/patterns/5.png) repeat fixed;
+  background: url(../../../assets/img/patterns/5.html) repeat fixed;
 }
 
 .parallax-counter-v1 .counters {
@@ -2285,7 +2067,7 @@
 .parallax-counter-v2 {
   position: relative;
   padding: 80px 0 60px;
-  background: url(../img/patterns/16.png) repeat fixed;
+  background: url(../../../assets/img/patterns/16.html) repeat fixed;
 }
 
 .parallax-counter-v2:after {
@@ -2346,7 +2128,7 @@
     overflow: hidden;
     text-align: center;
     position: relative;
-    background: url(../img/bg/25.jpg) 50% 0 fixed;
+    background: url(../../../assets/img/bg/25.html) 50% 0 fixed;
 }
 
 .parallax-counter-v3:after {
@@ -2429,7 +2211,7 @@
   overflow: hidden;
   text-align: center;
   position: relative;
-  background: url(../img/bg/19.jpg) 50% 0 fixed;
+  background: url(../../../assets/img/bg/19.html) 50% 0 fixed;
 }
 
 .parallax-counter-v4:after {
@@ -2465,12 +2247,11 @@
   text-transform: uppercase;
 }
 
-/*--------------------------------------------------
-    [17. Flat Background Block]
-----------------------------------------------------*/
+/*Flat Background Block
+------------------------------------*/
 .flat-bg-block-v1 {
   padding: 40px 0;
-  background: url(../img/patterns/16.png) repeat;
+  background: url(../../../assets/img/patterns/16.html) repeat;
 }
 
 .flat-bg-block-v1 .checked-list.first-child {
@@ -2507,9 +2288,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [18. Flat Testimonials]
-----------------------------------------------------*/
+/*Flat Testimonials
+------------------------------------*/
 .flat-testimonials {
   padding: 50px 0;
   background-color: #333;
@@ -2562,13 +2342,10 @@
   padding-left: 5px;
 }
 
-/*--------------------------------------------------
-    [19. Testimonials]
-----------------------------------------------------*/
 /*Testimonials v4
 ------------------------------------*/
 .testimonials-v4 {
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .testimonials-v4 .testimonials-v4-in {
@@ -2734,9 +2511,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [20. Featured Blog]
-----------------------------------------------------*/
+/*Featured Blog
+------------------------------------*/
 .featured-blog h2 {
   font-size: 18px;
   margin: 0 0 25px;
@@ -2827,9 +2603,8 @@
   -webkit-transition: all 0.2s ease-in-out;
 }
 
-/*--------------------------------------------------
-    [21. Blog Comments]
-----------------------------------------------------*/
+/*Blog Comments
+------------------------------------*/
 .blog-comments img {
   width: 80px;
   height: auto;
@@ -2891,13 +2666,12 @@
   }
 }
 
-/*--------------------------------------------------
-    [22. Quote]
-----------------------------------------------------*/
+/*Quote
+------------------------------------*/
 .quote-v1 {
   padding: 60px 0;
   text-align: center;
-  background: url(../img/patterns/5.png) repeat;
+  background: url(../../../assets/img/patterns/5.html) repeat;
 }
 
 .quote-v1 p {
@@ -2960,9 +2734,8 @@
   font-weight: 400;
 }
 
-/*--------------------------------------------------
-    [23. Team Social]
-----------------------------------------------------*/
+/*Team Social
+------------------------------------*/
 .social-icons-v1 i {
   color: #555;
   width: 33px;
@@ -2984,14 +2757,8 @@
   -webkit-transition: all 0.2s ease-in-out;
 }
 
-.social-icons-v1--dark i {
-  color: #fff;
-  background: #333;
-}
-
-/*--------------------------------------------------
-    [24. Box Shadows]
-----------------------------------------------------*/
+/*Box Shadows
+------------------------------------*/
 .shadow-wrapper {
   z-index: 1;
   position: relative;
@@ -3053,14 +2820,6 @@
   -webkit-transform: rotate(3deg);
 }
 
-/*Effect 5*/
-.shadow-effect-5 {
-  box-shadow: 0 0 2px #ccc;
-}
-
-/*--------------------------------------------------
-    [25. Interactive Slider]
-----------------------------------------------------*/
 /*Interactive Slider v1
 ------------------------------------*/
 .interactive-slider-v1 {
@@ -3070,19 +2829,19 @@
 }
 
 .interactive-slider-v1.img-v1 {
-  background: url(../img/bg/18.jpg) no-repeat;
+  background: url(../../../assets/img/bg/18.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v1.img-v2 {
-  background: url(../img/bg/19.jpg) no-repeat;
+  background: url(../../../assets/img/bg/19.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v1.img-v3 {
-  background: url(../img/bg/18.jpg) no-repeat;
+  background: url(../../../assets/img/bg/18.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3129,41 +2888,19 @@
   padding: 200px 0;
   position: relative;
   text-align: center;
-  background: url(../img/bg/18.jpg) no-repeat;
+  background: url(../../../assets/img/bg/18.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.interactive-slider-v2-md {
-  padding: 250px 0;
-}
-
 .interactive-slider-v2.img-v1 {
-  background: url(../img/bg/25.jpg) no-repeat;
+  background: url(../../../assets/img/bg/25.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v2 {
-  background: url(../img/bg/14.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.interactive-slider-v2.img-v3 {
-  background: url(../img/bg/img8.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.interactive-slider-v2.img-v4 {
-  background: url(../img/bg/img9.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.interactive-slider-v2.intro-promo-img {
-  background: url(../img/intro/promo.jpg) no-repeat;
+  background: url(../../../assets/img/bg/14.html) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3176,14 +2913,7 @@
   height: 100%;
   content: " ";
   position: absolute;
-  background: rgba(0,0,0,.4);
-}
-
-.intro-promo-cover-dark:after {
-  background: rgba(0,0,0,.8);
-}
-.intro-promo-cover-light:after {
-  background: rgba(255,255,255,.9);
+  background: rgba(0,0,0,0.4);
 }
 
 .interactive-slider-v2 h1 {
@@ -3209,9 +2939,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [26. Blog Trending]
-----------------------------------------------------*/
+/*Blog Trending
+------------------------------------*/
 .blog-trending li {
   margin-bottom: 20px;
 }
@@ -3231,9 +2960,8 @@
   color: #72c02c;
 }
 
-/*--------------------------------------------------
-    [27. Blog Latest Posts]
-----------------------------------------------------*/
+/*Blog Latest Posts
+------------------------------------*/
 .blog-latest-posts li {
   margin-top: 15px;
   padding-top: 15px;
@@ -3266,9 +2994,8 @@
   font-size: 12px;
 }
 
-/*--------------------------------------------------
-    [28. Blog Photostream]
-----------------------------------------------------*/
+/*Blog Photostream
+------------------------------------*/
 .blog-photostream {
   margin-right: -5px;
 }
@@ -3284,9 +3011,8 @@
   height: auto;
 }
 
-/*--------------------------------------------------
-    [29. Newsletter]
-----------------------------------------------------*/
+/*Newsletter
+------------------------------------*/
 .blog-newsletter p {
   color: #555;
   margin-bottom: 15px;
@@ -3300,9 +3026,8 @@
   box-shadow: none;
 }
 
-/*--------------------------------------------------
-    [30. Blog Post Quote]
-----------------------------------------------------*/
+/*Blog Post Quote
+------------------------------------*/
 .blog-post-quote {
   padding: 35px 60px;
   background: #fff;
@@ -3353,9 +3078,8 @@
   font-weight: 200;
 }
 
-/*--------------------------------------------------
-    [31. Blog Post Author]
-----------------------------------------------------*/
+/*Blog Post Author
+------------------------------------*/
 .blog-author {
   padding: 20px;
   background: #fff;
@@ -3388,9 +3112,8 @@
   color: #555;
 }
 
-/*--------------------------------------------------
-    [32. Blog Comments]
-----------------------------------------------------*/
+/*Blog Comments
+------------------------------------*/
 .blog-comments img {
   width: 80px;
   height: auto;
@@ -3452,9 +3175,6 @@
   }
 }
 
-/*--------------------------------------------------
-    [33. News]
-----------------------------------------------------*/
 /*News v1
 ------------------------------------*/
 .news-section {
@@ -3719,7 +3439,7 @@
 
 
 /*--------------------------------------------------
-    [34. Blog Grid]
+[Blog Grid]
 ----------------------------------------------------*/
 
 .blog-grid img {
@@ -3825,7 +3545,7 @@
 
 
 /*--------------------------------------------------
-    [35. Blog Thumb]
+[Blog Thumb]
 ----------------------------------------------------*/
 
 .blog-thumb {
@@ -3946,72 +3666,4 @@
 .blog-thumb.blog-thumb-circle .blog-thumb-hover .hover-grad {
   font-size: 15px;
   margin-top: -10px;
-}
-
-/*Blog Thumb Colors
-------------------------------------*/
-.blog-thumb .blog-thumb-hover:hover:after {
-  background: rgba(114,192,44,0.9);
-}
-.blog-grid .blog-grid-grad i:hover {
-  background: rgba(114,192,44,1);
-}
-
-/*--------------------------------------------------
-    [36. Shop-subscribe]
-----------------------------------------------------*/
-.shop-subscribe {
-  padding: 25px 0;
-}
-
-.shop-subscribe h2 {
-  margin: 0;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 200;
-  text-transform: uppercase;
-}
-
-/*Input Form Control*/
-.shop-subscribe input {
-  border-color: #fff;
-  border-right: none;
-  background: transparent;
-}
-
-.shop-subscribe .form-control {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-.shop-subscribe .form-control:focus {
-  box-shadow: none;
-  border-color: #fff;
-}
-
-.shop-subscribe .form-control::-moz-placeholder {
-  color: #fff;
-}
-.shop-subscribe .form-control:-ms-input-placeholder {
-  color: #fff;
-}
-.shop-subscribe .form-control::-webkit-input-placeholder {
-  color: #fff;
-}
-
-.shop-subscribe .input-group-btn {
-  border-color: #fff;
-  background: transparent;
-}
-
-.shop-subscribe .input-group-btn .btn {
-  border: 1px solid #fff;
-  background: transparent;
-}
-
-.shop-subscribe .input-group-btn i {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 200;
 }

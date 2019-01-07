@@ -1,31 +1,12 @@
 /*
- * Template Name: Unify - Responsive Bootstrap Template
- * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
- * Version: 1.9
- * Author: @htmlstream
- * Website: http://htmlstream.com
+* Template Name: Unify - Responsive Bootstrap Template
+* Version: 1.9
+* Author: @htmlstream
+* Website: http://htmlstream.com
+*/
 
-[-----*** TABLE OF CONTENT ***-----]
-
-1- Parallax Slider (Main)
-2- Master Slider
-3- Revolution Slider
-4- Layer Slider
-5- Sequence Slider (Home Page)
-6- Clients Carousel
-7- Pie Chart
-8- Counter
-9- Back To Top
-10- Owl Carousel
-	10.1- Recent Works (Owl Carousel)
-	10.2- Parallax Twitter (Owl Carousel)
-	10.3- Clients Section (Owl Carousel)
-	10.4- Owl Video
------------------------------------------------------------------------*/
-
-/*--------------------------------------------------
-    [1. Parallax Slider (Main)]
-----------------------------------------------------*/
+/*Parallax Slider (Main)
+------------------------------------*/
 .slider-inner .da-slider {
    box-shadow: none;
    border-bottom: 2px solid #ddd;
@@ -48,9 +29,8 @@
    }
 }
 
-/*--------------------------------------------------
-    [2. Master Slider]
-----------------------------------------------------*/
+/*Master Slider
+------------------------------------*/
 .ms-promo-info {
   font-size: 45px;
   font-weight: 300;
@@ -80,9 +60,8 @@
   padding: 7px;
 }
 
-/*--------------------------------------------------
-    [3. Revolution Slider]
-----------------------------------------------------*/
+/*Revolution Slider
+------------------------------------*/
 .tp-dottedoverlay {
   z-index: 1 !important;
 }
@@ -274,9 +253,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [4. Layer Slider]
-----------------------------------------------------*/
+/*Layer Slider
+------------------------------------*/
 .layer_slider {
    overflow: hidden;
 }
@@ -285,9 +263,8 @@
    border-radius: 100px !important;
 }
 
-/*--------------------------------------------------
-    [5. Sequence Slider (Home Page)]
-----------------------------------------------------*/
+/*Sequence Slider (Home Page)
+------------------------------------*/
 @media (max-width: 900px) {
    #sequence-theme .info {
       top:80px !important;
@@ -310,9 +287,8 @@
    }
 }
 
-/*--------------------------------------------------
-    [6. Clients Carousel]
-----------------------------------------------------*/
+/*Clients Carousel
+------------------------------------*/
 .clients {
   border: 0;
   overflow: hidden;
@@ -348,9 +324,8 @@
   filter: none;
 }
 
-/*--------------------------------------------------
-    [7. Pie Chart]
-----------------------------------------------------*/
+/*Pie Chart
+------------------------------------*/
 .pie-progress-charts .inner-pchart {
   text-align: center;
 }
@@ -371,9 +346,8 @@
   }
 }
 
-/*--------------------------------------------------
-    [8. Counter]
-----------------------------------------------------*/
+/*Counter
+------------------------------------*/
 .counters {
   color: #555;
   text-align: center;
@@ -425,9 +399,8 @@
    border-color: #000;
 }
 
-/*--------------------------------------------------
-    [9. Back To Top]
-----------------------------------------------------*/
+/*Back To Top
+------------------------------------*/
 #topcontrol {
   color: #fff;
   z-index: 99;
@@ -459,9 +432,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-/*--------------------------------------------------
-    [10. Owl Carousel]
-----------------------------------------------------*/
+/*Owl Carousel
+------------------------------------*/
 .owl-btn {
   color: #777;
   cursor: pointer;
@@ -812,7 +784,7 @@
   padding: 100px 0;
   position: relative;
   text-align: center;
-  background: #333 url(../img/bg/19.jpg) 50% 0 fixed;
+  background: #333 url(../../../assets/img/bg/19.html) 50% 0 fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -834,7 +806,7 @@
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../img/patterns/gridtile.png) repeat;
+  background: url(../../../assets/img/patterns/gridtile.html) repeat;
 }
 
 .parallax-twitter-in {
@@ -883,7 +855,7 @@
 .clients-section {
   padding: 60px 0;
   position: relative;
-  background: #333 url(../img/bg/7.jpg) 50% fixed;
+  background: #333 url(../../../assets/img/bg/7.html) 50% fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -905,7 +877,7 @@
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../img/patterns/gridtile.png) repeat;
+  background: url(../../../assets/img/patterns/gridtile.html) repeat;
 }
 
 .clients-section .title-v1 p,

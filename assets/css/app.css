@@ -1,9 +1,8 @@
 /*
- * Template Name: Unify - Responsive Bootstrap Template
- * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
- * Version: 1.9.
- * Author: @htmlstream
- * Website: http://htmlstream.com
+* Template Name: Unify - Responsive Bootstrap Template
+* Version: 1.9
+* Author: @htmlstream
+* Website: http://htmlstream.com
 */
 
 /*Reset Styles
@@ -1838,35 +1837,35 @@ span.badge-dark,
 	opacity: 1;
 }
 
-.social_amazon {background: url(../img/icons/social/amazon.png) no-repeat;}
-.social_behance {background: url(../img/icons/social/behance.png) no-repeat;}
-.social_blogger {background: url(../img/icons/social/blogger.png) no-repeat;}
-.social_deviantart {background: url(../img/icons/social/deviantart.png) no-repeat;}
-.social_dribbble {background: url(../img/icons/social/dribbble.png) no-repeat;}
-.social_dropbox {background: url(../img/icons/social/dropbox.png) no-repeat;}
-.social_evernote {background: url(../img/icons/social/evernote.png) no-repeat;}
-.social_facebook {background: url(../img/icons/social/facebook.png) no-repeat;}
-.social_forrst {background: url(../img/icons/social/forrst.png) no-repeat;}
-.social_github {background: url(../img/icons/social/github.png) no-repeat;}
-.social_googleplus {background: url(../img/icons/social/googleplus.png) no-repeat;}
-.social_jolicloud {background: url(../img/icons/social/jolicloud.png) no-repeat;}
-.social_last-fm {background: url(../img/icons/social/last-fm.png) no-repeat;}
-.social_linkedin {background: url(../img/icons/social/linkedin.png) no-repeat;}
-.social_picasa {background: url(../img/icons/social/picasa.png) no-repeat;}
-.social_pintrest {background: url(../img/icons/social/pintrest.png) no-repeat;}
-.social_rss {background: url(../img/icons/social/rss.png) no-repeat;}
-.social_skype {background: url(../img/icons/social/skype.png) no-repeat;}
-.social_spotify {background: url(../img/icons/social/spotify.png) no-repeat;}
-.social_stumbleupon {background: url(../img/icons/social/stumbleupon.png) no-repeat;}
-.social_tumblr {background: url(../img/icons/social/tumblr.png) no-repeat;}
-.social_twitter {background: url(../img/icons/social/twitter.png) no-repeat;}
-.social_vimeo {background: url(../img/icons/social/vimeo.png) no-repeat;}
-.social_wordpress {background: url(../img/icons/social/wordpress.png) no-repeat;}
-.social_xing {background: url(../img/icons/social/xing.png) no-repeat;}
-.social_yahoo {background: url(../img/icons/social/yahoo.png) no-repeat;}
-.social_youtube {background: url(../img/icons/social/youtube.png) no-repeat;}
-.social_vk {background: url(../img/icons/social/vk.png) no-repeat;}
-.social_instagram {background: url(../img/icons/social/instagram.png) no-repeat;}
+.social_amazon {background: url(../../../assets/img/icons/social/amazon.png) no-repeat;}
+.social_behance {background: url(../../../assets/img/icons/social/behance.png) no-repeat;}
+.social_blogger {background: url(../../../assets/img/icons/social/blogger.png) no-repeat;}
+.social_deviantart {background: url(../../../assets/img/icons/social/deviantart.png) no-repeat;}
+.social_dribbble {background: url(../../../assets/img/icons/social/dribbble.png) no-repeat;}
+.social_dropbox {background: url(../../../assets/img/icons/social/dropbox.png) no-repeat;}
+.social_evernote {background: url(../../../assets/img/icons/social/evernote.png) no-repeat;}
+.social_facebook {background: url(../../../assets/img/icons/social/facebook.png) no-repeat;}
+.social_forrst {background: url(../../../assets/img/icons/social/forrst.png) no-repeat;}
+.social_github {background: url(../../../assets/img/icons/social/github.png) no-repeat;}
+.social_googleplus {background: url(../../../assets/img/icons/social/googleplus.png) no-repeat;}
+.social_jolicloud {background: url(../../../assets/img/icons/social/jolicloud.png) no-repeat;}
+.social_last-fm {background: url(../../../assets/img/icons/social/last-fm.png) no-repeat;}
+.social_linkedin {background: url(../../../assets/img/icons/social/linkedin.png) no-repeat;}
+.social_picasa {background: url(../../../assets/img/icons/social/picasa.png) no-repeat;}
+.social_pintrest {background: url(../../../assets/img/icons/social/pintrest.png) no-repeat;}
+.social_rss {background: url(../../../assets/img/icons/social/rss.png) no-repeat;}
+.social_skype {background: url(../../../assets/img/icons/social/skype.png) no-repeat;}
+.social_spotify {background: url(../../../assets/img/icons/social/spotify.png) no-repeat;}
+.social_stumbleupon {background: url(../../../assets/img/icons/social/stumbleupon.png) no-repeat;}
+.social_tumblr {background: url(../../../assets/img/icons/social/tumblr.png) no-repeat;}
+.social_twitter {background: url(../../../assets/img/icons/social/twitter.png) no-repeat;}
+.social_vimeo {background: url(../../../assets/img/icons/social/vimeo.png) no-repeat;}
+.social_wordpress {background: url(../../../assets/img/icons/social/wordpress.png) no-repeat;}
+.social_xing {background: url(../../../assets/img/icons/social/xing.png) no-repeat;}
+.social_yahoo {background: url(../../../assets/img/icons/social/yahoo.png) no-repeat;}
+.social_youtube {background: url(../../../assets/img/icons/social/youtube.png) no-repeat;}
+.social_vk {background: url(../../../assets/img/icons/social/vk.png) no-repeat;}
+.social_instagram {background: url(../../../assets/img/icons/social/instagram.png) no-repeat;}
 
 /*Font Awesome Icon Styles*/
 i.icon-custom {
@@ -3363,8 +3362,8 @@ blockquote.hero.hero-default small {
 ------------------------------------*/
 /*Images*/
 img.img-bordered {
-	padding: 3px !important;
-	border: solid 1px #eee !important;
+	padding: 3px;
+	border: solid 1px #eee;
 }
 
 img.img-circle {
@@ -3620,11 +3619,6 @@ img.image-md {
 	padding-bottom: 150px;
 }
 
-.space-md-hor {
-	padding-left: 40px;
-	padding-right: 40px;
-}
-
 .space-lg-hor {
 	padding-left: 60px;
 	padding-right: 60px;
@@ -3783,8 +3777,8 @@ img.image-md {
 .bg-color-light-grey { background-color: #585f69 !important;}
 .bg-color-light-green { background-color: #79d5b3 !important;}
 
-.rgba-red { background-color: rgba(231,76,60,0.8)}
-.rgba-blue { background-color: rgba(52,152,219,0.8);}
+.rgba-red { background-color: rgba(231,76,60,0.8);}
+.rgba-blue{ background-color: rgba(52,152,219,0.8);}
 .rgba-aqua { background-color: rgba(39,215,231,0.8);}
 .rgba-yellow { background-color: rgba(241,196,15,0.8);}
 .rgba-default { background-color: rgba(114,192,44,0.8);}
@@ -3838,7 +3832,7 @@ img.image-md {
 	font-weight: 400;
 }
 .text-bold {
-	font-weight: 600 !important;
+	font-weight: 600;
 }
 
 /*Full Width*/
@@ -3854,8 +3848,7 @@ img.image-md {
 }
 
 /*Image Classes*/
-.img-width-60 { width: 60px;}
-.img-width-200 { width: 200px;}
+.img-width-200 { width:200px;}
 .lft-img-margin { margin:0 20px 5px 0;}
 .rgt-img-margin { margin:0 0 5px 10px;}
 
