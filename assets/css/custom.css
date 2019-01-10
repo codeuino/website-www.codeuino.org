@@ -1,33 +1,33 @@
 /* Add here all your css styles (customizations) */
 
-#contact .btn:hover{
-	color: #e74c3c!important;
+#contact .btn:hover {
+    color: #e74c3c !important;
 }
 
-.w-228{
-	width: 228px;
-	text-align: left;
-	color: #555;
+.w-228 {
+    width: 228px;
+    text-align: left;
+    color: #555;
 }
 
-.mail{
-	padding-right: 2px;
+.mail {
+    padding-right: 2px;
 }
 
 .owl-buttons {
     display: none !important;
 }
 
-.ta-js{
-	text-align: justify;
+.ta-js {
+    text-align: justify;
 }
 
-.fs-18{
-	font-size: 18px;
+.fs-18 {
+    font-size: 18px;
 }
 
-.fs-16{
-	font-size: 16px;
+.fs-16 {
+    font-size: 16px;
 }
 
 #our-cases .container {
@@ -35,9 +35,9 @@
     padding-bottom: 70px !important;
 }
 
-#testimonials{
-	margin-top: 0!important;
-	padding-bottom: 60px;
+#testimonials {
+    margin-top: 0 !important;
+    padding-bottom: 60px;
 }
 
 #testimonials .container .sponsors {
@@ -60,177 +60,232 @@
     height: 121px;
 }
 
-.caption-outer img{
-	height: 233.33px!important;
+.caption-outer img {
+    height: 233.33px !important;
 }
 
-#blog .lawyer-post img{
-	height: 240px!important;
+#blog .lawyer-post img {
+    height: 240px !important;
 }
 
-.our-team-v4-start{
-	background: #4d4354 url(../img-temp/Our-Team.jpg) no-repeat 50% 0 / cover;
+.our-team-v4-start {
+    background: #4d4354 url(../img-temp/Our-Team.jpg) no-repeat 50% 0 / cover;
 }
 
-.our-team-v4-member-wrapper img{
-	height: 450px!important;
+.our-team-v4-member-wrapper img {
+    height: 450px !important;
 }
 
-.g-mb-40{
-	margin-bottom: 10px !important;
+.g-mb-40 {
+    margin-bottom: 10px !important;
 }
 
-#Contact{
-	padding-bottom: 60px;
+#Contact {
+    padding-bottom: 60px;
 }
 
-#Contact .row{
-	margin-left: auto;
-	margin-right: auto;
+#Contact .row {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#irc{
-	border:0; 
-	width:88%; 
-	height:498px; 
-	padding-top: 60px;
+#irc {
+    border: 0;
+    width: 88%;
+    height: 498px;
+    padding-top: 60px;
 }
 
-hr{
-	margin: 0 0;
+hr {
+    margin: 0 0;
 }
 
 /*Projects*/
 
-.g-heading-v9.text-center:after{
-	left: 44%!important;
+.g-heading-v9.text-center:after {
+    left: 44% !important;
 }
 
-.g-heading-v9:after{
-	width: 143px!important;
+.g-heading-v9:after {
+    width: 143px !important;
 }
 
-#blog{
-	margin-top: 60px;
+#blog {
+    margin-top: 60px;
 }
 
-#blog h2, #blog2 h2, #blog3 h2{
-	font-weight: 700;
-	font-size: 40px;
+#blog h2,
+#blog2 h2,
+#blog3 h2 {
+    font-weight: 700;
+    font-size: 40px;
 }
 
-#getInvolved, #projects{
-	margin-top: 90px;
+#getInvolved,
+#projects {
+    margin-top: 90px;
 }
 
-.g-pb-40{
-	padding-bottom: 0;
+.g-pb-40 {
+    padding-bottom: 0;
 }
 
-.g-pt-100{
-	padding-top: 60px!important;
+.g-pt-100 {
+    padding-top: 60px !important;
 }
 
-#testimonials .container .g-mb-70{
-	margin-bottom: 30px!important;
+#testimonials .container .g-mb-70 {
+    margin-bottom: 30px !important;
 }
 
 /*Get Involved*/
 
-#getInvolved p{
-	font-size: 18px;
-	margin-bottom: 0;
+#getInvolved p {
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
-#getInvolved .container .fs-16 p{
-	font-size: 16px!important;
+#getInvolved .container .fs-16 p {
+    font-size: 16px !important;
 }
 
-#getInvolved .footer-section p{
-	font-size: 14px;
-	margin-bottom: 30px!important;
+#getInvolved .footer-section p {
+    font-size: 14px;
+    margin-bottom: 30px !important;
 }
 
-#getInvolved-content{
-	padding-top: 70px;
+#getInvolved-content {
+    padding-top: 70px;
 }
 
-#getInvolved-content h3{
-	font-weight: 600;
-	font-size: 40px;
+#getInvolved-content h3 {
+    font-weight: 600;
+    font-size: 40px;
 }
 
-.heading-padding{
-	padding-top: 30px;
+.heading-padding {
+    padding-top: 30px;
 }
 
 
-.reduce{
-	margin-bottom: 30px!important;
+.reduce {
+    margin-bottom: 30px !important;
 }
 
-blockquote{
-	/*border-left: 5px solid #e74c3c!important;*/
+blockquote {
+    /*border-left: 5px solid #e74c3c!important;*/
 }
 
-ul{
-	list-style-type: none;
+ul {
+    list-style-type: none;
 }
 
-#points li p{
-	margin-bottom: 10px!important;
+#points li p {
+    margin-bottom: 10px !important;
 }
 
-.steps-heading{
-	padding-bottom: 5px;
+.steps-heading {
+    padding-bottom: 5px;
 }
 
-.steps-heading h4{
-	font-weight: 600;
-	padding-top: 30px;
+.steps-heading h4 {
+    font-weight: 600;
+    padding-top: 30px;
 }
 
-.steps-heading .g-heading-v9:after{
-    width: 60px!important;
+.steps-heading .g-heading-v9:after {
+    width: 60px !important;
+}
+
+.team-h2{
+	margin-top: 80px;
 }
 
 @media (max-width: 768px) {
-	.center-align{
-		text-align: center;
-	}	
-	.pb-15{
-		padding-bottom: 20px;
-	}
-	#blog h2{
-		font-size: 30px;
-	}
-	.pr-pl-0{
-		padding-right: 15px!important;
-		padding-left: 15px!important;
-	}
-	.g-heading-v9.text-center:after{
-	    left: 31%!important;
-	}
+    .center-align {
+        text-align: center;
+    }
+
+    .pb-15 {
+        padding-bottom: 20px;
+    }
+
+    #blog h2 {
+        font-size: 30px;
+    }
+
+    .pr-pl-0 {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .g-heading-v9.text-center:after {
+        left: 31% !important;
+    }
+
     .sponsors li {
         height: 121px !important;
         width: 50%;
     }
 
-	#testimonials .container .sponsors {
-	    width: 85%;
+    #testimonials .container .sponsors {
+        width: 85%;
     }
 
-	.sponsors li a img {
-	height: 90px;
+    .sponsors li a img {
+        height: 90px;
+    }
+
+    #irc {
+        border: 0;
+        width: 100%;
+        height: 398px;
+        padding-top: 0px;
+    }
+
+    .g-heading-v9:after {
+        left: 26% !important;
+    }
+
+    /*Get Involved*/
+    #points {
+        padding-left: 0!important;
+    }
+
+    #getInvolved p {
+        font-size: 16px;
+        margin-bottom: 0;
+        text-align: justify;
+    }
+
+    #getInvolved-content h3 {
+        font-size: 30px;
+        line-height: 0.9;
+        text-align: center;
+    }
+	#getInvolved, #projects{
+	    margin-top: 55px;
 	}
 
-	#irc{
-	    border: 0;
-	    width: 100%;
-	    height: 398px;
-	    padding-top: 0px;
+	.steps-heading:after{
+		left:0!important;
 	}
-	.g-heading-v9:after{
-		left: 26%!important;
+
+	/*Home*/
+	.promo {
+    	padding-top: 55px;
+	}
+
+	.one-page-header .navbar-toggle{
+		margin-top: 11px!important;
+	}
+
+	/*Team*/
+	.our-team-v4-start{
+		height: 404px!important;
+	}
+
+	.our-team-v4-start:after{
+		background: #4e4353!important;
 	}
 }
