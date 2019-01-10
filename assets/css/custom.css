@@ -1,5 +1,9 @@
 /* Add here all your css styles (customizations) */
 
+.center-align{
+	text-align: center;
+}
+
 #contact .btn:hover{
 	color: #e74c3c!important;
 }
@@ -226,5 +230,8 @@ ul{
 	    width: 100%;
 	    height: 398px;
 	    padding-top: 0px;
+	}
+	.g-heading-v9:after{
+		left: 125px;
 	}
 }
