@@ -1,5 +1,19 @@
 /* Add here all your css styles (customizations) */
 
+#contact .btn:hover{
+	color: #e74c3c!important;
+}
+
+.w-228{
+	width: 228px;
+	text-align: left;
+	color: #555;
+}
+
+.mail{
+	padding-right: 2px;
+}
+
 .owl-buttons {
     display: none !important;
 }
