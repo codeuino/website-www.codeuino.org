@@ -1,9 +1,5 @@
 /* Add here all your css styles (customizations) */
 
-.center-align{
-	text-align: center;
-}
-
 #contact .btn:hover{
 	color: #e74c3c!important;
 }
@@ -199,6 +195,9 @@ ul{
 }
 
 @media (max-width: 768px) {
+	.center-align{
+		text-align: center;
+	}	
 	.pb-15{
 		padding-bottom: 20px;
 	}
@@ -232,6 +231,6 @@ ul{
 	    padding-top: 0px;
 	}
 	.g-heading-v9:after{
-		left: 125px;
+		left: 26%!important;
 	}
 }
