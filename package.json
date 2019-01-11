@@ -1,5 +1,5 @@
 {
-  "name": "nodetestrepo",
+  "name": "codeuino",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,16 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devesh-verma/nodetestrepo.git"
+    "url": "git+https://github.com/devshiva619/website-www.codeuino.org.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devesh-verma/nodetestrepo/issues"
+    "url": "https://github.com/devshiva619/website-www.codeuino.org.git/issues"
   },
-  "homepage": "https://github.com/devesh-verma/nodetestrepo#readme",
+  "homepage": "https://github.com/devshiva619/website-www.codeuino.org.git#readme",
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4"
-  }
+  },
+  "devDependencies": {}
 }
