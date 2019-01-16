@@ -1,5 +1,18 @@
 /* Add here all your css styles (customizations) */
 
+.align-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github-button{
+    width: 124px;
+}
+
+.github-btn-before{
+    margin-right: 48px;
+}
+
 .navbar-brand > img{
     width: 150px!important;
 }
@@ -127,7 +140,7 @@ hr {
 
 #getInvolved,
 #projects {
-    margin-top: 90px;
+    margin-top: 82px;
 }
 
 .g-pb-40 {
@@ -384,4 +397,7 @@ ul {
     #blog2 h2{
         font-size: 30px;
     }
+    .github-button{
+        margin-top: 9px;
+    }    
 }
