@@ -265,6 +265,49 @@ ul {
     left: 0!important;
 }
 
+#contributors{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+#contributors .fa{
+    font-size: 23px;
+}
+
+#contributors .btn-u-lg, a.btn-u-lg{
+    padding: 5px 9px;
+}
+
+#contributors .github-button{
+    width: 38px;
+}
+
+#contributors .g-mb-50{
+    margin-bottom: 2px!important;
+}
+
+#contributors .g-mb-25{
+    margin-bottom: 0px!important;
+}
+
+#contributors p{
+    text-align: center;
+    font-size: 14px;
+}
+
+#contributors img{
+    border-radius: 50%;
+}
+
+#contributrs .col-xs-1{
+    width: 11.333333%;
+}
+
+.hr-style{
+    margin-top: 50px!important;
+}
+
 @media (max-width: 768px) {
     
     .navbar-brand > img{
@@ -399,5 +442,11 @@ ul {
     }
     .github-button{
         margin-top: 9px;
+    }
+    #contributors .col-3xs-12{
+        width: 33%;
+    }
+    .hr-style{
+        margin-top: 50px!important;
     }    
 }
