@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Cloned by RabinsXP.com-->
+
+<head>
+    <title>Our Contributors</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- Web Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800&amp;subset=cyrillic,latin">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/blocks.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/one.style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="../assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="../assets/plugins/owl-carousel2/assets/owl.carousel.css">
+    <link rel="stylesheet" href="../assets/plugins/master-slider/masterslider/style/masterslider.css">
+    <link rel="stylesheet" href="../assets/plugins/master-slider/u-styles/testimonials-1.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" href="../assets/plugins/revolution-slider/revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" href="../assets/plugins/revolution-slider/revolution/css/layers.css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" href="../assets/plugins/revolution-slider/revolution/css/navigation.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/lawyer.style.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/agency.style.css">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var jsonURL = "https://s3.ap-south-1.amazonaws.com/pr-webhook-contributors-json/contributors.json";
+        $.getJSON(jsonURL, function(json) {
+            $.each(json, function() {
+                var contributorDiv = "";
+                contributorDiv += '<div class="col-xs-1 col-3xs-12 lawyer-post g-mb-50"><a href=' + this.url + '><img class="img-responsive full-width g-mb-25" src="' + this.image + '" alt=""></a> </div>';
+                // contributorDiv += '<p class="g-fs-10 text-uppercase center-align">' + this.name + '</p>';
+                // contributorDiv += '<a href=' + this.url + ' class="btn-u btn-u-lg btn-u-red btn-u-upper github-button"><i class="fa fa-github"></i> </a> </div>'
+                $('#contributors').append(contributorDiv);
+            });
+        });
+    });
+    </script>
+</head>
+
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery lawyer-style">
+    <main class="wrapper">
+        <!-- Header -->
+        <nav class="one-page-header navbar navbar-default navbar-fixed-top one-page-nav-scrolling one-page-nav__fixed top-nav-collapse" data-role="navigation">
+            <div class="container">
+                <div class="menu-container page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#body">
+                        <img src="assets/img/codeuino.png" alt="Logo">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav">
+                            <li class="page-scroll">
+                                <a href="index.html"><span data-hover="Home">Home</span></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="projects.html"><span data-hover="Projects">Projects</span></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="team.html"><span data-hover="Team">Team</span></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="https://wiki.codeuino.org"><span data-hover="Wiki">Wiki</span></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="getInvolved.html"><span data-hover="Get Involved">Get Involved</span></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="codeofconduct.html"><span data-hover="Code Of Conduct">Code Of Conduct</span></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="license.html"><span data-hover="License">License</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- End Header -->
+        <!-- Project section -->
+        <section id="projects" class="g-theme-bg-color-1 g-text-color-2 text-center g-pt-100 g-pb-40">
+            <div class="container">
+                <!-- Testimonials Info -->
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                        <div class="g-heading-v9 text-center g-mb-30">
+                            <h2><strong>Our Contributors</strong></h2>
+                        </div>
+                        <!-- <p class="g-fs-16 g-mb-60">Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel odio.</p> -->
+                    </div>
+                </div>
+                <!-- End Testimonials Info -->
+            </div>
+        </section>
+        <div class="row" id="contributors">
+            <!-- <div class="col-xs-1 col-3xs-12 lawyer-post g-mb-50"> -->
+                <!-- <img class="img-responsive full-width g-mb-25" src="https://avatars2.githubusercontent.com/u/20336672?s=460&amp;v=4" alt=""> -->
+<!--                 <p class="g-fs-10 text-uppercase center-align">byDorianGrayfor slaw</p> -->
+                <!-- <a href="https://github.com/codeuino/Social-Platform-Donut" class="btn-u btn-u-lg btn-u-red btn-u-upper github-button"><i class="fa fa-github"></i> </a> -->
+<!--                 <a href="https://github.com/codeuino/Social-Platform-Donut"><img class="img-responsive full-width g-mb-25" src="https://avatars2.githubusercontent.com/u/20336672?s=460&amp;v=4" alt=""></a> -->
+            <!-- </div> -->
+        </div>
+        </section>
+        <!-- End Project section -->
+        <hr class="hr-style" style="height:4px;border:none;color:#e74c3c;background-color:#e74c3c;width: 50%;margin-left: auto;margin-right: auto;">
+        <!-- Footer -->
+        <footer>
+            <section class="footer-section container g-pt-50 text-center">
+                <div class="row">
+                    <div class="col-sm-12 g-mb-40">
+                        <h5 class="text-uppercase g-mb-20"><strong>CODEUINO</strong></h5>
+                        <p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
+                        <ul class="social-icons-v-2">
+                            <li><a href="https://twitter.com/codeuino"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/codeuino"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://www.facebook.com/codeuino/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/codeuino/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <hr style="height:40px;border:none;color:#4d4354;background-color:#4d4354;">
+        <!-- End Footer -->
+    </main>
+    <!-- JS Global Compulsory -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="assets/plugins/smoothScroll.js"></script>
+    <script src="assets/plugins/jquery.easing.min.js"></script>
+    <script src="../assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&amp;callback=initMap" async defer></script>
+    <script src="assets/js/plugins/gmaps-ini.js"></script>
+    <script src="../assets/plugins/master-slider/masterslider/masterslider.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS (Load Extensions only on Local File Systems! The following part can be removed on Server for On Demand Loading) -->
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="../assets/plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <!-- JS Page Level-->
+    <script src="assets/js/one.app.js"></script>
+    <script src="assets/js/plugins/owl-carousel2.js"></script>
+    <script src="assets/js/plugins/promo.js"></script>
+    <script src="assets/js/plugins/testimonials.js"></script>
+    <script>
+    jQuery(document).ready(function() {
+        App.init();
+        OwlCarousel.initOwlCarousel();
+    });
+    </script>
+    <!--[if lt IE 10]>
+        <script src="../assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+</body>
+<!-- Cloned by RabinsXP.com-->
+
+</html>
