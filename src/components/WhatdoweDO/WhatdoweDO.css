@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+@media only screen and (max-width:1500) and (min-width:600){
+    .WhatdoweDo{
+        font-size: 150%;
+    }
+}

@@ -16,7 +16,7 @@ import {
 } from "react-router-dom";
 import Banner from '../../components/Banner/Banner'
 import WhyCodeuino from '../../components/WhyCodeuino/WhyCodeuino'
-
+import WhatdoweDO from '../../components/WhatdoweDO/WhatdoweDO'
 
 import "./Home.css";
 const Layout = () => {
@@ -26,6 +26,7 @@ const Layout = () => {
     {/* <Layout> */}
     <Banner/>
     <WhyCodeuino/>
+    <WhatdoweDO/>
   {/* </Layout> */}
     </div>
   )
