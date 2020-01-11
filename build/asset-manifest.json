@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c3ea6d9.chunk.css",
-    "main.js": "/static/js/main.df38b5e1.chunk.js",
-    "main.js.map": "/static/js/main.df38b5e1.chunk.js.map",
+    "main.css": "/static/css/main.5c786090.chunk.css",
+    "main.js": "/static/js/main.041af931.chunk.js",
+    "main.js.map": "/static/js/main.041af931.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9ad29a56.js",
     "runtime-main.js.map": "/static/js/runtime-main.9ad29a56.js.map",
-    "static/js/2.8d79b7c0.chunk.js": "/static/js/2.8d79b7c0.chunk.js",
-    "static/js/2.8d79b7c0.chunk.js.map": "/static/js/2.8d79b7c0.chunk.js.map",
+    "static/css/2.5ffa1744.chunk.css": "/static/css/2.5ffa1744.chunk.css",
+    "static/js/2.d3610616.chunk.js": "/static/js/2.d3610616.chunk.js",
+    "static/js/2.d3610616.chunk.js.map": "/static/js/2.d3610616.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.dee5a458a36cf275c406e1f61836d31b.js": "/precache-manifest.dee5a458a36cf275c406e1f61836d31b.js",
+    "precache-manifest.f4d2ca3d429a26d21ba2e08a4937ea6b.js": "/precache-manifest.f4d2ca3d429a26d21ba2e08a4937ea6b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2c3ea6d9.chunk.css.map": "/static/css/main.2c3ea6d9.chunk.css.map",
-    "static/js/2.8d79b7c0.chunk.js.LICENSE": "/static/js/2.8d79b7c0.chunk.js.LICENSE",
+    "static/css/2.5ffa1744.chunk.css.map": "/static/css/2.5ffa1744.chunk.css.map",
+    "static/css/main.5c786090.chunk.css.map": "/static/css/main.5c786090.chunk.css.map",
+    "static/js/2.d3610616.chunk.js.LICENSE": "/static/js/2.d3610616.chunk.js.LICENSE",
+    "static/media/About.md": "/static/media/About.a47260be.md",
     "static/media/WhyCodeuino.png": "/static/media/WhyCodeuino.b225a218.png",
-    "static/media/banner.png": "/static/media/banner.5240eee2.png"
+    "static/media/banner.png": "/static/media/banner.5240eee2.png",
+    "static/media/codeuino-banner.jpg": "/static/media/codeuino-banner.ef101484.jpg",
+    "static/media/donutImage.png": "/static/media/donutImage.38e9da30.png",
+    "static/media/lamp.png": "/static/media/lamp.2797f9fd.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/test.md": "/static/media/test.473558f4.md"
   },
   "entrypoints": [
     "static/js/runtime-main.9ad29a56.js",
-    "static/js/2.8d79b7c0.chunk.js",
-    "static/css/main.2c3ea6d9.chunk.css",
-    "static/js/main.df38b5e1.chunk.js"
+    "static/css/2.5ffa1744.chunk.css",
+    "static/js/2.d3610616.chunk.js",
+    "static/css/main.5c786090.chunk.css",
+    "static/js/main.041af931.chunk.js"
   ]
 }

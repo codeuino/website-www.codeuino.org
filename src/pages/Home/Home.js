@@ -17,7 +17,7 @@ import {
 import Banner from '../../components/Banner/Banner'
 import WhyCodeuino from '../../components/WhyCodeuino/WhyCodeuino'
 import WhatdoweDO from '../../components/WhatdoweDO/WhatdoweDO'
-
+import ProjectSlide from '../../components/ProjectSlide/ProjectSlide'
 import "./Home.css";
 const Layout = () => {
 
@@ -27,6 +27,7 @@ const Layout = () => {
     <Banner/>
     <WhyCodeuino/>
     <WhatdoweDO/>
+    <ProjectSlide/>
   {/* </Layout> */}
     </div>
   )

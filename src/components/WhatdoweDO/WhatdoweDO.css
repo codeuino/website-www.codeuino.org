@@ -3,9 +3,16 @@
     justify-content: space-around;
     margin-bottom: 2vh;
 }
-
-@media only screen and (max-width:1500) and (min-width:600){
+.hover:hover{
+    background-color: cadetblue;
+}
+@media only screen and (max-width:1500px) and (min-width:600px){
     .WhatdoweDo{
         font-size: 150%;
+    }
+}
+@media only screen and (max-width:800px){
+    .lamp{
+        display: none;
     }
 }

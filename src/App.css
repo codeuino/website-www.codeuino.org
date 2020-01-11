@@ -6,6 +6,75 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.navbar{
+  height:10vh;
+}
+.main{
+  margin: 0 auto;
+  margin-top:10vh;
+  max-width: 960;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
+footer{
+  margin-top: 3vh;
+  background-color: black;
+  color:white;
+}
+
+/* footer h3{
+  
+  float:left
+} */
+
+#discover1 {
+  font-family: Raleway-SemiBold;
+  font-size: 0.8em;
+  color:black;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid black;
+  border-radius: 40px;
+  background: white;
+  transition: all 0.3s ease 0s;
+  /* float:right; */
+}
+
+#discover2 {
+  color: black;
+  background: white;
+  border: 2px solid rgba(121, 117, 133, 0.75);
+  display: none;
+}
+
+@media only screen and (max-width:1800px){
+  .navbar{
+    height:12vh
+  }
+  .main{
+    margin-top:12vh
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .navbar{
+    height:15vh
+  }
+  .main{
+    margin-top:15vh
+  }
+}
+
+@media only screen and (max-width:320px){
+  .navbar{
+    height:16vh;
+  }
+  .main{
+    margin-top:16vh
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
