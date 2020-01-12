@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c786090.chunk.css",
-    "main.js": "/static/js/main.041af931.chunk.js",
-    "main.js.map": "/static/js/main.041af931.chunk.js.map",
+    "main.css": "/static/css/main.02e89d0d.chunk.css",
+    "main.js": "/static/js/main.bfbdaf31.chunk.js",
+    "main.js.map": "/static/js/main.bfbdaf31.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9ad29a56.js",
     "runtime-main.js.map": "/static/js/runtime-main.9ad29a56.js.map",
     "static/css/2.5ffa1744.chunk.css": "/static/css/2.5ffa1744.chunk.css",
-    "static/js/2.d3610616.chunk.js": "/static/js/2.d3610616.chunk.js",
-    "static/js/2.d3610616.chunk.js.map": "/static/js/2.d3610616.chunk.js.map",
+    "static/js/2.c595d331.chunk.js": "/static/js/2.c595d331.chunk.js",
+    "static/js/2.c595d331.chunk.js.map": "/static/js/2.c595d331.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f4d2ca3d429a26d21ba2e08a4937ea6b.js": "/precache-manifest.f4d2ca3d429a26d21ba2e08a4937ea6b.js",
+    "precache-manifest.7b40acfe75634ab9dc0d51d483c496af.js": "/precache-manifest.7b40acfe75634ab9dc0d51d483c496af.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.5ffa1744.chunk.css.map": "/static/css/2.5ffa1744.chunk.css.map",
-    "static/css/main.5c786090.chunk.css.map": "/static/css/main.5c786090.chunk.css.map",
-    "static/js/2.d3610616.chunk.js.LICENSE": "/static/js/2.d3610616.chunk.js.LICENSE",
+    "static/css/main.02e89d0d.chunk.css.map": "/static/css/main.02e89d0d.chunk.css.map",
+    "static/js/2.c595d331.chunk.js.LICENSE": "/static/js/2.c595d331.chunk.js.LICENSE",
     "static/media/About.md": "/static/media/About.a47260be.md",
+    "static/media/Codebadge.md": "/static/media/Codebadge.02933a59.md",
+    "static/media/Donut.md": "/static/media/Donut.80ed2ecd.md",
+    "static/media/Jaskirat.jpeg": "/static/media/Jaskirat.c4176052.jpeg",
     "static/media/WhyCodeuino.png": "/static/media/WhyCodeuino.b225a218.png",
     "static/media/banner.png": "/static/media/banner.5240eee2.png",
     "static/media/codeuino-banner.jpg": "/static/media/codeuino-banner.ef101484.jpg",
@@ -26,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.9ad29a56.js",
     "static/css/2.5ffa1744.chunk.css",
-    "static/js/2.d3610616.chunk.js",
-    "static/css/main.5c786090.chunk.css",
-    "static/js/main.041af931.chunk.js"
+    "static/js/2.c595d331.chunk.js",
+    "static/css/main.02e89d0d.chunk.css",
+    "static/js/main.bfbdaf31.chunk.js"
   ]
 }

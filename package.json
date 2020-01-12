@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "history": "^4.10.1",
+    "list-react-files": "^0.2.0",
     "marked": "^0.8.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",

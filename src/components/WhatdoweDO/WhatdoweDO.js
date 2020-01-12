@@ -8,7 +8,7 @@ export default function WhatdoweDO() {
   return (
     <>
         <div className="WhatdoweDo" style={{marginBottom:"5vh"}}>
-            <div><img src={lamp} className="col-2 lamp" style={{float:"right",verticalAlign:"top",height:"100%"}} alt="lamp"/></div>
+            <div><img src={lamp} className="col-2 lamp" style={{float:"right",verticalAlign:"top",height:"fit-content"}} alt="lamp"/></div>
             
             <div class="container">
                 <h1 style={{textAlign:"left"}}>What do we DO?</h1>

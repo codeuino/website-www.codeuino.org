@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Nav,NavDropdown,Navbar,Container,Image,Button} from 'react-bootstrap';
+
 // import 'bootstrap';
 import whycodeuino from './WhyCodeuino.png'
 import "./WhyCodeuino.css";
@@ -9,8 +10,8 @@ const WhyCodeuino = () => {
     return (
         <div className="container">
             <div class="row">
-                <Container className="col-lg-6 col-0" id="whycodeuino1" style={{paddingTop:"8%",paddingBottom:"12%"}} >
-                    <Image src={whycodeuino} alt="why codeuino"/>
+                <Container className="col-md-6 col-0" id="whycodeuino1" style={{paddingTop:"8%",paddingBottom:"12%"}} >
+                    <Image src={whycodeuino} style={{height:"100%"}} alt="why codeuino"/>
                 </Container>
                 <Container className="col-md-6 col-12" style={{paddingTop:"8%",paddingBottom:"12%",textAlign:"left"}}>
                    <h1>What is CODEUINO?</h1> 

@@ -17,6 +17,20 @@
       font-size:0.5em;
     }
     #whycodeuino{
+      display: none;
+    }
+    #whycodeuino1{
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h1{
+        font-size: 1em;
+    }
+    p{
+      font-size:0.5em;
+    }
+    #whycodeuino{
       display: block;
     }
     #whycodeuino1{
