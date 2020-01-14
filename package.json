@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/devshiva619/website-www.codeuino.org.git#readme",
   "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "ejs": "^2.7.4",
+    "express": "^4.17.1"
   },
   "devDependencies": {}
 }
