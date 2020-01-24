@@ -2,10 +2,11 @@ import React from 'react';
 import logo from './newlogo.png';
 import './App.css';
 import Home from "./pages/Home/NewHome";
-import {Nav,Navbar,Container,Image} from 'react-bootstrap';
+import {Nav,Navbar,Container,Image,NavDropdown} from 'react-bootstrap';
 import Team from './pages/Team/Team';
 import NewBlog from './pages/NewBlog/NewBlog'
-import NewHome from './pages/Home/NewHome'
+import NewHome from './pages/Home/NewHome';
+import JoinUs from './pages/JoinUs/JoinUs'
 import {
   Switch,
   Route,
@@ -34,11 +35,20 @@ function App() {
             </Nav>
             <Nav>
               <Link to="/"><Nav.Link href="/">Home</Nav.Link></Link>
+              <NavDropdown title="Activities" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/#/gsoc19">GSOC 2019</NavDropdown.Item>
+                <NavDropdown.Item href="/#/gci19">GCI 2019-20</NavDropdown.Item>
+                <NavDropdown.Item href="/#/kwoc18">KWOC 2018</NavDropdown.Item>
+                <NavDropdown.Item href="/#/gssoc19">GSSOC 2019</NavDropdown.Item>
+              </NavDropdown>
+                {/* <Navbar.Dropdown>
+
+                </Navbar.Dropdown> */}
               <Link to="/team"><Nav.Link href="/team">Team</Nav.Link></Link>
               <Nav.Link href="https://docs.codeuino.org/documentation/">Docs</Nav.Link>
               <Link to="/about"><Nav.Link href="/about">About Us</Nav.Link></Link>
               <Link to="/bloglist"><Nav.Link href="/bloglist">Blog</Nav.Link></Link>
-              <Nav.Link href="https://github.com/codeuino">Join Us</Nav.Link>
+              <Link to="/joinus"><Nav.Link href="/joinus">Join Us</Nav.Link></Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -61,6 +71,9 @@ function App() {
               <Team/>
             </Route>
             <Route path="/joinus" >
+              <JoinUs/>
+            </Route>
+            <Route path="/joinus" >
               <NewHome/>
             </Route>
             <Route path="/bloglist">
@@ -71,6 +84,18 @@ function App() {
             </Route>
             <Route path="/newblog">
               <NewBlog/>
+            </Route>
+            <Route path="/gsoc19">
+              <NewHome/>
+            </Route>
+            <Route path="/gssoc19">
+              <NewHome/>
+            </Route>
+            <Route path="/gci19">
+              <NewHome/>
+            </Route>
+            <Route path="/kwoc19">
+              <NewHome/>
             </Route>
             <Route path="/" >
               <NewHome/>
@@ -88,33 +113,17 @@ function App() {
             <div className="row">
               <div className="col-md-3">
                 <h6>Resources</h6>
-                <div>Home</div>
-                <div>About</div>
-                <div>Blog</div>
-                <div>Join Us</div>
+                <div><a href="/">Home</a></div>
+                <div><a href="/about">About</a></div>
+                <div><a href="/blog">Blog</a></div>
+                <div><a href="/join">Join Us</a></div>
+              </div>
+              <div className="col-md-6">
+                  <p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
               </div>
               <div className="col-md-3">
-                <h6>Company</h6>
-                <div>Product</div>
-                <div>FAQ</div>
-                <div>Privacy Policy</div>
-                <div>Terms & Conditions
-        
-                </div>
-              </div>
-              <div className="col-md-3">
-                <h6>Contact Details</h6>
-                <div><a href="http://github.io/codeuino">website</a></div>
-                <div>a</div>
-              </div>
-              <div className="col-md-3">
-                <h6>Sign up for Newsletter</h6>
-                <div className="container">
-                  <div className="row">
-                    {/* <div class="col-10"><input type="email"/>
-                    <button style={{backgroundColor:"purple",alignContent:"center"}} className= "col-1"><i class="fa fa-paper-plane" aria-hidden="true" style={{color:"white"}}></i></button></div> */}
-                  </div>
-                </div>
+                <p><i class="fa fa-envelope"></i> codeuino@gmail.com</p>
+                <p><i class="fa fa-map-marker"></i> Coduino</p>
               </div>
             </div>
           </div>

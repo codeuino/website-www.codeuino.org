@@ -13,11 +13,11 @@
 /* #logo{
   width:10vw;
 } */
-/* @media only screen and (max-width:800px){
+@media only screen and (max-width:800px){
   #logo{
-    width:20vw !important;
+    width:30vw !important;
   }
-} */
+}
 .main{
   margin: 0 auto;
   /* margin-top:12vh; */

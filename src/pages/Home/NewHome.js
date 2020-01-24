@@ -27,7 +27,7 @@ const NewHome = () => {
 								<h1 class="display-3 text-center text-md-left">Learn, Build, Contribute, Grow.<br/><span class="text-primary"><span><span></span></span></span></h1>
 								<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">We are a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world.</p>
 								<div class="text-center text-md-left"><a href="https://github.com/codeuino" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-github mr-1"></span>Github</a>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-slack mr-1"></span>Slack</a>
+								<a href="http://slack.codeuino.org" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-slack mr-1"></span>Slack</a>
 								</div>
 								{/* <div class="text-muted mt-4 h5 text-center text-md-left"><span>Hosted version coming soon. </span><a href="https://chatwoot.typeform.com/to/tNMDIM" data-mode="popup" target="_blank" class="typeform-share d-inline mr-3" rel="noreferrer noopener nofollow">Request an early access</a>
 								</div> */}
@@ -38,7 +38,7 @@ const NewHome = () => {
 									<div class="col-md-6 co-12 ml-0 pt-6 pb-6 pl-8">
 										<h2>Join Us</h2>
 										<p>COMMUNITY FUND AND PROJECT INCUBATION</p>
-										<a href="https://github.com/codeuino" class="ml-0 btn btn-primary shadow lift" style={{color:" #22247A",backgroundColor:"white"}}>Open Collective</a>
+										<a href="https://opencollective.com/donut" class="ml-0 btn btn-primary shadow lift" style={{color:" #22247A",backgroundColor:"white"}}>Open Collective</a>
 									</div>
 									<div class="col-md-6 col-12" id="join">
 										<p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
@@ -58,7 +58,7 @@ const NewHome = () => {
 										<p>We are a group of young open-source contributors creatively leveraging our expertise in Social networking and development projects to improve the quality of outreaching, interaction and collaboration for the people in developing nations. We consist of various teams from Development, Documentation, Designers and Donut Platform. Everyone at Codeuino contributes to increase efficiency, outreaching for the user and expedite idea generation for social networking.</p>
 									</div>
 									<div class="col-md-4 col-12">
-									<span class="fa fa-question-circle fa-2x mr-1" style={{color:" #22247A"}}></span>
+									<span class="fa fa-check fa-2x mr-1" style={{color:" #22247A"}}></span>
 										<h2>What do we do?</h2>
 										<p>Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p>
 										<p>Teams within organization design and develop some basic set of software and networking plugins to help users/organisations to build up their own platform to interact for feeds, projects, Scholarships, etc.</p>
@@ -89,9 +89,9 @@ const NewHome = () => {
 										<p>Donut is an open-source, feature-rich, highly flexible and privacy-friendly, social networking platform built for community-oriented collaboration in a customized way. It has been built on the Node.js framework allowing an essential impetus to provide custom and friendly rich widgets and an expansive library of modules to make communication and collaboration easy and successful. With a powerful module system, you can customize this platform by using third party tools, writing your own or integrating other software.</p>
 										<div class="container" style={{display:"flex",justifyContent:"space-around"}}>
 											<div class="row">
-												<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-												<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-												<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+												<a href="https://github.com/codeuino/Social-Platform-Donut" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+												<a href="https://www.youtube.com/watch?v=wYk71_KY6Bk" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-youtube"></span></a>
+												<a href="https://docs.codeuino.org/documentation/donut-docs/donut-documentation" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-file"></span></a>
 											</div>
 										</div>
 									</div>
@@ -100,9 +100,9 @@ const NewHome = () => {
 										<p>Codebadge is an open-source, user-friendly, visual-oriented collaboration tool which incorporates development of badges and integrating with forums in a customized way. Codebadge communicate skills, achievements and contribution tracking by providing visual symbols of accomplishments packed with verifiable data and evidence that can be shared across the web. It is a standard organization-oriented project  that provides an essential impetus to Admins and users with an appropriate dashboards.</p>
 										<div class="container" style={{display:"flex",justifyContent:"space-around"}}>
 											<div class="row">
-												<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-												<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-												<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+												<a href="https://github.com/codeuino/Codebadge" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+												<a href="https://www.youtube.com/watch?v=s1gDGjJtmpk" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-youtube"></span></a>
+												<a href="https://docs.codeuino.org/documentation/codebadge/codebadge-documentation" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-file"></span></a>
 											</div>
 										</div>
 									</div>
@@ -148,7 +148,7 @@ const NewHome = () => {
 					</section>
 					
 				</section>
-					<div>
+					<div id="activity">
 						<h1>Activities</h1>
 						<div class="container">
 							<div class="row"style={{display:"flex",justifyContent:"space-around"}}>
@@ -164,7 +164,7 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/440px-GSoC-icon.svg.png" />
+							<Card.Img variant="top" src="https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://numfocus.org/wp-content/uploads/2017/03/vertical-gsoc-logo_1-1.jpg" />
 							<Card.Body>
 								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
 								<Card.Text>
@@ -174,7 +174,29 @@ const NewHome = () => {
 								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
 							</Card.Body>
 							</Card>
-
+							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
+							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/wwc.jpg" />
+							<Card.Body>
+								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
+								<Card.Text>
+								Competition for undergraduate students.
+								</Card.Text>
+								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+							</Card.Body>
+							</Card>
+							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
+							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/kwoc.png" />
+							<Card.Body>
+								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
+								<Card.Text>
+								Competition for undergraduate students.
+								</Card.Text>
+								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+							</Card.Body>
+							</Card>
+							
 							{/* <Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
 							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/440px-GSoC-icon.svg.png" />
 							<Card.Body>
@@ -364,6 +386,8 @@ const NewHome = () => {
 									</div>
 								</div>
 							</div>
+							<section class="pt-16 mt-n15 bg-gray-200 position-relative">
+					</section>
 				</section>
 		</div>
 	</div>

@@ -34,11 +34,11 @@ class Blog extends Component {
 		<div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
 			
 			<div class="mt-12"></div>
-      <img src={codeuino} alt="img"  style={{width:"80vw",height:'25vh'}}/>
+      
             <div className="container">
                 <div className="row">
                     <div className="blog" style={{maxWidth:"100%"}}>
-                      
+                    <img src={codeuino} alt="img"  style={{width:"100%",height:'25vh'}}/>
                       <h2><b>What is CodeUino?</b></h2>
                       <p>CodeUino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way.</p>
                       <p>This wide social open networking framework organisation is driven by the volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living softwares and researching FOSS projects under code survivors and challenging world. CodeUino takes into house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p>

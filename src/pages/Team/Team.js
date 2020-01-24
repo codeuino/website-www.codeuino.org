@@ -36,7 +36,7 @@ class Team extends Component {
         let contributors=this.state.contributors;
         // console.log(contributors)
         var contrilist = contributors.map((contri)=>{
-            return <div class="col-xs-2 lawyer-post g-mb-50"><a href={contri.url}><img class="img-responsive full-width g-mb-25" src={" "+contri.image+" "} alt="" style={{width:"10vw",height:"10vw", borderRadius:"50%"}}/></a> </div>
+            return <div class="col-xs-2 lawyer-post g-mb-50"><a href={contri.url}><img class="img-responsive full-width g-mb-25" title={contri.name} src={" "+contri.image+" "} alt="" style={{width:"10vw",height:"10vw", borderRadius:"50%"}}/></a> </div>
         })
         return (
             <>
@@ -241,7 +241,7 @@ class Team extends Component {
   </div>
             <h2>Our Awesome Contributors</h2>
             <div id="cotributors" style={{marginLeft:"6vw",display:"flex",justifyContent:"center"}}>
-                <div class="row">
+                <div class="row" style={{display:"flex",justifyContent:"center"}}>
                     {contrilist}
                 </div>
             </div>
