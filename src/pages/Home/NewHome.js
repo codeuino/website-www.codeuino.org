@@ -144,10 +144,10 @@ const NewHome = () => {
 						</div>
 						{/* <img src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
 					</div>
-					<section class="pt-16 mt-n15 bg-gray-200 position-relative">
+					<section class="pt-30 mt-n15 bg-gray-200 position-relative">
 					</section>
-					
-				</section>
+					</section>
+				
 					<div id="activity">
 						<h1>Activities</h1>
 						<div class="container">
@@ -159,8 +159,7 @@ const NewHome = () => {
 								<Card.Text>
 								Competition for preschool.
 								</Card.Text>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-										<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+								<a href="/#/gci19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
@@ -170,30 +169,27 @@ const NewHome = () => {
 								<Card.Text>
 								Competition for undergraduate students.
 								</Card.Text>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+								<a href="/#/gsoc19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
 							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/wwc.jpg" />
 							<Card.Body>
-								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
+								<Card.Title><h3>ORGANISED A WORKSHOP/ EVENT AT NEW DELHI TOGETHER WITH WOMEN WHO CODE</h3></Card.Title>
 								<Card.Text>
 								Competition for undergraduate students.
 								</Card.Text>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+								<a href="/#/workshop19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
 							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/kwoc.png" />
 							<Card.Body>
-								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
+								<Card.Title><h3>Kharagpur Winter of Code 2019</h3></Card.Title>
 								<Card.Text>
 								Competition for undergraduate students.
 								</Card.Text>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
-								<a href="https://github.com/codeuino" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+								<a href="/#/kwoc19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
 							</Card.Body>
 							</Card>
 							
@@ -379,7 +375,7 @@ const NewHome = () => {
 									<div class="col-md-6 co-12 ml-0 pt-6 pb-6 pl-8">
 										<h2>Donate Us</h2>
 										<p>COMMUNITY FUND AND PROJECT INCUBATION</p>
-										<a href="https://github.com/codeuino" class="ml-0 btn btn-primary shadow lift" style={{color:" #22247A",backgroundColor:"white"}}>Open Collective</a>
+										<a href="https://opencollective.com/donut" class="ml-0 btn btn-primary shadow lift" style={{color:" #22247A",backgroundColor:"white"}}>Open Collective</a>
 									</div>
 									<div class="col-md-6 col-12" id="join">
 										<p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>

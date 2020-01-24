@@ -4,22 +4,19 @@ const JoinUs = () => {
     return (
         <div>
             <div class="mt-12"></div>
-             <section id="getInvolved" class="g-theme-bg-color-1 g-text-color-2 text-center g-pt-100 g-pb-40">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 text-center fs-16">
-                        <div class="g-heading-v9 text-center g-mb-30">
-                            <h2><strong>Get Involved</strong></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <div class="container content blog-page blog-item" id="getInvolved-content">
             <div class="blog margin-bottom-40" id="donut">
                 <div class="g-heading-v9 g-mb-30">
+                <h2><strong>Get Involved</strong></h2>
                     <h3 class="text-uppercase">Welcome to Newcomers !!!</h3>
                 </div>
+                <section class="container">
+                    <div class="row" style={{display:"flex",justifyContent:"space-evenly"}}>
+                        <a href="http://slack.codeuino.org"><img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png"/></a>
+                        <a href="https://github.com/codeuino"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGABB70TILWLV3BLkJ0hLr0arXG20T7pGd6czWU7tzdkwdoRV&s"/></a>
+                    </div>
+                    <h3>Join us with</h3>
+                </section>
                 <p class="g-fs-16 ta-js">Codeuino is a non-profit organization that helps to bring amazing people together to create, develop, design and make things with Open Technologies and share work for the benefit of all. Our project is an important part of Free Software Ecosystem. We work with other free projects to create high-quality solutions that span the entire software stack. While the many Codeuino contributors develop code, smash bugs, write documentation, and help users, the Foundation acts as a guiding hand in the process and provides resources and infrastructure. It steers releases, determines what software is officially part of the project, and acts as an official face of the Codeuino Project to the outside world, through it delegates most of its authority to specialized teams. Therefore, this guide would help you to become an integral part of the Community.</p><br/>
                 <div class="g-heading-v9 g-mb-30 heading-padding">
                     <h3 class="text-uppercase">Working with Codeuino</h3>
