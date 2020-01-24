@@ -11,10 +11,10 @@
   }
   @media only screen and (max-width: 990px) {
     h1{
-        font-size: 1em;
+        font-size: 0.9em !important;
     }
     p{
-      font-size:0.5em;
+      font-size:0.8em !important;
     }
     #whycodeuino{
       display: none;

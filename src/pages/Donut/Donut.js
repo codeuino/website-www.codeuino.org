@@ -25,12 +25,24 @@ class Donut extends Component {
     const { markdown } = this.state;
     return (
       <>
+      <div withd="80vw">
       <div>
+            <div>
+            <div>
+                    <div id="___gatsby">
+                <div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
+                    
+                    <div class="mt-12"></div>
             <h1>Social Platform Donut</h1>
             <div className="image-container">
-                <img src={img} style={{width:"100%",height:"60vh"}} alt="images"/>
+                <img src={img} style={{height:"60vh"}} alt="images"/>
               </div>
               <article dangerouslySetInnerHTML={{__html: markdown}} style={{textAlign:"left"}}></article>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
     </>
     );

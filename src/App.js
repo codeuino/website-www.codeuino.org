@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './codeuino.png';
+import logo from './newlogo.png';
 import './App.css';
-// import React from "react"
-import PropTypes from "prop-types"
-// import Header from "./components/Header/header"
-import Home from "./pages/Home/Home";
-import { createHistory, useBasename } from 'history';
-import {Nav,NavDropdown,Navbar,Container,Image} from 'react-bootstrap';
-import Team from './pages/Team/Team'
+import Home from "./pages/Home/NewHome";
+import {Nav,Navbar,Container,Image} from 'react-bootstrap';
+import Team from './pages/Team/Team';
+import NewBlog from './pages/NewBlog/NewBlog'
+import NewHome from './pages/Home/NewHome'
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
   HashRouter,
-  Redirect
 } from "react-router-dom";
 import About from './pages/About/About'
 import Donut from './pages/Donut/Donut';
-import Blog from './pages/Blogs/Blog'
+import Blog from './pages/Blogs/Blog';
+import BlogList from './pages/Blogs/BlogList'
 import Codebadge from './pages/Codebadge/Codebadge';
-import Codo from './pages/Codo/Codo';
 // import Header from "./Header/header"
 function App() {
   return (
@@ -29,8 +25,8 @@ function App() {
       
       <HashRouter>
       <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" class="navbar">
-        <Container className="col-xl-8 col-12">
-          <Navbar.Brand href="/"><Link to="/"><Image src={logo} alt="codeuino logo" style={{paddingTop:"3vh",height:"8vh"}}/></Link></Navbar.Brand>
+        <Container className="col-md-8 col-12">
+          <Navbar.Brand href="/"><Link to="/"><Image id="logo" src={logo} alt="codeuino logo" style={{heigth:"20vh",width:"10vw"}}/></Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" style={{backgroundColor:"white"}}>
             <Nav className="mr-auto">
@@ -39,59 +35,48 @@ function App() {
             <Nav>
               <Link to="/"><Nav.Link href="/">Home</Nav.Link></Link>
               <Link to="/team"><Nav.Link href="/team">Team</Nav.Link></Link>
-              <Link to="/projects"><Nav.Link href="/projects">Projects</Nav.Link></Link>
+              <Nav.Link href="https://docs.codeuino.org/documentation/">Docs</Nav.Link>
               <Link to="/about"><Nav.Link href="/about">About Us</Nav.Link></Link>
-              <Link to="/blog"><Nav.Link href="/blog">Blog</Nav.Link></Link>
-              <Link to="/joinus"><Nav.Link href="/joinus">Join Us</Nav.Link></Link>
+              <Link to="/bloglist"><Nav.Link href="/bloglist">Blog</Nav.Link></Link>
+              <Nav.Link href="https://github.com/codeuino">Join Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div class="main container-fluid"
-        style={{maxWidth: 960}}
-      >
       
-        
-        <main>
       
           <Switch>
           
             
             <Route path="/about" >
+              <div class="main container-fluid"
+                style={{maxWidth: "100vw",margin:"0"}}
+              >
+              <main>
               <About/>
-            </Route>
-            <Route path="/team/board" >
-              <Home/>
+              </main>
+              </div>
             </Route>
             <Route path="/team" >
               <Team/>
             </Route>
             <Route path="/joinus" >
-              <Home/>
+              <NewHome/>
             </Route>
-            <Route path="/projects" >
-              <Home/>
-            </Route>
-            <Route path="/donut">
-              <Donut/>
-            </Route>
-            <Route path="/codebadge">
-              <Codebadge/>
-            </Route>
-            <Route path="/codo">
-              <Codo/>
+            <Route path="/bloglist">
+              <BlogList/>
             </Route>
             <Route path="/blog">
               <Blog/>
             </Route>
-            <Route path="/" >
-              <Home/>
+            <Route path="/newblog">
+              <NewBlog/>
             </Route>
+            <Route path="/" >
+              <NewHome/>
+            </Route>
+            
           </Switch>
-      
-        </main>
-        
-      </div>
       </HashRouter>
       <footer>
             <div className="container">
