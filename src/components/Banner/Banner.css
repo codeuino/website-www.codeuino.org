@@ -1,0 +1,57 @@
+.btn {
+    margin:2vh;
+  }
+  .btn-default {
+    font-family: Raleway-SemiBold;
+    font-size: 0.8em;
+    color: rgba(108, 88, 179, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(108, 89, 179, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn-default:hover {
+    color: #FFF;
+    background: rgba(108, 88, 179, 0.75);
+    border: 2px solid rgba(121, 117, 133, 0.75);
+  }
+  /* Image{
+    width: 100%;
+    height: 100%;
+  } */
+
+  /* @media only screen and (max-width: 800px) and (min-width:600px) {
+    h1{
+        font-size: 0.8em;
+    }
+    p{
+      font-size:0.6em;
+    }
+    Image{
+      width: 100vw;
+      height: 100vh;
+    }
+  }*/
+  @media only screen and (max-width: 800px) {
+    h1{
+        font-size: 0.8rem;
+    }
+    /* p{
+      font-size:em;
+    }
+    Image{
+      width: 100%;
+      height: 100%;
+    } */
+  }
+  /* @media only screen and (max-width: 320px) {
+    Image{
+      margin-top:50%;
+    }
+    p{
+      font-size: 2em;
+    }
+  } */
