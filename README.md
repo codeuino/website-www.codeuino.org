@@ -1,13 +1,12 @@
 
-# Codeuino New Website
+# CODEUINO New Website
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-# CODEUINO  
-
-
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?logo=github)](https://www.gnu.org/licenses/gpl-3.0) [![GitHub forks](https://img.shields.io/github/forks/codeuino/website-www.codeuino.org?logo=github)](https://github.com/codeuino/website-www.codeuino.org/network) [![GitHub stars](https://img.shields.io/github/stars/codeuino/website-www.codeuino.org?logo=github)](https://github.com/codeuino/website-www.codeuino.org/stargazers) 
 ## Opening an issue
-You should usually open an issue in the following situations:
+
+[![GitHub issues](https://img.shields.io/github/issues/codeuino/website-www.codeuino.org?logo=github)](https://github.com/codeuino/website-www.codeuino.org/issues) ![GitHub closed issues](https://img.shields.io/github/issues-closed/codeuino/website-www.codeuino.org?logo=github)
+
+You should usually [open an issue](https://github.com/codeuino/website-www.codeuino.org/issues/new) in the following situations:
 
 * Report an error you can’t solve yourself
 * Discuss a high-level topic or idea (for example, community, vision or policies)
@@ -20,6 +19,9 @@ If an issue was opened a while ago, it’s possible that it’s being addressed 
 If you opened an issue, but figured out the answer later on your own, comment on the issue to let people know, then close the issue. Even documenting that outcome is a contribution to the project.
 
 ## Opening a pull request
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](http://makeapullrequest.com) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/codeuino/website-www.codeuino.org?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/codeuino/website-www.codeuino.org?logo=github)
+
 You should usually open a pull request in the following situations:
 
 * Submit trivial fixes (for example, a typo, a broken link or an obvious error)
@@ -35,3 +37,6 @@ If the project is on GitHub, here’s how to submit a pull request:
 * Test your changes! Run your changes against any existing tests if they exist and create new ones when needed. Whether tests exist or not, make sure your changes don’t break the existing project.
 * Contribute in the style of the project to the best of your abilities. This may mean using indents, semi-colons or comments differently than you would in your own repository, but makes it easier for the maintainer to merge, others to understand and maintain in the future.
 
+---
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/codeuino?style=social)](https://twitter.com/codeuino) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/codeuino/Social-Platform-Donut)
