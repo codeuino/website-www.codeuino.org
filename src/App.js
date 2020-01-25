@@ -26,20 +26,20 @@ function App() {
       
       <HashRouter>
       <Navbar class="shadow" collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" class="navbar">
-        <Container className="col-md-8 col-12">
+        <div className="container">
           <Navbar.Brand href="/"><Link to="/"><Image id="logo" src={logo} alt="codeuino logo" style={{heigth:"20vh",width:"10vw"}}/></Link></Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" data-toggle="collapse" data-target="#myDropdown"/>
           <Navbar.Collapse id="responsive-navbar-nav" style={{backgroundColor:"white"}}>
             <Nav className="mr-auto">
               
             </Nav>
             <Nav>
               <Link to="/"><Nav.Link href="/">Home</Nav.Link></Link>
-              <NavDropdown title="Activities" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/#/gsoc19">GSOC 2019</NavDropdown.Item>
-                <NavDropdown.Item href="/#/gci19">GCI 2019-20</NavDropdown.Item>
-                <NavDropdown.Item href="/#/kwoc18">KWOC 2018</NavDropdown.Item>
-                <NavDropdown.Item href="/#/gssoc19">GSSOC 2019</NavDropdown.Item>
+              <NavDropdown title="Activities" id="responsive-navbar-nav">
+                <NavDropdown.Item data-target=".navbar-collapse.show"  href="/#/gsoc19" style={{"textAlign": "center"}}>GSOC 2019</NavDropdown.Item>
+                <NavDropdown.Item data-target=".navbar-collapse.show" href="/#/gci19" style={{"textAlign": "center"}}>GCI 2019-20</NavDropdown.Item>
+                <NavDropdown.Item  data-target=".navbar-collapse.show" href="/#/kwoc18" style={{"textAlign": "center"}} >KWOC 2018</NavDropdown.Item>
+                <NavDropdown.Item  data-target=".navbar-collapse.show" href="/#/gssoc19" style={{"textAlign": "center"}} >GSSOC 2019</NavDropdown.Item>
               </NavDropdown>
                 {/* <Navbar.Dropdown>
 
@@ -51,7 +51,7 @@ function App() {
               <Link to="/joinus"><Nav.Link href="/joinus">Join Us</Nav.Link></Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
       
       

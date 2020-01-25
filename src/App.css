@@ -10,6 +10,9 @@
 .navbar{
   height:10vh;
 }
+.navbar-collapse.show{
+  overflow-y: hidden;
+}
 /* #logo{
   width:10vw;
 } */

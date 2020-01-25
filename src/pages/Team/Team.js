@@ -84,9 +84,9 @@ class Team extends Component {
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-    <div class="container" style={{display:"flex",justifyContent:"space-evenly"}}>
-    <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <div class="container" style={{display:"flex",justifyContent:"space-evenly"}}>
+        <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
     </Card.Content>
   </Card>
@@ -104,9 +104,9 @@ class Team extends Component {
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-    <div class="container" style={{display:"flex",justifyContent:"space-evenly"}}>
-    <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <div class="container" style={{display:"flex",justifyContent:"space-evenly"}}>
+        <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
     </Card.Content>
   </Card>
@@ -124,9 +124,9 @@ class Team extends Component {
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-    <div class="container" style={{display:"flex",justifyContent:"space-evenly"}}>
-    <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <div class="container" style={{display:"flex",justifyContent:"space-evenly"}}>
+        <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="btn btn-primary mr-1" href="https://github.com/codeuino/codebadge" role="button" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
     </Card.Content>
   </Card>
@@ -181,7 +181,7 @@ class Team extends Component {
 			<Card style={{marginBottom:"2vh",border:"0px"}}>
     <Image src="https://avatars0.githubusercontent.com/u/31209617?s=460&v=4" wrapped ui={false}/>
     <Card.Content>
-      <Card.Header>Rupeshia</Card.Header>
+      <Card.Header>Rupeshiya</Card.Header>
       <Card.Meta>
         <span className='date'>Core Colaborator</span>
       </Card.Meta>
@@ -254,10 +254,6 @@ class Team extends Component {
     }
 }
 
-
-Team.propTypes = {
-    
-};
 
 
 export default Team;
