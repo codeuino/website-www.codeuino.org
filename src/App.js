@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './newlogo.png';
 import './App.css';
-import Home from "./pages/Home/NewHome";
-import {Nav,Navbar,Container,Image,NavDropdown} from 'react-bootstrap';
+import {Nav,Navbar,Image,NavDropdown} from 'react-bootstrap';
 import Team from './pages/Team/Team';
 import NewBlog from './pages/NewBlog/NewBlog'
 import NewHome from './pages/Home/NewHome';
@@ -14,10 +13,8 @@ import {
   HashRouter,
 } from "react-router-dom";
 import About from './pages/About/About'
-import Donut from './pages/Donut/Donut';
 import Blog from './pages/Blogs/Blog';
 import BlogList from './pages/Blogs/BlogList'
-import Codebadge from './pages/Codebadge/Codebadge';
 // import Header from "./Header/header"
 function App() {
   return (

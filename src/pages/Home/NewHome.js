@@ -1,11 +1,10 @@
 import React from 'react';
 import './NewHome.css';
 import Banner from './banner.svg';
-import { Card, Icon, Image,Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import wwc from './wwc.jpeg';
 import dgocean from './dgocean.svg';
 import poster from './poster.svg';
-import image from './image.svg';
 import donut from './donut.svg';
 import codebadge from './codebadge.svg';
 import card from './card.svg'

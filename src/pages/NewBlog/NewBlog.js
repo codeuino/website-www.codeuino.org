@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import MdEditor from 'react-markdown-editor-lite'
 import MarkdownIt from 'markdown-it'
 import emoji from 'markdown-it-emoji'
@@ -63,7 +62,6 @@ export default class Demo extends React.Component {
         }
         return new Blob([u8arr], {type:mime})
       }
-      const blob = convertBase64UrlToBlob(reader.result)
       setTimeout(() => {
         // setTimeout 模拟异步上传图片
         // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown

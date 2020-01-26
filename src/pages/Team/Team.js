@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 // import {Card,Button} from 'react-bootstrap'
 import jaskirat from './Jaskirat.jpeg';
 import devesh from './Devesh.jpeg';
@@ -7,8 +6,7 @@ import shivam from './Shivam.jpeg';
 import vaibhav from './Vaibhav.jpeg';
 import './Team.css';
 import axios from 'axios';
-import $ from 'jquery';
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 class Team extends Component {
     
     constructor(props){

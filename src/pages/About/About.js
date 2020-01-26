@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 // import BlogList from './BlogList';
-import Markdown from 'react-markdown';
 import marked from "marked";
 import codeuino from './codeuino-banner.jpg'
 class Blog extends Component {
@@ -25,8 +23,6 @@ class Blog extends Component {
           })
       }
     render() {
-        const { markdown } = this.state;
-
         return (
           <div>
       <div>
