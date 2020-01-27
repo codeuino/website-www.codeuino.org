@@ -1,0 +1,10 @@
+#myNav{
+    box-shadow: 0px 2px 15px grey;
+}
+a {
+    transition: transform 0.6s;
+}
+a:hover{
+    text-decoration:none;
+    transform: scale(1.05);
+}
