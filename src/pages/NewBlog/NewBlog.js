@@ -15,8 +15,9 @@ import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-light.css'
 // import 'highlight.js/styles/github.css'
 // import './index.less';
- 
-const MOCK_DATA = "Hello.\n\n * This is markdown.\n * It is fun\n * Love it or leave it."
+
+const MOCK_DATA =
+  'Hello.\n\n * This is markdown.\n * It is fun\n * Love it or leave it.'
 export default class Demo extends React.Component {
   mdEditor = null
   mdParser = null
@@ -27,47 +28,49 @@ export default class Demo extends React.Component {
       html: true,
       linkify: true,
       typographer: true,
-      highlight: function (str, lang) {
+      highlight: function(str, lang) {
         if (lang && hljs.getLanguage(lang)) {
           try {
             return hljs.highlight(lang, str).value
           } catch (__) {}
-        }    
+        }
         return '' // use external default escaping
-      }
+      },
     })
-    .use(emoji)
-    .use(subscript)
-    .use(superscript)
-    .use(footnote)
-    .use(deflist)
-    .use(abbreviation)
-    .use(insert)
-    .use(mark)
-    .use(tasklists, { enabled: this.taskLists })
+      .use(emoji)
+      .use(subscript)
+      .use(superscript)
+      .use(footnote)
+      .use(deflist)
+      .use(abbreviation)
+      .use(insert)
+      .use(mark)
+      .use(tasklists, { enabled: this.taskLists })
     this.renderHTML = this.renderHTML.bind(this)
   }
-  handleEditorChange({html, text}, event) {
+  handleEditorChange({ html, text }, event) {
     console.log('handleEditorChange', html, text, event)
   }
   handleImageUpload(file, callback) {
     const reader = new FileReader()
-    reader.onload = () => {      
-      const convertBase64UrlToBlob = (urlData) => {  
-        let arr = urlData.split(','), mime = arr[0].match(/:(.*?);/)[1]
+    reader.onload = () => {
+      const convertBase64UrlToBlob = urlData => {
+        let arr = urlData.split(','),
+          mime = arr[0].match(/:(.*?);/)[1]
         let bstr = atob(arr[1])
         let n = bstr.length
         let u8arr = new Uint8Array(n)
         while (n--) {
           u8arr[n] = bstr.charCodeAt(n)
         }
-        return new Blob([u8arr], {type:mime})
+        return new Blob([u8arr], { type: mime })
       }
       const blob = convertBase64UrlToBlob(reader.result)
       setTimeout(() => {
         // setTimeout 模拟异步上传图片
         // 当异步上传获取图片地址后，执行calback回调（参数为imageUrl字符串），即可将图片地址写入markdown
-        const uploadedUrl = 'https://avatars0.githubusercontent.com/u/21263805?s=40&v=4'
+        const uploadedUrl =
+          'https://avatars0.githubusercontent.com/u/21263805?s=40&v=4'
         callback(uploadedUrl)
       }, 1000)
     }
@@ -89,7 +92,7 @@ export default class Demo extends React.Component {
   }
   renderHTML(text) {
     // 模拟异步渲染Markdown
-    return new Promise((resolve) => {
+    return new Promise(resolve => {
       setTimeout(() => {
         resolve(this.mdParser.render(text))
       }, 1000)
@@ -97,7 +100,9 @@ export default class Demo extends React.Component {
   }
   onBeforeClear = () => {
     return new Promise((resolve, reject) => {
-      const result = window.confirm('Are you sure you want to clear your markdown :-)')
+      const result = window.confirm(
+        'Are you sure you want to clear your markdown :-)'
+      )
       const toClear = result ? true : false
       resolve(toClear)
       // custom confirm dialog pseudo code
@@ -110,41 +115,41 @@ export default class Demo extends React.Component {
       // })
     })
   }
-  handleGetMdValue = () => {   
-    this.mdEditor && alert(this.mdEditor.getMdValue())      
+  handleGetMdValue = () => {
+    this.mdEditor && alert(this.mdEditor.getMdValue())
   }
-  handleGetHtmlValue = () => {    
+  handleGetHtmlValue = () => {
     this.mdEditor && alert(this.mdEditor.getHtmlValue())
   }
   render() {
-    return (      
+    return (
       <div>
         <nav>
-          <button onClick={this.handleGetMdValue} >getMdValue</button>  
-          <button onClick={this.handleGetHtmlValue} >getHtmlValue</button>  
+          <button onClick={this.handleGetMdValue}>getMdValue</button>
+          <button onClick={this.handleGetHtmlValue}>getHtmlValue</button>
         </nav>
-        <section style={{height: "500px"}}>
-          <MdEditor 
-            ref={node => this.mdEditor = node}
+        <section style={{ height: '500px' }}>
+          <MdEditor
+            ref={node => (this.mdEditor = node)}
             value={MOCK_DATA}
-            style={{height: '400px'}}
+            style={{ height: '400px' }}
             renderHTML={this.renderHTML}
             config={{
               view: {
                 menu: true,
                 md: true,
                 html: true,
-                fullScreen: true
+                fullScreen: true,
               },
-              imageUrl: 'https://octodex.github.com/images/minion.png'
+              imageUrl: 'https://octodex.github.com/images/minion.png',
             }}
-            onChange={this.handleEditorChange} 
+            onChange={this.handleEditorChange}
             onImageUpload={this.handleImageUpload}
             // onCustomImageUpload={this.onCustomImageUpload} // if using onCustomImageUpload, onImageUpload will be not working
             onBeforeClear={this.onBeforeClear}
           />
-        </section>                        
-      </div>      
+        </section>
+      </div>
     )
   }
 }
