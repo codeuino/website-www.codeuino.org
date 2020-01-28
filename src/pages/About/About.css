@@ -1,0 +1,14 @@
+.cover-img-wrapper {
+    text-align: center;
+    padding:20px;
+    background-color: rgb(224,226,228);
+}
+.cover-img-wrapper > img {
+    width:auto;
+    height:25vh
+}
+@media screen and (max-width:661px) {
+    .cover-img-wrapper > img {
+        width:100%;
+    }
+}

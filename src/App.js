@@ -1,8 +1,5 @@
 import React from 'react';
-import logo from './newlogo.png';
 import './App.css';
-import Home from "./pages/Home/NewHome";
-import {Nav,Navbar,Container,Image,NavDropdown} from 'react-bootstrap';
 import Team from './pages/Team/Team';
 import NewBlog from './pages/NewBlog/NewBlog'
 import NewHome from './pages/Home/NewHome';
@@ -10,14 +7,15 @@ import JoinUs from './pages/JoinUs/JoinUs'
 import {
   Switch,
   Route,
-  Link,
   HashRouter,
 } from "react-router-dom";
 import About from './pages/About/About'
-import Donut from './pages/Donut/Donut';
+// import Donut from './pages/Donut/Donut';
 import Blog from './pages/Blogs/Blog';
 import BlogList from './pages/Blogs/BlogList'
-import Codebadge from './pages/Codebadge/Codebadge';
+// import Codebadge from './pages/Codebadge/Codebadge';
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 // import Header from "./Header/header"
 function App() {
   return (
@@ -25,47 +23,11 @@ function App() {
     <div className="App" style={{width:"100%"}}>
       
       <HashRouter>
-      <Navbar class="shadow" collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" class="navbar">
-        <div className="container">
-          <Navbar.Brand href="/"><Link to="/"><Image id="logo" src={logo} alt="codeuino logo" style={{heigth:"20vh",width:"10vw"}}/></Link></Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" data-toggle="collapse" data-target="#myDropdown"/>
-          <Navbar.Collapse id="responsive-navbar-nav" style={{backgroundColor:"white"}}>
-            <Nav className="mr-auto">
-              
-            </Nav>
-            <Nav>
-              <Link to="/"><Nav.Link href="/">Home</Nav.Link></Link>
-              <NavDropdown title="Activities" id="responsive-navbar-nav">
-                <NavDropdown.Item data-target=".navbar-collapse.show"  href="/#/gsoc19" style={{"textAlign": "center"}}>GSOC 2019</NavDropdown.Item>
-                <NavDropdown.Item data-target=".navbar-collapse.show" href="/#/gci19" style={{"textAlign": "center"}}>GCI 2019-20</NavDropdown.Item>
-                <NavDropdown.Item  data-target=".navbar-collapse.show" href="/#/kwoc18" style={{"textAlign": "center"}} >KWOC 2018</NavDropdown.Item>
-                <NavDropdown.Item  data-target=".navbar-collapse.show" href="/#/gssoc19" style={{"textAlign": "center"}} >GSSOC 2019</NavDropdown.Item>
-              </NavDropdown>
-                {/* <Navbar.Dropdown>
-
-                </Navbar.Dropdown> */}
-              <Link to="/team"><Nav.Link href="/team">Team</Nav.Link></Link>
-              <Nav.Link href="https://docs.codeuino.org/documentation/">Docs</Nav.Link>
-              <Link to="/about"><Nav.Link href="/about">About Us</Nav.Link></Link>
-              <Link to="/bloglist"><Nav.Link href="/bloglist">Blog</Nav.Link></Link>
-              <Link to="/joinus"><Nav.Link href="/joinus">Join Us</Nav.Link></Link>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
-      </Navbar>
-      
-      
-          <Switch>
-          
-            
+      <NavBar/>
+          <Switch>      
             <Route path="/about" >
-              <div class="main container-fluid"
-                style={{maxWidth: "100vw",margin:"0"}}
-              >
-              <main>
+              
               <About/>
-              </main>
-              </div>
             </Route>
             <Route path="/team" >
               <Team/>
@@ -103,34 +65,7 @@ function App() {
             
           </Switch>
       </HashRouter>
-      <footer>
-            <div className="container">
-              <h3 style={{alignContent:"left"}}>Want to know more about CodeUino?</h3>
-              <button type="button" id="discover1" className="btn btn-default" style={{alignContent:"right"}}>Discover more</button>
-            {/* <button type="button" id="discover2" class="btn btn-default col-md-3">Discover more</button> */}
-          </div>
-            <div className="container">
-            <div className="row">
-              <div className="col-md-3">
-                <h6>Resources</h6>
-                <div><a href="/">Home</a></div>
-                <div><a href="/about">About</a></div>
-                <div><a href="/blog">Blog</a></div>
-                <div><a href="/join">Join Us</a></div>
-              </div>
-              <div className="col-md-6">
-                  <p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
-              </div>
-              <div className="col-md-3">
-                <p><i class="fa fa-envelope"></i> codeuino@gmail.com</p>
-                <p><i class="fa fa-map-marker"></i> Coduino</p>
-              </div>
-            </div>
-          </div>
-          © {new Date().getFullYear()}, Built by
-          {` `}
-          <a href="http://codeuino.org/">Codeuino</a>
-        </footer>
+      <Footer/>
     </div>
   </>
   );
