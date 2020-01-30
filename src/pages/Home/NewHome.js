@@ -16,8 +16,8 @@ const NewHome = () => {
             <div id="___gatsby">
 		<div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
 			
-			<div class="mt-12">
-				<section class="pt-4 pt-md-5">
+			<div class="mt-12 holder">
+				<div class="pt-4 pt-md-5">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-12 col-md-5 col-lg-6 order-md-2">
@@ -69,9 +69,9 @@ const NewHome = () => {
 							<img class="mt-10" src={poster} style={{width:"100%"}}/>
 						</div>
 						
-				</section>
+				</div>
 				
-				<section class="mt-5 pt-md-11">
+				<div class="mt-5 pt-md-11" id="projects">
 					
 					<div class="container">
 						
@@ -144,10 +144,10 @@ const NewHome = () => {
 						</div>
 						{/* <img src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
 					</div>
-					<section class="pt-30 mt-n15 bg-gray-200 position-relative">
+					<section class="pt-30 mt-n15 bg-gray-200 position-relative"> 
 					</section>
-					</section>
-				
+					</div>
+					
 					<div id="activity">
 						<h1>Activities</h1>
 						<div class="container">
@@ -349,10 +349,10 @@ const NewHome = () => {
 					
 				</section> */}
 				
-				<section>
+				<div className="associations">
 					
 				{/* <div></div> */}
-				<div>
+					<div>
 					
 						
 						{/* <div class="mt-10"></div> */}
@@ -382,9 +382,9 @@ const NewHome = () => {
 									</div>
 								</div>
 							</div>
-							<section class="pt-16 mt-n15 bg-gray-200 position-relative">
+							<section class="pt-30 mt-n15 bg-gray-200 position-relative">
 					</section>
-				</section>
+				</div>
 		</div>
 	</div>
         </div>
