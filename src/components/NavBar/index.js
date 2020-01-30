@@ -29,10 +29,10 @@ const NavBar = () => {
                 Activities
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">GSOC 2019</a>
-                <a class="dropdown-item" href="#">GCI 2019-20</a>
-                <a class="dropdown-item" href="#">KWOC 2018</a>
-                <a class="dropdown-item" href="#">GSSOC 2019</a>
+                <a class="dropdown-item" href="#" style={{textAlign : "center"}}>GSOC 2019</a>
+                <a class="dropdown-item" href="#" style={{textAlign : "center"}}>GCI 2019-20</a>
+                <a class="dropdown-item" href="#" style={{textAlign : "center"}}>KWOC 2018</a>
+                <a class="dropdown-item" href="#" style={{textAlign : "center"}}>GSSOC 2019</a>
               </div>
             </li>
             <li class="nav-item">
