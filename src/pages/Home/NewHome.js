@@ -118,7 +118,7 @@ const NewHome = () => {
 						<div class="shadow-light-lg overflow-hidden">
 									<div class="row">
 									<div class="col-12">
-									<div class="card shadow-light-lg overflow-hidden text-center text-lg-left">
+									<div class="card shadow-lg p-3 mb-5 bg-white rounded overflow-hidden text-center text-lg-left comming-soon">
 										<div class="row">
 											
 											<div class="col-md-7">
@@ -163,7 +163,7 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://numfocus.org/wp-content/uploads/2017/03/vertical-gsoc-logo_1-1.jpg" />
+							<Card.Img variant="top" src="https://cdn-media-1.freecodecamp.org/images/1*eGuxTZlES8o0YhnacR0Bwg.png" />
 							<Card.Body>
 								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
 								<Card.Text>
@@ -173,9 +173,9 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/wwc.jpg" />
+							<Card.Img variant="top" src="https://pbs.twimg.com/profile_images/1058940008176992256/Ckm74AnJ_400x400.jpg" />
 							<Card.Body>
-								<Card.Title><h3>ORGANISED A WORKSHOP/ EVENT AT NEW DELHI TOGETHER WITH WOMEN WHO CODE</h3></Card.Title>
+								<Card.Title><h3>Organised a workshop/event in New Delhi in collaboration with Women Who Code</h3></Card.Title>
 								<Card.Text>
 								Competition for undergraduate students.
 								</Card.Text>
@@ -183,7 +183,7 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/kwoc.png" />
+							<Card.Img variant="top" src="https://kwoc.kossiitkgp.org/static/images/kwoc_logo.png" />
 							<Card.Body>
 								<Card.Title><h3>Kharagpur Winter of Code 2019</h3></Card.Title>
 								<Card.Text>
