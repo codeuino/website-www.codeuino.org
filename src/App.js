@@ -8,6 +8,7 @@ import {
   Switch,
   Route,
   HashRouter,
+  BrowserRouter
 } from "react-router-dom";
 import About from './pages/About/About'
 // import Donut from './pages/Donut/Donut';
@@ -22,7 +23,7 @@ function App() {
     <>
     <div className="App" style={{width:"100%"}}>
       
-      <HashRouter>
+      <BrowserRouter>
       <NavBar/>
           <Switch>      
             <Route path="/about" >
@@ -64,7 +65,7 @@ function App() {
             </Route>
             
           </Switch>
-      </HashRouter>
+      </BrowserRouter>
       <Footer/>
     </div>
   </>
