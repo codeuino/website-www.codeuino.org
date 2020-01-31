@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <h6>Resources</h6>
+            <h3>Resources</h3>
             <div><a href="/">Home</a></div>
             <div><a href="/about">About</a></div>
             <div><a href="/blog">Blog</a></div>

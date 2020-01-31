@@ -16,8 +16,8 @@ const NewHome = () => {
             <div id="___gatsby">
 		<div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
 			
-			<div class="mt-12">
-				<section class="pt-4 pt-md-5">
+			<div class="mt-12 holder">
+				<div class="pt-4 pt-md-5">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-12 col-md-5 col-lg-6 order-md-2">
@@ -69,9 +69,9 @@ const NewHome = () => {
 							<img class="mt-10" src={poster} style={{width:"100%"}}/>
 						</div>
 						
-				</section>
+				</div>
 				
-				<section class="mt-5 pt-md-11">
+				<div class="mt-5 pt-md-11" id="projects">
 					
 					<div class="container">
 						
@@ -118,7 +118,7 @@ const NewHome = () => {
 						<div class="shadow-light-lg overflow-hidden">
 									<div class="row">
 									<div class="col-12">
-									<div class="card shadow-light-lg overflow-hidden text-center text-lg-left">
+									<div class="card shadow-lg p-3 mb-5 bg-white rounded overflow-hidden text-center text-lg-left comming-soon">
 										<div class="row">
 											
 											<div class="col-md-7">
@@ -144,10 +144,10 @@ const NewHome = () => {
 						</div>
 						{/* <img src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
 					</div>
-					<section class="pt-30 mt-n15 bg-gray-200 position-relative">
+					<section class="pt-30 mt-n15 bg-gray-200 position-relative"> 
 					</section>
-					</section>
-				
+					</div>
+					
 					<div id="activity">
 						<h1>Activities</h1>
 						<div class="container">
@@ -163,7 +163,7 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://numfocus.org/wp-content/uploads/2017/03/vertical-gsoc-logo_1-1.jpg" />
+							<Card.Img variant="top" src="https://cdn-media-1.freecodecamp.org/images/1*eGuxTZlES8o0YhnacR0Bwg.png" />
 							<Card.Body>
 								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
 								<Card.Text>
@@ -173,9 +173,9 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/wwc.jpg" />
+							<Card.Img variant="top" src="https://pbs.twimg.com/profile_images/1058940008176992256/Ckm74AnJ_400x400.jpg" />
 							<Card.Body>
-								<Card.Title><h3>ORGANISED A WORKSHOP/ EVENT AT NEW DELHI TOGETHER WITH WOMEN WHO CODE</h3></Card.Title>
+								<Card.Title><h3>Organised a workshop/event in New Delhi in collaboration with Women Who Code</h3></Card.Title>
 								<Card.Text>
 								Competition for undergraduate students.
 								</Card.Text>
@@ -183,7 +183,7 @@ const NewHome = () => {
 							</Card.Body>
 							</Card>
 							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
-							<Card.Img variant="top" src="http://codeuino.org/assets/img-temp/activities/kwoc.png" />
+							<Card.Img variant="top" src="https://kwoc.kossiitkgp.org/static/images/kwoc_logo.png" />
 							<Card.Body>
 								<Card.Title><h3>Kharagpur Winter of Code 2019</h3></Card.Title>
 								<Card.Text>
@@ -349,10 +349,10 @@ const NewHome = () => {
 					
 				</section> */}
 				
-				<section>
+				<div className="associations">
 					
 				{/* <div></div> */}
-				<div>
+					<div>
 					
 						
 						{/* <div class="mt-10"></div> */}
@@ -382,9 +382,9 @@ const NewHome = () => {
 									</div>
 								</div>
 							</div>
-							<section class="pt-16 mt-n15 bg-gray-200 position-relative">
+							<section class="pt-30 mt-n15 bg-gray-200 position-relative">
 					</section>
-				</section>
+				</div>
 		</div>
 	</div>
         </div>
