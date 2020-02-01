@@ -9,7 +9,13 @@ import image from './image.svg'
 import donut from './donut.svg'
 import codebadge from './codebadge.svg'
 import card from './card.svg'
+import React from 'react';
+import './NewHome.css';
 
+import Projects from './Components/Projects'
+import LandingPageComponent from './Components/LandingPageComponent'
+import Activities from './Components/Activities'
+import Partners from './Components/Partners'
 const NewHome = () => {
   return (
     <div>
@@ -917,6 +923,12 @@ const NewHome = () => {
 							<section class="pt-30 mt-n15 bg-gray-200 position-relative">
 					</section>
 				</div>
+
+			<div class="mt-12">
+				<LandingPageComponent/>
+				<Projects/>
+				<Activities/>
+				<Partners/>
 		</div>
 	</div>
         </div>
