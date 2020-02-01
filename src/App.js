@@ -5,6 +5,13 @@ import NewBlog from './pages/NewBlog/NewBlog'
 import NewHome from './pages/Home/NewHome'
 import JoinUs from './pages/JoinUs/JoinUs'
 import { Switch, Route, HashRouter } from 'react-router-dom'
+
+import {
+  Switch,
+  Route,
+  HashRouter,
+  BrowserRouter
+} from "react-router-dom";
 import About from './pages/About/About'
 // import Donut from './pages/Donut/Donut';
 import Blog from './pages/Blogs/Blog'
@@ -22,6 +29,14 @@ function App() {
           <Switch>
             <Route path="/about">
               <About />
+    <div className="App" style={{width:"100%"}}>
+      
+      <BrowserRouter>
+      <NavBar/>
+          <Switch>      
+            <Route path="/about" >
+              
+              <About/>
             </Route>
             <Route path="/team">
               <Team />
@@ -62,6 +77,11 @@ function App() {
       </div>
     </>
   )
+      </BrowserRouter>
+      <Footer/>
+    </div>
+  </>
+  );
 }
 
 export default App

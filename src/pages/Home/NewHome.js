@@ -482,6 +482,190 @@ const NewHome = () => {
                   </Card>
 
                   {/* <Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
+
+    return (
+        <div>
+            <div id="___gatsby">
+		<div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
+			
+			<div class="mt-12 holder">
+				<div class="pt-4 pt-md-5">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-12 col-md-5 col-lg-6 order-md-2">
+								<img src={Banner} class="img-fluid mw-md-100 mw-lg-100 mb-6 mb-md-0" alt="all-channels" />
+							</div>
+							<div class="col-12 col-md-7 col-lg-6 order-md-1">
+								<h1 class="display-3 text-center text-md-left">Learn, Build, Contribute, Grow.<br/><span class="text-primary"><span><span></span></span></span></h1>
+								<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">We are a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world.</p>
+								<div class="text-center text-md-left"><a href="https://github.com/codeuino" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-github mr-1"></span>Github</a>
+								<a href="http://slack.codeuino.org" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-slack mr-1"></span>Slack</a>
+								</div>
+								{/* <div class="text-muted mt-4 h5 text-center text-md-left"><span>Hosted version coming soon. </span><a href="https://chatwoot.typeform.com/to/tNMDIM" data-mode="popup" target="_blank" class="typeform-share d-inline mr-3" rel="noreferrer noopener nofollow">Request an early access</a>
+								</div> */}
+							</div>
+							</div>
+							<div class="mt-10 container lift" style={{borderRadius:"25px",textAlign:"left",color:"white",backgroundColor:" #22247A",width:"100%"}}>
+								<div class="row">
+									<div class="col-md-6 co-12 ml-0 pt-6 pb-6 pl-8">
+										<h2>Join Us</h2>
+										<p>COMMUNITY FUND AND PROJECT INCUBATION</p>
+										<a href="https://opencollective.com/donut" class="ml-0 btn btn-primary shadow lift" style={{color:" #22247A",backgroundColor:"white"}}>Open Collective</a>
+									</div>
+									<div class="col-md-6 col-12" id="join">
+										<p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
+									</div>
+								</div>
+							</div>
+							<div class="container mt-10 ml-0" style={{width:"100%",alignContent:"left"}}>
+								<div class="row" style={{textAlign:"left"}}>
+									<div class="col-md-4 col-12">
+										<span class="fa fa-question-circle fa-2x mr-1" style={{color:" #22247A"}}></span>
+										<h2>What is Codeuino?</h2>
+										<p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreaches to showcase their products in a custom way. This wide social open networking framework organisation is driven by volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living software and researching FOSS projects under code survivors and challenging world. Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world..</p>
+									</div>
+									<div class="col-md-4 col-12">
+									<span class="fa fa-user-circle fa-2x mr-1" style={{color:" #22247A",}}></span>
+										<h2>Who we Are?</h2>
+										<p>We are a group of young open-source contributors creatively leveraging our expertise in Social networking and development projects to improve the quality of outreaching, interaction and collaboration for the people in developing nations. We consist of various teams from Development, Documentation, Designers and Donut Platform. Everyone at Codeuino contributes to increase efficiency, outreaching for the user and expedite idea generation for social networking.</p>
+									</div>
+									<div class="col-md-4 col-12">
+									<span class="fa fa-check fa-2x mr-1" style={{color:" #22247A"}}></span>
+										<h2>What do we do?</h2>
+										<p>Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p>
+										<p>Teams within organization design and develop some basic set of software and networking plugins to help users/organisations to build up their own platform to interact for feeds, projects, Scholarships, etc.</p>
+										<p>We build social networking Kit/FOSS for various organisations to build up the social environment for their organisation to showcase their products and services for their community along with the collaboration platform to interact with one another.</p>
+									</div>
+								</div>
+							</div>
+							<img class="mt-10" src={poster} style={{width:"100%"}}/>
+						</div>
+						
+				</div>
+				
+				<div class="mt-5 pt-md-11" id="projects">
+					
+					<div class="container">
+						
+						{/* <h1>Our Projects</h1> */}
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-10 text-center"><span class="badge badge-pill badge-primary-soft mb-2"><span class="h6 text-uppercase font-weight-bold">Opensource</span></span>
+								<h1 class="font-weight-bold">Our Projects</h1>
+								{/* <p class="font-size-lg text-muted mb-7">Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way. This wide social open networking framework organisation is driven by the volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living softwares and researching FOSS projects under code survivors and challenging world. Codeuino takes into house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p> */}
+								<div class="row">
+									<div class="col-md-6 col-12" style={{display:"flex",justifyContent:"space-around"}}>
+										<img src={donut}/>
+									</div>
+									<div class="col-md-6 col-12">
+										<h1>Donut</h1>
+										<p>Donut is an open-source, feature-rich, highly flexible and privacy-friendly, social networking platform built for community-oriented collaboration in a customized way. It has been built on the Node.js framework allowing an essential impetus to provide custom and friendly rich widgets and an expansive library of modules to make communication and collaboration easy and successful. With a powerful module system, you can customize this platform by using third party tools, writing your own or integrating other software.</p>
+										<div class="container" style={{display:"flex",justifyContent:"space-around"}}>
+											<div class="row">
+												<a href="https://github.com/codeuino/Social-Platform-Donut" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+												<a href="https://www.youtube.com/watch?v=wYk71_KY6Bk" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-youtube"></span></a>
+												<a href="https://docs.codeuino.org/documentation/donut-docs/donut-documentation" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-file"></span></a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h1>Codebadge</h1>
+										<p>Codebadge is an open-source, user-friendly, visual-oriented collaboration tool which incorporates development of badges and integrating with forums in a customized way. Codebadge communicate skills, achievements and contribution tracking by providing visual symbols of accomplishments packed with verifiable data and evidence that can be shared across the web. It is a standard organization-oriented project  that provides an essential impetus to Admins and users with an appropriate dashboards.</p>
+										<div class="container" style={{display:"flex",justifyContent:"space-around"}}>
+											<div class="row">
+												<a href="https://github.com/codeuino/Codebadge" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
+												<a href="https://www.youtube.com/watch?v=s1gDGjJtmpk" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-youtube"></span></a>
+												<a href="https://docs.codeuino.org/documentation/codebadge/codebadge-documentation" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-file"></span></a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12 mt-10"style={{display:"flex",justifyContent:"space-around"}}>
+										<img src={codebadge}/>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="index-content">
+						<div class="form-row">
+						<div class="shadow-light-lg overflow-hidden">
+									<div class="row">
+									<div class="col-12">
+									<div class="card shadow-lg p-3 mb-5 bg-white rounded overflow-hidden text-center text-lg-left comming-soon">
+										<div class="row">
+											
+											<div class="col-md-7">
+												<div class="card-body py-7 py-md-9">
+													<h4 class="font-weight-bold">Design Project</h4>
+													<p class="text-muted mb-0">To all the designers in the world something big is comming soon! Update your tools for the battle.</p>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<h1 class="mt-5">Comming Soon</h1>
+												</div>
+												<div class="col-md-2">
+												<img src={card} class="h-75 position-absolute right-0 mt-6 mr-3" alt="Productivity" />
+											</div>
+										</div>
+									</div>
+							</div>
+										
+									</div>
+								</div>
+							{/* </div> */}
+						</div>
+						</div>
+						{/* <img src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
+					</div>
+					<section class="pt-30 mt-n15 bg-gray-200 position-relative"> 
+					</section>
+					</div>
+					
+					<div id="activity">
+						<h1>Activities</h1>
+						<div class="container">
+							<div class="row"style={{display:"flex",justifyContent:"space-around"}}>
+							<Card style={{ width: '18rem',marginBottom:"2vh",border:"0px" }}>
+							<Card.Img variant="top" src="https://1.bp.blogspot.com/-Ig-v1tDXZt4/XDODmZvWp1I/AAAAAAAAB0A/KtbFdBPFVQw2O15FekkIR0Yg8MUp--rngCLcBGAs/s1600/GCI%2B-%2BVertical%2B-%2BGray%2BText%2B-%2BWhite%2BBG.png" />
+							<Card.Body>
+								<Card.Title><h3>Google CodeIN 2019-20</h3></Card.Title>
+								<Card.Text>
+								Competition for preschool.
+								</Card.Text>
+								<a href="/#/gci19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
+							</Card.Body>
+							</Card>
+							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
+							<Card.Img variant="top" src="https://cdn-media-1.freecodecamp.org/images/1*eGuxTZlES8o0YhnacR0Bwg.png" />
+							<Card.Body>
+								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
+								<Card.Text>
+								Competition for undergraduate students.
+								</Card.Text>
+								<a href="/#/gsoc19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
+							</Card.Body>
+							</Card>
+							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
+							<Card.Img variant="top" src="https://pbs.twimg.com/profile_images/1058940008176992256/Ckm74AnJ_400x400.jpg" />
+							<Card.Body>
+								<Card.Title><h3>Organised a workshop/event in New Delhi in collaboration with Women Who Code</h3></Card.Title>
+								<Card.Text>
+								Competition for undergraduate students.
+								</Card.Text>
+								<a href="/#/workshop19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
+							</Card.Body>
+							</Card>
+							<Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
+							<Card.Img variant="top" src="https://kwoc.kossiitkgp.org/static/images/kwoc_logo.png" />
+							<Card.Body>
+								<Card.Title><h3>Kharagpur Winter of Code 2019</h3></Card.Title>
+								<Card.Text>
+								Competition for undergraduate students.
+								</Card.Text>
+								<a href="/#/kwoc19" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
+							</Card.Body>
+							</Card>
+							
+							{/* <Card style={{ width: '18rem' ,marginBottom:"2vh",border:"0px" }}>
 							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GSoC-icon.svg/440px-GSoC-icon.svg.png" />
 							<Card.Body>
 								<Card.Title><h3>Google Summer of Code 2019</h3></Card.Title>
@@ -696,6 +880,45 @@ const NewHome = () => {
               <section class="pt-16 mt-n15 bg-gray-200 position-relative"></section>
             </section>
           </div>
+				
+				<div className="associations">
+					
+				{/* <div></div> */}
+					<div>
+					
+						
+						{/* <div class="mt-10"></div> */}
+						<div class="container" style={{justifyContent:"space-evenly",display:"flex"}}>
+							<div class="row">
+								<div class="col-6">
+									<h2>Our Partners</h2>
+									<img src={wwc} style={{width:"60%",height:"60%"}}/>
+								</div>
+								<div class="col-6">
+									<h2>Our Sponsers</h2>
+									<img src={dgocean} style={{width:"60%",height:"60%"}}/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-10"></div>
+					<div class="mt-10 container lift" style={{borderRadius:"25px",textAlign:"left",color:"white",backgroundColor:" #22247A",width:"100%"}}>
+								<div class="row">
+									<div class="col-md-6 co-12 ml-0 pt-6 pb-6 pl-8">
+										<h2>Donate Us</h2>
+										<p>COMMUNITY FUND AND PROJECT INCUBATION</p>
+										<a href="https://opencollective.com/donut" class="ml-0 btn btn-primary shadow lift" style={{color:" #22247A",backgroundColor:"white"}}>Open Collective</a>
+									</div>
+									<div class="col-md-6 col-12" id="join">
+										<p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
+									</div>
+								</div>
+							</div>
+							<section class="pt-30 mt-n15 bg-gray-200 position-relative">
+					</section>
+				</div>
+		</div>
+	</div>
         </div>
       </div>
     </div>

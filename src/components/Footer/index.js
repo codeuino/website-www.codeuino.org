@@ -33,6 +33,11 @@ const Footer = () => {
             <div>
               <a href="/join">Join Us</a>
             </div>
+            <h3>Resources</h3>
+            <div><a href="/">Home</a></div>
+            <div><a href="/about">About</a></div>
+            <div><a href="/blog">Blog</a></div>
+            <div><a href="/join">Join Us</a></div>
           </div>
           <div className="col-md-6">
             <p>

@@ -14,6 +14,24 @@ class Team extends Component {
     super(props)
     this.state = {
       contributors: [],
+import React, { Component } from 'react';
+
+import PropTypes from 'prop-types';
+// import {Card,Button} from 'react-bootstrap'
+
+import './Team.css';
+import BoardMembersWrapper from './BoardMembers'
+import CoreContributorsWrapper from './CoreContributors'
+import axios from 'axios';
+import $ from 'jquery';
+class Team extends Component {
+    
+    constructor(props){
+        super(props);
+        this.state={
+            boardMembers:[],
+            contributors:[]
+        }
     }
   }
   // var jsonURL = "https://s3.ap-south-1.amazonaws.com/pr-webhook-contributors-json/contributors.json";
@@ -522,6 +540,20 @@ class Team extends Component {
                     class="row"
                     style={{ display: 'flex', justifyContent: 'center' }}
                   >
+
+		<div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
+			<div class="mt-12"></div>
+            <h2>Board</h2>
+        <div class="container pt-8 pb-6">
+          <BoardMembersWrapper/>
+        </div>
+    <h2>Our Backbone</h2>
+      <div class="container pt-8 pb-6" style={{display:"flex",justifyContent:"space-evenly"}}>
+          <CoreContributorsWrapper/>
+      </div>
+            <h2>Our Awesome Contributors</h2>
+            <div id="cotributors" className="container d-flex">
+                <div class="row" style={{display:"flex",justifyContent:"center"}}>
                     {contrilist}
                   </div>
                 </div>
