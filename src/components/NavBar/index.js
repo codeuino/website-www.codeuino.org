@@ -39,7 +39,7 @@ const NavBar = () => {
               <Link class="nav-link" to="/team">Team<span class="sr-only">(current)</span></Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" to="https://docs.codeuino.org/documentation/">Docs<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="https://docs.codeuino.org/documentation/">Docs<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/about">About Us<span class="sr-only">(current)</span></Link>
