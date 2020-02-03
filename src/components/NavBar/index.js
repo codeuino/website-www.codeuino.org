@@ -29,17 +29,17 @@ const NavBar = () => {
                 Activities
               </Link>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link class="dropdown-item" to="https://docs.codeuino.org/documentation/activities/google-summer-of-code-2019" style={{textAlign : "center"}}>GSOC 2019</Link>
-                <Link class="dropdown-item" to="https://github.com/codeuino/gci" style={{textAlign : "center"}}>GCI 2019-20</Link>
-                <Link class="dropdown-item" to="https://kwoc.kossiitkgp.org/" style={{textAlign : "center"}}>KWOC 2018</Link>
-                <Link class="dropdown-item" to="https://www.gssoc.tech/index.html" style={{textAlign : "center"}}>GSSOC 2019</Link>
+                <a class="dropdown-item" href="https://docs.codeuino.org/documentation/activities/google-summer-of-code-2019" style={{textAlign : "center"}}>GSOC 2019</a>
+                <a class="dropdown-item" href="https://github.com/codeuino/gci" style={{textAlign : "center"}}>GCI 2019-20</a>
+                <a class="dropdown-item" href="https://kwoc.kossiitkgp.org/" style={{textAlign : "center"}}>KWOC 2018</a>
+                <a class="dropdown-item" href="https://www.gssoc.tech/index.html" style={{textAlign : "center"}}>GSSOC 2019</a>
               </div>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/team">Team<span class="sr-only">(current)</span></Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="https://docs.codeuino.org/documentation/">Docs<span class="sr-only">(current)</span></Link>
+              <a class="nav-link" to="https://docs.codeuino.org/documentation/">Docs<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/about">About Us<span class="sr-only">(current)</span></Link>
