@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewHome.css';
-
+import ScrollToTopBtn from '../../components/ScrollToTopBtn/ScrollToTopBtn.js';
 import Projects from './Components/Projects'
 import LandingPageComponent from './Components/LandingPageComponent'
 import Activities from './Components/Activities'
@@ -15,6 +15,7 @@ const NewHome = () => {
 				<Projects/>
 				<Activities/>
 				<Partners/>
+				<ScrollToTopBtn />
 		</div>
 	</div>
         </div>

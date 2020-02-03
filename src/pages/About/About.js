@@ -5,6 +5,7 @@ import Markdown from 'react-markdown';
 import './About.css'
 import marked from "marked";
 import codeuino from './codeuino-banner.jpg'
+import ScrollToTopBtn from '../../components/ScrollToTopBtn/ScrollToTopBtn.js';
 class Blog extends Component {
     constructor(props){
         super(props);
@@ -57,6 +58,7 @@ class Blog extends Component {
             </div>
             </div>
             </div>
+            <ScrollToTopBtn />
             </div>
         );
     }
