@@ -48,6 +48,9 @@ const NavBar = () => {
               <Link class="nav-link" to="/bloglist">Blogs<span class="sr-only">(current)</span></Link>
             </li>
             <li class="nav-item">
+              <Link class="nav-link" to="/codeofconduct">Code of Conduct<span class="sr-only">(current)</span></Link>
+            </li>
+            <li class="nav-item">
               <Link class="nav-link" to="/joinus">Join Us<span class="sr-only">(current)</span></Link>
             </li>
           </ul>

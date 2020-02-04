@@ -10,6 +10,7 @@ import {
   HashRouter,
   BrowserRouter
 } from "react-router-dom";
+import COC from './pages/COC/COC'
 import About from './pages/About/About'
 // import Donut from './pages/Donut/Donut';
 import Blog from './pages/Blogs/Blog';
@@ -36,9 +37,7 @@ function App() {
             <Route path="/joinus" >
               <JoinUs/>
             </Route>
-            <Route path="/joinus" >
-              <NewHome/>
-            </Route>
+            <Route path="/codeofconduct"><COC/></Route>
             <Route path="/bloglist">
               <BlogList/>
             </Route>
