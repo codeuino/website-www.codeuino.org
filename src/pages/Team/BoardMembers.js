@@ -9,15 +9,15 @@ var BoardMembers = [
     {
         name:"Jaskirat Singh",
         post:"Founder",
-        headline:'Matthew is a musician living in Nashville.',
+        headline:'Founder @Codeuino, Google summer of code & Code In mentor at @sugar_labs, @jbossorg, member at @OpenSourceOrg, Mentor at @kossiitkgp, @microsoft Educator Expert',
         profile:jaskirat,
-        github:'',
+        github:'https://github.com/jaskirat2000',
         linkedin:''
     },
     {
         name:"Devesh",
         post:"Donut Maintainer",
-        headline:'Matthew is a musician living in Nashville.',
+        headline:'foss contributor|board member@CODEUINO|software engineer@SHAW ACADEMY|ex-intern@SHAW ACADEMY|HASURA| INTERNSHALA|HIREINK|INDICIUMHUB|',
         profile:devesh,
         github:'',
         linkedin:''
@@ -25,7 +25,7 @@ var BoardMembers = [
     {
         name:"Vaibhav D. Aren",
         post:"Co-Founder",
-        headline:'Matthew is a musician living in Nashville.',
+        headline:'SDE at HashedIn | GSOC 2018 Developer @SugarLabs | GSOC-19 Mentor @JBOSS(Codeuino)| GCI -18 Mentor @SugarLabs .',
         profile:vaibhav,
         github:'',
         linkedin:''
@@ -34,7 +34,7 @@ var BoardMembers = [
     {
         name:"Shivam Luthra",
         post:"CodeBadge Maintainer",
-        headline:'Matthew is a musician living in Nashville.',
+        headline:'Student Mentor at Google Code-in',
         profile:shivam,
         github:'',
         linkedin:''
@@ -43,16 +43,16 @@ var BoardMembers = [
     {
         name:"Ayush Nagar",
         post:"CodeBadge Maintainer",
-        headline:'Matthew is a musician living in Nashville.',
+        headline:'Student Mentor at Google Code-in',
         profile:'https://avatars1.githubusercontent.com/u/32647423?s=460&v=4',
-        github:'',
+        github:'https://github.com/ayushnagar123',
         linkedin:''
 
     },
     {
         name:"Siddharth",
         post:"Designer",
-        headline:'Matthew is a musician living in Nashville.',
+        headline:'Student Mentor at Google Code-in',
         profile:'https://avatars1.githubusercontent.com/u/33068322?s=460&v=4',
         github:'',
         linkedin:''
