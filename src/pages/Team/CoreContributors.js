@@ -27,9 +27,8 @@ var CoreContributors = [
         github:'',
         linkedin:''
     },
-    ,
     {
-        name:"Lakshya Batra",
+        name:"Lakshya Khera",
         post:"Core Colaborator",
         headline:'GSOCer 2019 Codeuino',
         profile:'https://avatars1.githubusercontent.com/u/29687362?s=460&v=4',
