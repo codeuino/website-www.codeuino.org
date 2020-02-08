@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Codeuino Website
 
-## Available Scripts
+Offical site for Codeuino landing page. Please visit [http://www.codeuino.org/](http://www.codeuino.org/)
 
-In the project directory, you can run:
+### Table of contents
 
-### `npm start`
+ - Requirements
+ - Installation
+ - File Structure
+ - How to contribute
+ - Credits
+ 
+ ## Requirements
+ Following applications are required to run the application locally.
+ 
+ - Git
+ - Npm
+ - Node
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
+To run the application on your local system follow these steps
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+ 1. <code>git clone https://github.com/codeuino/website-www.codeuino.org.git</code>
+ 2. Move to the project directory.
+ 3. <code>git checkout development</code>
+ 4. <code>npm install</code>
+ 5. Open <code>localhost:3000</code> to view the website on your local browser.
 
-### `npm test`
+## File Structure
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This section describes about the file structure of the project.
+All the source code is located in <code>src</code> directory.
+There are two main directories in the src folder, <code>components</code> and <code>pages</code>.
+The pages directory contains all the source code of routes in separate folders.
+The components directory contains all reusable component file in separate folders.
 
-### `npm run build`
+## How to contribute
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Opening an issue
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[![GitHub issues](https://img.shields.io/github/issues/codeuino/website-www.codeuino.org?logo=github)](https://github.com/codeuino/website-www.codeuino.org/issues) ![GitHub closed issues](https://img.shields.io/github/issues-closed/codeuino/website-www.codeuino.org?logo=github)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You should usually [open an issue](https://github.com/codeuino/website-www.codeuino.org/issues/new) in the following situations:
 
-### `npm run eject`
+* Report an error you can’t solve yourself
+* Discuss a high-level topic or idea (for example, community, vision or policies)
+* Propose a new feature or other project idea
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Tips for communicating on issues:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you see an open issue that you want to tackle, comment on the issue to let people know you’re on it. That way, people are less likely to duplicate your work.
+If an issue was opened a while ago, it’s possible that it’s being addressed somewhere else, or has already been resolved, so comment to ask for confirmation before starting work.
+If you opened an issue, but figured out the answer later on your own, comment on the issue to let people know, then close the issue. Even documenting that outcome is a contribution to the project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Opening a pull request
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](http://makeapullrequest.com) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/codeuino/website-www.codeuino.org?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/codeuino/website-www.codeuino.org?logo=github)
 
-## Learn More
+You should usually open a pull request in the following situations:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Submit trivial fixes (for example, a typo, a broken link or an obvious error)
+* Start work on a contribution that was already asked for, or that you’ve already discussed, in an issue
+A pull request doesn’t have to represent finished work. It’s usually better to open a pull request early on, so others can watch or give feedback on your progress. Just mark it as a “WIP” (Work in Progress) in the subject line. You can always add more commits later.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is currently maintained by [Jaskirat Singh](https://github.com/jaskirat2000) .
