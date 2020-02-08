@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import './Team.css';
 import BoardMembersWrapper from './BoardMembers'
 import CoreContributorsWrapper from './CoreContributors'
+import ScrollToTopBtn from '../../components/ScrollToTopBtn/ScrollToTopBtn.js';
 import axios from 'axios';
 import $ from 'jquery';
 class Team extends Component {
@@ -63,6 +64,7 @@ class Team extends Component {
     </div>
     </div>
     </div>
+    <ScrollToTopBtn />
             </>
         );
     }
