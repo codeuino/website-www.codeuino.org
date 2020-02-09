@@ -58,7 +58,7 @@ const Projects = () => {
 												</div>
 											</div>
 											<div class="col-md-3">
-												<h1 class="mt-5">Comming Soon</h1>
+												<h1 class="mt-5">Coming Soon</h1>
 												</div>
 												<div class="col-md-2">
 												<img src={card} class="h-75 position-absolute right-0 mt-6 mr-3" alt="Productivity" />
