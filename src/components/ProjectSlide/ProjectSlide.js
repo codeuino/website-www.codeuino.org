@@ -37,16 +37,18 @@ const ProjectSlide = () => {
         <Fade {...fadeProperties}>  
         {
           images.map((each, index) =>  
-            <> 
-            <div className="each-fade">
-              <div className="image-container">
-                <img key={index} src={each.image} style={{width:"100%",height:"60vh"}} alt="images"/>
+           <div className="row">
+             <div className="col-md-12">
+               <div className="each-fade">
+                <div className="image-container">
+                  <img key={index} src={each.image} style={{width:"100%",height:"60vh"}} alt="images"/>
+                </div>
+                <h2>{each.project}</h2>
+                  <p style={{fontSize:"1.2rem"}}>{each.content}</p>
+                <button type="button" className="btn btn-default" key={index} onClick={function(e){readmore(each.link)}}>Read More</button>
               </div>
-              <h2>{each.project}</h2>
-                <p style={{fontSize:"1.2rem"}}>{each.content}</p>
-              <button type="button" className="btn btn-default" key={index} onClick={function(e){readmore(each.link)}}>Read More</button>
-            </div>
-            </>
+             </div>
+           </div>
           )
         }
         </Fade>
