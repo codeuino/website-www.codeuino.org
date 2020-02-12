@@ -13,11 +13,11 @@ const Projects = () => {
 								{/* <p class="font-size-lg text-muted mb-7">Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way. This wide social open networking framework organisation is driven by the volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living softwares and researching FOSS projects under code survivors and challenging world. Codeuino takes into house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p> */}
 								<div class="row">
 									<div class="col-md-6 col-12" style={{display:"flex",justifyContent:"space-around"}}>
-										<img src={donut}/>
+										<img className="img-fluid" style={{width: "100%"}} src={donut}/>
 									</div>
 									<div class="col-md-6 col-12">
 										<h1>Donut</h1>
-										<p>Donut is an open-source, feature-rich, highly flexible and privacy-friendly, social networking platform built for community-oriented collaboration in a customized way. It has been built on the Node.js framework allowing an essential impetus to provide custom and friendly rich widgets and an expansive library of modules to make communication and collaboration easy and successful. With a powerful module system, you can customize this platform by using third party tools, writing your own or integrating other software.</p>
+										<p style={{textAlign: "justify"}}>Donut is an open-source, feature-rich, highly flexible and privacy-friendly, social networking platform built for community-oriented collaboration in a customized way. It has been built on the Node.js framework allowing an essential impetus to provide custom and friendly rich widgets and an expansive library of modules to make communication and collaboration easy and successful. With a powerful module system, you can customize this platform by using third party tools, writing your own or integrating other software.</p>
 										<div class="container" style={{display:"flex",justifyContent:"space-around"}}>
 											<div class="row">
 												<a href="https://github.com/codeuino/Social-Platform-Donut" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
@@ -28,7 +28,7 @@ const Projects = () => {
 									</div>
 									<div class="col-md-6 col-12">
 										<h1>Codebadge</h1>
-										<p>Codebadge is an open-source, user-friendly, visual-oriented collaboration tool which incorporates development of badges and integrating with forums in a customized way. Codebadge communicate skills, achievements and contribution tracking by providing visual symbols of accomplishments packed with verifiable data and evidence that can be shared across the web. It is a standard organization-oriented project  that provides an essential impetus to Admins and users with an appropriate dashboards.</p>
+										<p style={{textAlign: "justify"}}>Codebadge is an open-source, user-friendly, visual-oriented collaboration tool which incorporates development of badges and integrating with forums in a customized way. Codebadge communicate skills, achievements and contribution tracking by providing visual symbols of accomplishments packed with verifiable data and evidence that can be shared across the web. It is a standard organization-oriented project  that provides an essential impetus to Admins and users with an appropriate dashboards.</p>
 										<div class="container" style={{display:"flex",justifyContent:"space-around"}}>
 											<div class="row">
 												<a href="https://github.com/codeuino/Codebadge" class="btn btn-primary shadow lift mr-1" style={{borderRadius:"50%",backgroundColor:" #22247A"}}><span class="fe fe-github"></span></a>
@@ -38,7 +38,7 @@ const Projects = () => {
 										</div>
 									</div>
 									<div class="col-md-6 col-12 mt-10"style={{display:"flex",justifyContent:"space-around"}}>
-										<img src={codebadge}/>
+										<img className="img-fluid" style={{width: "100%"}} src={codebadge}/>
 									</div>
 								</div>
 							</div>

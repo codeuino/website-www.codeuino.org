@@ -25,19 +25,19 @@ const LandingPageComponent = () => {
 									<div class="col-md-4 col-12">
 										<span class="fa fa-question-circle fa-2x mr-1" style={{color:" #22247A"}}></span>
 										<h2>What is Codeuino?</h2>
-										<p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreaches to showcase their products in a custom way. This wide social open networking framework organisation is driven by volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living software and researching FOSS projects under code survivors and challenging world. Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world..</p>
+										<p style={{textAlign: "justify"}}>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreaches to showcase their products in a custom way. This wide social open networking framework organisation is driven by volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living software and researching FOSS projects under code survivors and challenging world. Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world..</p>
 									</div>
 									<div class="col-md-4 col-12">
 									<span class="fa fa-user-circle fa-2x mr-1" style={{color:" #22247A",}}></span>
 										<h2>Who we Are?</h2>
-										<p>We are a group of young open-source contributors creatively leveraging our expertise in Social networking and development projects to improve the quality of outreaching, interaction and collaboration for the people in developing nations. We consist of various teams from Development, Documentation, Designers and Donut Platform. Everyone at Codeuino contributes to increase efficiency, outreaching for the user and expedite idea generation for social networking.</p>
+										<p style={{textAlign: "justify"}}>We are a group of young open-source contributors creatively leveraging our expertise in Social networking and development projects to improve the quality of outreaching, interaction and collaboration for the people in developing nations. We consist of various teams from Development, Documentation, Designers and Donut Platform. Everyone at Codeuino contributes to increase efficiency, outreaching for the user and expedite idea generation for social networking.</p>
 									</div>
 									<div class="col-md-4 col-12">
 									<span class="fa fa-check fa-2x mr-1" style={{color:" #22247A"}}></span>
 										<h2>What do we do?</h2>
-										<p>Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p>
-										<p>Teams within organization design and develop some basic set of software and networking plugins to help users/organisations to build up their own platform to interact for feeds, projects, Scholarships, etc.</p>
-										<p>We build social networking Kit/FOSS for various organisations to build up the social environment for their organisation to showcase their products and services for their community along with the collaboration platform to interact with one another.</p>
+										<p style={{textAlign: "justify"}}>Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.
+										Teams within organization design and develop some basic set of software and networking plugins to help users/organisations to build up their own platform to interact for feeds, projects, Scholarships, etc.
+										We build social networking Kit/FOSS for various organisations to build up the social environment for their organisation to showcase their products and services for their community along with the collaboration platform to interact with one another.</p>
 									</div>
 								</div>
 							</div>

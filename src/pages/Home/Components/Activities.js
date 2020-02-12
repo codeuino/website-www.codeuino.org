@@ -24,7 +24,7 @@ var activities = [
     },
     {
         img:workshop19,
-        title:'ORGANISED A WORKSHOP/ EVENT AT NEW DELHI TOGETHER WITH WOMEN WHO CODE',
+        title:'Organized a Workshop/ Event At New Delhi Together With Women Who Code',
         text:'Competition for undergraduate students.',
         link:'/#/workshop19'
     },
