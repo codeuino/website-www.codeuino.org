@@ -1,46 +1,25 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import "./ActivityCard.css";
+
 const ActivityCard = props => {
   return (
-    <div>
-      <Card
-        style={{
-          width: "65em",
-          marginBottom: "2vh",
-          border: "1px solid #d4d0cf"
-        }}
-        className="shadow-lg"
-      >
-        <Card.Img
-          variant="top"
-          src={props.activity.img}
-          style={{ height: "175px", objectFit: "cover" }}
-        />
-        <Card.Body>
-          <Card.Title>
-            <div style={{ width: "300px", margin: "0 auto" }}>
-              <h3
-                style={{
-                  textTransform: "capitalize",
-                  overflowWrap: "break-word"
-                }}
-              >
-                {props.activity.title}
-              </h3>
-            </div>
-          </Card.Title>
-          <Card.Text style={{ textTransform: "capitalize" }}>
-            {props.activity.text}
-          </Card.Text>
-          <a
-            href={props.activity.link}
-            class="btn btn-sm btn-primary"
-            style={{ backgroundColor: "#22247A" }}
-          >
-            Read More
-          </a>
-        </Card.Body>
-      </Card>
+    <div className="card text-center activity overflow-hidden">
+      <img src={props.activity.img} alt="" className="card-img-top activity" />
+
+      <div className="card-body text-dark flex-column d-flex">
+        <h4 className="card-title activity" style={{ height: "200px" }}>
+          {props.activity.title}
+        </h4>
+        <p className="card-text text-secondary">{props.activity.description}</p>
+
+        <a
+          href={props.activity.link}
+          className="activity btn btn-outline-primary mt-auto btn-block align-self-end"
+          style={{ marginTop: "auto" }}
+        >
+          Read More
+        </a>
+      </div>
     </div>
   );
 };

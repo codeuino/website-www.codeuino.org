@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import ActivityCard from "../../../components/Activities/ActivityCard";
-import KWoC from "../images/kwoc_logo.png";
-import workshop19 from "../images/workshop.jpg";
 import "./common.css";
 
 class Activities extends React.Component {
@@ -23,11 +21,11 @@ class Activities extends React.Component {
         return res.json();
       })
       .then(resData => {
-        for (let i = 0; i < 4; i++) {
+        console.log(resData);
+        for (let i = 0; i < 3; i++) {
           let obj = {};
           obj.title = resData.items[i].title;
           obj.link = resData.items[i].link;
-
           let m,
             urls = [],
             str = resData.items[i].content_encoded,
@@ -37,6 +35,16 @@ class Activities extends React.Component {
             urls.push(m[1]);
           }
           obj.img = urls[0];
+
+          let reg = /<\s*p[^>]*>([^<]*)<\s*\/\s*p\s*>/;
+          let stream = resData.items[i].content_encoded.match(reg);
+
+          obj.description =
+            stream[1]
+              .split(" ")
+              .slice(0, 20)
+              .join(" ") + "...";
+
           activities.push(obj);
         }
         this.setState({ activities: activities }, () => {
@@ -51,16 +59,14 @@ class Activities extends React.Component {
     return (
       <div id="activity">
         <h1 className="component-heading">Activities</h1>
-        <div class="container">
-          <div
-            class="row"
-            style={{
-              display: "flex",
-              justifyContent: "space-around"
-            }}
-          >
+        <div className="container-fluid d-flex justify-content-center">
+          <div className="row">
             {this.state.activities.map((currentActivity, index) => {
-              return <ActivityCard key={index} activity={currentActivity} />;
+              return (
+                <div className="col-md-4">
+                  <ActivityCard key={index} activity={currentActivity} />
+                </div>
+              );
             })}
           </div>
         </div>
