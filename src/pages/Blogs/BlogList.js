@@ -1,123 +1,183 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import './BlogList.css';
+import Modal from 'react-awesome-modal';
 
-export default function BlogList({title,content}) {
-  return (
-    <>
-        <div class="mt-10">
-        <main class="mt-5 pt-5">
-        <div class="container">
+class BlogList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activities: [],
+      visible: false,
+      currentActivity: null
+    };
+  }
 
-            <section class="pt-5">
-                <div class="wow fadeIn">
-                    <h2 class="h1 text-center mb-5">What is MDB?</h2>
-                    <p class="text-center">MDB is world's most popular Material Design framework for building responsive, mobile-first websites
-                        and apps. </p>
-                    <p class="text-center mb-5 pb-5">Trusted by over
-                        <strong>400 000</strong> developers and designers. Easy to use & customize. 400+ material UI elements, templates
-                        & tutorials.</p>
-                </div>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <div class="view overlay rounded z-depth-1-half">
-                            <div class="view overlay">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-                                </div>
-                            </div>
+  componentDidMount() {
+    let activities = [];
+    fetch('https://medium-article-fetcher.herokuapp.com/posts', {
+      crossDomain: true,
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(res => {
+        return res.json();
+      })
+      .then(resData => {
+        console.log(resData);
+        for (let i = 0; i < resData.items.length; i++) {
+          let obj = {};
+          obj.title = resData.items[i].title;
+          obj.link = resData.items[i].link;
+          let m,
+            urls = [],
+            str = resData.items[i].content_encoded,
+            rex = /<img[^>]+src="?([^"\s]+)"?\s*\/>/g;
+
+          while ((m = rex.exec(str))) {
+            urls.push(m[1]);
+          }
+          obj.img = urls[0];
+
+          let reg = /<\s*p[^>]*>([^<]*)<\s*\/\s*p\s*>/;
+          let stream = resData.items[i].content_encoded.match(reg);
+
+          let div = document.createElement('div');
+          div.innerHTML = resData.items[i].content_encoded;
+
+          obj.longDescription = div.textContent || div.innerText || '';
+
+          obj.description =
+            stream[1]
+              .split(' ')
+              .slice(0, 20)
+              .join(' ') + '...';
+
+          activities.push(obj);
+        }
+        this.setState({ activities: activities });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
+  handleClick = currentActivity => {
+    this.setState(
+      {
+        currentActivity: currentActivity
+      },
+      () => {
+        this.setState({
+          visible: true
+        });
+      }
+    );
+  };
+
+  closeModal = () => {
+    this.setState({
+      visible: false
+    });
+  };
+
+  render() {
+    return (
+      <div className='mt-10'>
+        <main className='mt-5 pt-5'>
+          <div className='container'>
+            <section className='pt-5'>
+              <div className='container-fluid d-flex space-between'>
+                <div className='row'>
+                  {this.state.activities.map((currentActivity, index) => {
+                    return (
+                      <div
+                        className='col-lg-4 col-md-6 col-sm-12'
+                        style={{ marginBottom: '20px' }}
+                      >
+                        <div className='card text-center activity overflow-hidden'>
+                          <img
+                            src={currentActivity.img}
+                            alt=''
+                            className='card-img-top activity'
+                          />
+
+                          <div className='card-body text-dark flex-column d-flex'>
+                            <h4 className='card-title activity'>
+                              {currentActivity.title}
+                            </h4>
+                            <p className='card-text text-secondary'>
+                              {currentActivity.description}
+                            </p>
+
+                            <a
+                              href='#'
+                              className='activity btn btn-outline-primary mt-auto btn-block align-self-end'
+                              style={{ marginTop: 'auto' }}
+                              onClick={() => this.handleClick(currentActivity)}
+                            >
+                              Read More
+                            </a>
+                          </div>
                         </div>
-                    </div>
-
+                      </div>
+                    );
+                  })}
                 </div>
-
-                <hr class="mb-5"/>
-                <div class="row mt-3 wow fadeIn">
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/wp-content/uploads/2017/11/brandflow-tutorial-fb.jpg" class="img-fluid" alt=""/>
-                            <a href="/#/blog" target="_blank">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                        <h3 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>Bootstrap Automation</strong>
-                        </h3>
-                        <p class="grey-text">Learn how to create a smart website which learns your user and reacts properly to his behavior.</p>
-                        <a href="/#/blog" class="btn btn-primary btn-md">Start tutorial
-                            <i class="fas fa-play ml-2"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <hr class="mb-5"/>
-                <div class="row wow fadeIn">
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/wp-content/uploads/2018/01/push-fb.jpg" class="img-fluid" alt=""/>
-                            <a href="/#/blog" target="_blank">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                        <h3 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>Web Push notifications</strong>
-                        </h3>
-                        <p class="grey-text">Push messaging provides a simple and effective way to re-engage with your users and in this tutorial
-                            you'll learn how to add push notifications to your web app</p>
-                        <a href="/#/blog" target="_blank" class="btn btn-primary btn-md">Start tutorial
-                            <i class="fas fa-play ml-2"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <hr class="mb-5"/>
-                <nav class="d-flex justify-content-center wow fadeIn">
-                    <ul class="pagination pg-blue">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-
-                        <li class="page-item active">
-                            <a class="page-link" href="#">1
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">5</a>
-                        </li>
-
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
+              </div>
             </section>
+          </div>
+        </main>
+        <Modal
+          visible={this.state.visible}
+          width='90%'
+          height='90%'
+          effect='fadeInUp'
+          onClickAway={() => this.closeModal()}
+        >
+          <div>
+            <img
+              src={
+                this.state.currentActivity ? this.state.currentActivity.img : ''
+              }
+              style={{
+                margin: '10px',
+                height: '200px',
+                objectFit: 'scale-down'
+              }}
+            ></img>
+            <h2 style={{ padding: '10px' }}>
+              {this.state.currentActivity
+                ? this.state.currentActivity.title
+                : ''}
+            </h2>
+            <div style={{ width: '100%', height: '100%' }}>
+              <p
+                style={{
+                  fontSize: '10',
+                  overflow: 'auto',
+                  display: 'block',
+                  height: '450px',
+                  margin: '10px'
+                }}
+              >
+                {this.state.currentActivity
+                  ? this.state.currentActivity.longDescription
+                  : ''}
+              </p>
+            </div>
 
-        </div>
-    </main>
-        </div>
-    </>
-  );
+            <button
+              type='button'
+              class='btn btn-danger btn-circle'
+              onClick={this.closeModal}
+            >
+              <i class='fa fa-times'></i>
+            </button>
+          </div>
+        </Modal>
+      </div>
+    );
+  }
 }
 
+export default BlogList;
