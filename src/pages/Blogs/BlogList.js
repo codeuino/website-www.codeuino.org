@@ -1,6 +1,5 @@
 import React from 'react';
 import './BlogList.css';
-import Modal from 'react-awesome-modal';
 
 class BlogList extends React.Component {
   constructor(props) {
@@ -23,7 +22,6 @@ class BlogList extends React.Component {
         return res.json();
       })
       .then(resData => {
-        console.log(resData);
         for (let i = 0; i < resData.items.length; i++) {
           let obj = {};
           obj.title = resData.items[i].title;
@@ -41,11 +39,6 @@ class BlogList extends React.Component {
           let reg = /<\s*p[^>]*>([^<]*)<\s*\/\s*p\s*>/;
           let stream = resData.items[i].content_encoded.match(reg);
 
-          let div = document.createElement('div');
-          div.innerHTML = resData.items[i].content_encoded;
-
-          obj.longDescription = div.textContent || div.innerText || '';
-
           obj.description =
             stream[1]
               .split(' ')
@@ -60,25 +53,6 @@ class BlogList extends React.Component {
         console.log(err);
       });
   }
-
-  handleClick = currentActivity => {
-    this.setState(
-      {
-        currentActivity: currentActivity
-      },
-      () => {
-        this.setState({
-          visible: true
-        });
-      }
-    );
-  };
-
-  closeModal = () => {
-    this.setState({
-      visible: false
-    });
-  };
 
   render() {
     return (
@@ -110,10 +84,9 @@ class BlogList extends React.Component {
                             </p>
 
                             <a
-                              href='#'
+                              href={currentActivity.link}
                               className='activity btn btn-outline-primary mt-auto btn-block align-self-end'
                               style={{ marginTop: 'auto' }}
-                              onClick={() => this.handleClick(currentActivity)}
                             >
                               Read More
                             </a>
@@ -127,54 +100,6 @@ class BlogList extends React.Component {
             </section>
           </div>
         </main>
-        <Modal
-          visible={this.state.visible}
-          width='90%'
-          height='90%'
-          effect='fadeInUp'
-          onClickAway={() => this.closeModal()}
-        >
-          <div>
-            <img
-              src={
-                this.state.currentActivity ? this.state.currentActivity.img : ''
-              }
-              style={{
-                margin: '10px',
-                height: '200px',
-                objectFit: 'scale-down'
-              }}
-            ></img>
-            <h2 style={{ padding: '10px' }}>
-              {this.state.currentActivity
-                ? this.state.currentActivity.title
-                : ''}
-            </h2>
-            <div style={{ width: '100%', height: '100%' }}>
-              <p
-                style={{
-                  fontSize: '10',
-                  overflow: 'auto',
-                  display: 'block',
-                  height: '450px',
-                  margin: '10px'
-                }}
-              >
-                {this.state.currentActivity
-                  ? this.state.currentActivity.longDescription
-                  : ''}
-              </p>
-            </div>
-
-            <button
-              type='button'
-              class='btn btn-danger btn-circle'
-              onClick={this.closeModal}
-            >
-              <i class='fa fa-times'></i>
-            </button>
-          </div>
-        </Modal>
       </div>
     );
   }
