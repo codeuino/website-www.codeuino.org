@@ -5,6 +5,7 @@ import Projects from './Components/Projects'
 import LandingPageComponent from './Components/LandingPageComponent'
 import Activities from './Components/Activities'
 import Partners from './Components/Partners'
+import TweetFeeds from '../../components/TwitterFeeds/TwitterFeeds'
 const NewHome = () => {
     return (
         <div>
@@ -15,6 +16,7 @@ const NewHome = () => {
 				<Projects/>
 				<Activities/>
 				<Partners/>
+				<TweetFeeds/>
 				<ScrollToTopBtn />
 		</div>
 	</div>
