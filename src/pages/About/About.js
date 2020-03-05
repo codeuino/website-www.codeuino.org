@@ -37,7 +37,6 @@ class Blog extends Component {
 			
 			<div class="mt-12"></div>
             <div className="cover-img-wrapper">
-              <img src={codeuino} alt="img" />
             </div>
             <div className="container mt-5">
                 <div className="row">
