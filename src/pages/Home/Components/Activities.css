@@ -1,0 +1,11 @@
+.btn.activity {
+  color: #22247a;
+  background-color: #fff;
+  border-color: #22247a;
+}
+
+.btn.activity:hover {
+  color: #fff;
+  background-color: #22247a;
+  border-color: #22247a;
+}

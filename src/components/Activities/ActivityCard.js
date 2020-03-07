@@ -1,19 +1,19 @@
-import React from 'react'
-import { Card } from 'react-bootstrap';
-const ActivityCard = (props) => {
-    return (
-        <Card style={{ width: '18rem',marginBottom:"2vh",border:"0px" }} className="shadow-lg">
-			<Card.Img variant="top" src={props.activity.img} />
-			<Card.Body>
-                <Card.Title><h3 style={{textTransform: "capitalize"}}>{props.activity.title}</h3></Card.Title>
-				<Card.Text style={{textTransform: "capitalize"}}>
-					{props.activity.text}
-				</Card.Text>
-				<a href={props.activity.link} class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More</u></a>
-			</Card.Body>
-		</Card>
+import React from 'react';
+import './ActivityCard.css';
 
-    )
-}
+const ActivityCard = props => {
+  return (
+    <div className='card text-center activity overflow-hidden'>
+      <img src={props.activity.img} alt='' className='card-img-top activity' />
 
-export default ActivityCard
+      <div className='card-body text-dark flex-column d-flex'>
+        <h4 className='card-title activity' style={{ height: '100' }}>
+          {props.activity.title}
+        </h4>
+        <p className='card-text text-secondary'>{props.activity.description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default ActivityCard;

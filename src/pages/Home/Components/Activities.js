@@ -1,49 +1,87 @@
-import React from 'react'
-import ActivityCard from '../../../components/Activities/ActivityCard'
-import KWoC from '../images/kwoc_logo.png'
-import workshop19 from '../images/workshop.jpg'
-import './common.css'
-var activities = [
-    {
-        img:'https://1.bp.blogspot.com/-Ig-v1tDXZt4/XDODmZvWp1I/AAAAAAAAB0A/KtbFdBPFVQw2O15FekkIR0Yg8MUp--rngCLcBGAs/s1600/GCI%2B-%2BVertical%2B-%2BGray%2BText%2B-%2BWhite%2BBG.png',
-        title:'Google CodeIN 2019-20',
-        text:'Competition for preschool.',
-        link:'/#/gci19'
-    },
-    {
-        img:'https://cdn.shortpixel.ai/spai/q_lossy+ret_img/https://numfocus.org/wp-content/uploads/2017/03/vertical-gsoc-logo_1-1.jpg',
-        title:'Google Summer of Code 2019',
-        text:'Competition for undergraduate students.',
-        link:'/#/gsoc19'
-    },
-    {
-        img:KWoC,
-        title:'Kharagpur Winter of Code 2019',
-        text:'Competition for undergraduate students.',
-        link:'/#/kwoc19'
-    },
-    {
-        img:workshop19,
-        title:'Organized a Workshop/ Event At New Delhi Together With Women Who Code',
-        text:'Competition for undergraduate students.',
-        link:'/#/workshop19'
-    },
-]
+import React from 'react';
+import ActivityCard from '../../../components/Activities/ActivityCard';
+import './common.css';
 
-const MapActivites = activities.map((activity,index)=>{return <ActivityCard key={index} activity={activity}/> })
+class Activities extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activities: [],
+      page: 'activities'
+    };
+  }
 
+  componentDidMount() {
+    let activities = [];
+    fetch('https://medium-article-fetcher.herokuapp.com/posts', {
+      crossDomain: true,
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(res => {
+        return res.json();
+      })
+      .then(resData => {
+        for (let i = 0; i < 3; i++) {
+          let obj = {};
+          obj.title = resData.items[i].title;
+          obj.link = resData.items[i].link;
+          let m,
+            urls = [],
+            str = resData.items[i].content_encoded,
+            rex = /<img[^>]+src="?([^"\s]+)"?\s*\/>/g;
 
-const Activities = () => {
+          while ((m = rex.exec(str))) {
+            urls.push(m[1]);
+          }
+          obj.img = urls[0];
+
+          let reg = /<\s*p[^>]*>([^<]*)<\s*\/\s*p\s*>/;
+          let stream = resData.items[i].content_encoded.match(reg);
+
+          obj.description =
+            stream[1]
+              .split(' ')
+              .slice(0, 20)
+              .join(' ') + '...';
+
+          activities.push(obj);
+        }
+        this.setState({ activities: activities });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+  render() {
     return (
-        <div id="activity">
-				<h1 className="component-heading">Activities</h1>
-				<div class="container">
-				<div class="row"style={{display:"flex",justifyContent:"space-around"}}>
-                    {MapActivites}
-				</div>
-			</div>
-		</div>	
-    )
+      <div id='activity'>
+        <h1 className='component-heading'>Activities</h1>
+        <div className='container-fluid d-flex justify-content-center'>
+          <div className='row'>
+            {this.state.activities.map((currentActivity, index) => {
+              return (
+                <div className='col-md-4'>
+                  <ActivityCard
+                    key={index}
+                    activity={currentActivity}
+                    page={this.state.page}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <a
+          href='/bloglist'
+          className='btn btn-outline-primary activity'
+          style={{ marginTop: '40px' }}
+        >
+          Continue to the Blogs Page
+        </a>
+      </div>
+    );
+  }
 }
 
-export default Activities
+export default Activities;
