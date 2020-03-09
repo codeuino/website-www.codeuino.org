@@ -34,6 +34,14 @@ There are two main directories in the src folder, <code>components</code> and <c
 The pages directory contains all the source code of routes in separate folders.
 The components directory contains all reusable component file in separate folders.
 
+## Dockerizing the application
+
+### To use the application in docker for both production and development use, follow:
+
+- Build and tag docker image <code> docker image build -f  Dockerfile-dev  -t {name-of-docker-file-of-your-choice}  . </code>
+
+- Running docker image <code> lakshyadocker run -it -v ${PWD}:/app -v /app/node_modules -p {Port-you-want-your-app-on}:3000 --rm {docker-image} </code>
+
 ## How to contribute
 
 ### Opening an issue
