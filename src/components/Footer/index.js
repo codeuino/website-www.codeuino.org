@@ -18,7 +18,7 @@ const Footer = () => {
             <div><a href="/join">Join Us</a></div>
           </div>
           <div className="col-md-6">
-              <p>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
+              <p>Codeuino is an Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration.</p>
           </div>
           <div className="col-md-3">
             <p><i class="fa fa-envelope"></i> codeuino@gmail.com</p>

@@ -46,7 +46,7 @@ class Team extends Component {
             <div id="___gatsby">
 		<div style={{outline:"none"}} tabindex="-1" role="group" id="gatsby-focus-wrapper">
 			<div class="mt-12"></div>
-            <h2>Board</h2>
+            <h2>Leadership</h2>
         <div class="container pt-8 pb-6">
           <BoardMembersWrapper/>
         </div>

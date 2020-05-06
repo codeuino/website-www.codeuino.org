@@ -13,7 +13,7 @@ const LandingPageComponent = () => {
 							</div>
 							<div class="col-12 col-md-7 col-lg-6 order-md-1">
 								<h1 class="display-3 text-center text-md-left">Learn, Build, Contribute, Grow.<br/><span class="text-primary"><span><span></span></span></span></h1>
-								<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">We are a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world.</p>
+								<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">We are an Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world.</p>
 								<div class="text-center text-md-left"><a href="https://github.com/codeuino" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-github mr-1"></span>Github</a>
 								<a href="http://slack.codeuino.org" class="btn btn-primary shadow lift pr-5 mr-1" style={{backgroundColor:" #22247A"}}><span class="fe fe-slack mr-1"></span>Slack</a>
 								</div>
@@ -25,7 +25,7 @@ const LandingPageComponent = () => {
 									<div class="col-md-4 col-12">
 										<span class="fa fa-question-circle fa-2x mr-1" style={{color:" #22247A"}}></span>
 										<h2>What is Codeuino?</h2>
-										<p style={{textAlign: "justify"}}>Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreaches to showcase their products in a custom way. This wide social open networking framework organisation is driven by volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living software and researching FOSS projects under code survivors and challenging world. Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world..</p>
+										<p style={{textAlign: "justify"}}>Codeuino is an Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreaches to showcase their products in a custom way. This wide social open networking framework organisation is driven by volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living software and researching FOSS projects under code survivors and challenging world. Codeuino takes into the house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world..</p>
 									</div>
 									<div class="col-md-4 col-12">
 									<span class="fa fa-user-circle fa-2x mr-1" style={{color:" #22247A",}}></span>
