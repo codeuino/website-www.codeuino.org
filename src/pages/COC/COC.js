@@ -8,7 +8,7 @@ export default function componentName() {
           <div className="col-md-2"></div>  
           <div className="col-md-8" style={{maxWidth: "100%"}}>
               <h2 style={{"textAlign": "left"}}><b>Code of conduct</b></h2>
-              <p className="text" style={{textAlign: 'justify'}}>The world we currently live in is full of technologies. Like the technical community as a whole, the Codeuino is a non profit open Source organisation that helps to bring amazing people together to create, develop, design and make things with open technologies and share work for benefit of all.
+              <p className="text" style={{textAlign: 'justify'}}>The world we currently live in is full of technologies. Like the technical community as a whole, the Codeuino is an open Source organisation that helps to bring amazing people together to create, develop, design and make things with open technologies and share work for benefit of all.
               Codeuino Runs various technical projects which tends to bring various open source organisation at one place to build up a unity of Open Source.
 
               Our project is an important part of the Free Software ecosystem. We work with various projects to create high-quality solutions that span the entire software stack of world While the many Codeuino contributors develop code, smash bugs, write documentation, and help users, the Foundation acts as a guiding hand in the process and provides resources and infrastructure for existing and future building other open source Organisations.

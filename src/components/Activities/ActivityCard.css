@@ -1,0 +1,49 @@
+.card.activity {
+  width: 20rem;
+  height: 400px;
+}
+
+.card.activity:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+}
+
+.card.activity.card-body {
+  padding: 3rem 0;
+}
+
+.card.activity.card-text {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.9rem;
+}
+
+.container.fluid.row {
+  padding-top: 6rem;
+}
+
+.card-img-top.activity {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  height: 150px;
+  object-fit: scale-down;
+}
+
+.card-img-top.activity:hover {
+  transform: scale(1.8);
+  overflow: hidden;
+}
+
+.btn.activity {
+  color: #22247a;
+  background-color: #fff;
+  border-color: #22247a;
+}
+
+.btn.activity:hover {
+  color: #fff;
+  background-color: #22247a;
+  border-color: #22247a;
+}
+
+.card-title.activity {
+  font-weight: bold;
+}

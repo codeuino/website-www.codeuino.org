@@ -21,7 +21,7 @@ const JoinUs = () => {
                         <div className="col-md-2"></div>
                         <div className="col-md-8">
                             <p className="text bold lead text-uppercase" style={{"textAlign": "left"}}><b>Join Us</b></p>
-                            <p className="text" style={{"textAlign": "left"}}>Codeuino is a non - profit organization that helps to bring amazing people together to create, develop, design and make things with Open Technologies and share work
+                            <p className="text" style={{"textAlign": "left"}}>Codeuino is an Open Source organization that helps to bring amazing people together to create, develop, design and make things with Open Technologies and share work
                             for the benefit of all.Our project is an important part of Free Software Ecosystem.We work with other free projects to create high - quality solutions that span the entire software stack.While the many Codeuino contributors develop code, smash bugs, write documentation, and help users, the Foundation acts as a guiding hand in the process and provides resources and infrastructure.It steers releases, determines what software is officially part of the project, and acts as an official face of the Codeuino Project to the outside world, through it delegates most of its authority to specialized teams.Therefore, this guide would help you to become an integral part of the Community.</p>
                         </div>
                         <div className="col-md-2"></div>
