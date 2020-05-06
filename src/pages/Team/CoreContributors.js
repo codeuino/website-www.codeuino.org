@@ -12,28 +12,20 @@ var CoreContributors = [
         linkedin:''
     },
     {
-        name:"Tushar",
+        name:"Asel Peiris",
         post:"Core Colaborator",
-        headline:'Student Mentor at Google Code-in',
-        profile:'https://avatars2.githubusercontent.com/u/34160672?s=460&v=4',
-        github:'https://github.com/TG1999?tab=overview&org=codeuino',
+        headline:"GSoC '20 Codeuino",
+        profile:'https://avatars3.githubusercontent.com/u/31003923?s=460&v=4',
+        github:'https://github.com/AuraOfDivinity',
         linkedin:''
     },
     {
-        name:"Shivansh",
+        name:"Devansh Agarwal",
         post:"Core Colaborator",
-        headline:'Student Mentor at Google Code-in',
-        profile:'https://avatars3.githubusercontent.com/u/43990819?s=460&v=4',
-        github:'',
-        linkedin:''
-    },
-    {
-        name:"Lakshya Khera",
-        post:"Core Colaborator",
-        headline:'GSOCer 2019 Codeuino',
-        profile:'https://avatars1.githubusercontent.com/u/29687362?s=460&v=4',
-        github:'https://github.com/lakshyabatman/',
-        linkedin:''
+        headline:"Student at BITS Pilani '23 | Web Developer | UI/UX Designer",
+        profile:'https://avatars3.githubusercontent.com/u/48180687?s=460&v=4',
+        github:'https://github.com/DevanshCodes',
+        linkedin:'https://www.linkedin.com/in/devansh-agarwal-739702189/'
     }
 ]
 const InjectedJSX = CoreContributors.map((member,index) => {
