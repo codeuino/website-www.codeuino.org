@@ -23,7 +23,7 @@ var BoardMembers = [
     },
     {
         name:"Vaibhav D. Aren",
-        post:"Co-Founder",
+        post:"Board Member",
         headline:'SDE at HashedIn | GSOC 2018 Developer @SugarLabs | GSOC-19 Mentor @JBOSS(Codeuino)| GCI -18 Mentor @SugarLabs .',
         profile:vaibhav,
         github:'',
