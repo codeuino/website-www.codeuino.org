@@ -11,11 +11,11 @@ const Partners = () => {
 							<div class="row">
 								<div class="col-6">
 									<h2 className="component-heading">Our Partners</h2>
-									<img src={wwc} style={{width:"60%"}}/>
+									<img src={wwc} alt="image" style={{width:"60%"}}/>
 								</div>
 								<div class="col-6">
 									<h2 className="component-heading">Our Sponsers</h2>
-									<img src={dgocean} style={{width:"40%"}}/>
+									<img src={dgocean} alt="image" style={{width:"40%"}}/>
 								</div>
 							</div>
 						</div>

@@ -13,7 +13,7 @@ const Projects = () => {
 								{/* <p class="font-size-lg text-muted mb-7">Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way. This wide social open networking framework organisation is driven by the volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living softwares and researching FOSS projects under code survivors and challenging world. Codeuino takes into house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p> */}
 								<div class="row">
 									<div class="col-md-6 col-12" style={{display:"flex",justifyContent:"space-around"}}>
-										<img className="img-fluid" style={{width: "100%"}} src={donut}/>
+										<img alt="image" className="img-fluid" style={{width: "100%"}} src={donut}/>
 									</div>
 									<div class="col-md-6 col-12">
 										<h1>Donut</h1>
@@ -38,7 +38,7 @@ const Projects = () => {
 										</div>
 									</div>
 									<div class="col-md-6 col-12 mt-10"style={{display:"flex",justifyContent:"space-around"}}>
-										<img className="img-fluid" style={{width: "100%"}} src={codebadge}/>
+										<img alt="image" className="img-fluid" style={{width: "100%"}} src={codebadge}/>
 									</div>
 								</div>
 							</div>
@@ -61,7 +61,7 @@ const Projects = () => {
 												<h1 class="mt-5">Coming Soon</h1>
 												</div>
 												<div class="col-md-2">
-												<img src={card} class="h-75 position-absolute right-0 mt-6 mr-3" alt="Productivity" />
+												<img alt="image" src={card} class="h-75 position-absolute right-0 mt-6 mr-3" alt="Productivity" />
 											</div>
 										</div>
 									</div>
@@ -72,7 +72,7 @@ const Projects = () => {
 							{/* </div> */}
 						</div>
 						</div>
-						{/* <img src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
+						{/* <img alt="image" src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
 					</div>
 					<section class="pt-30 mt-n15 bg-gray-200 position-relative">
 					</section>

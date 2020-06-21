@@ -7,7 +7,6 @@ import JoinUs from './pages/JoinUs/JoinUs'
 import {
   Switch,
   Route,
-  HashRouter,
   BrowserRouter
 } from "react-router-dom";
 import COC from './pages/COC/COC'

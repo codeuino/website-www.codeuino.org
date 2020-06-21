@@ -12,8 +12,8 @@ const JoinUs = () => {
                         </div>
                         <section class="container">
                             <div class="row" style={{display:"flex",justifyContent:"space-evenly"}}>
-                                <a href="http://slack.codeuino.org"><img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png"/></a>
-                                <a href="https://github.com/codeuino"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGABB70TILWLV3BLkJ0hLr0arXG20T7pGd6czWU7tzdkwdoRV&s"/></a>
+                                <a href="http://slack.codeuino.org"><img alt="image" src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png"/></a>
+                                <a href="https://github.com/codeuino"><img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGABB70TILWLV3BLkJ0hLr0arXG20T7pGd6czWU7tzdkwdoRV&s"/></a>
                             </div>
                         </section>
                     </div><br/><br/>
