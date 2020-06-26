@@ -4,6 +4,11 @@
     font-weight:400;
     font-style:normal
     }
+    .twitter-feed {
+        max-width: max-content;
+        margin: auto;
+    }
+
     .fe {
         font-family: Feather!important;
         speak: none;

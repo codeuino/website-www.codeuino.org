@@ -19,7 +19,7 @@ const NavBar = () => {
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {/* <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
@@ -54,7 +54,55 @@ const NavBar = () => {
               <Link class="nav-link" to="/joinus">Join Us<span class="sr-only">(current)</span></Link>
             </li>
           </ul>
+        </div> */}
+
+
+
+
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/#aboutUs">About Us<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#projects">Project<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#programs">Programs<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/team">Leadership<span class="sr-only">(current)</span></Link>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://docs.codeuino.org/documentation/">Docs<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#collaborate">Collaborate<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/codeofconduct">Code of Conduct<span class="sr-only">(current)</span></Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/joinus">Join Us<span class="sr-only">(current)</span></Link>
+            </li>
+          </ul>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </nav>
     )
