@@ -30,3 +30,33 @@
     --loader-bar-color: #ffffff;
     --loader-bar-height: 4px;
 }
+
+.custom-links {
+  color: rgb(34, 36, 122);
+  font-weight: 700;
+  border-bottom: 3px solid rgb(34, 36, 122);
+}
+
+.custom-links:hover {
+  color: rgb(34, 36, 122);
+}
+
+.design-banner-heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  color: #000000;
+  margin-top: -15px !important;
+}
+
+.coming-soon {
+  letter-spacing: 7px;
+  font-size: 25px;
+  margin-left: 25px;
+  font-weight: normal;
+}
+
+.banner-text {
+  font-size: 22px;
+}

@@ -4,6 +4,20 @@
     grid-gap: 30px;
     grid-row-gap: 50px;
 }
+
+.team-card-name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.team-card-post {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
 @media screen and (max-width:767px) {
     .grid {
         grid-template-columns: auto;

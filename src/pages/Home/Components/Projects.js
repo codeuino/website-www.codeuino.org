@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import donut from "../images/donut.png";
-import codebadge from "../images/donut.png";
+import donut from "../images/donut.jpg";
+import codebadge from "../images/Codebadge.png";
 import card from "../images/card.svg";
 import "./common.css";
 
@@ -40,9 +40,9 @@ const Projects = () => {
                   <Carousel.Item>
                     <img src={donut} className="d-block w-100" />
                   </Carousel.Item>
-                  <Carousel.Item>
+                  {/* <Carousel.Item>
                     <img src={codebadge} className="d-block w-100" />
-                  </Carousel.Item>
+                  </Carousel.Item> */}
                 </Carousel>
               </div>
               <div class="col-md-6 col-12">
@@ -67,17 +67,17 @@ const Projects = () => {
                       href="https://github.com/codeuino/Social-Platform-Donut"
                       class="btn btn-primary shadow lift mr-1"
                       style={{
-						borderRadius: "50%",
+                        borderRadius: "50%",
                         backgroundColor: " #22247A",
                       }}
                     >
-                      <span class="fa fa-github"></span>
+                      <span class="fe fe-github"></span>
                     </a>
                     <a
                       href="https://www.youtube.com/watch?v=wYk71_KY6Bk"
                       class="btn btn-primary shadow lift mr-1"
                       style={{
-						borderRadius: "50%",
+                        borderRadius: "50%",
                         backgroundColor: " #22247A",
                       }}
                     >
@@ -91,7 +91,7 @@ const Projects = () => {
                         backgroundColor: " #22247A",
                       }}
                     >
-                      <span class="fa fa-file"></span>
+                      <span class="fe fe-file"></span>
                     </a>
                   </div>
                 </div>
@@ -156,44 +156,118 @@ const Projects = () => {
                   activeIndex={codebadgeIndex}
                   onSelect={handleSelect("codebadge")}
                 >
-                  <Carousel.Item>
+                  {/* <Carousel.Item>
                     <img src={donut} className="d-block w-100" />
-                  </Carousel.Item>
+                  </Carousel.Item> */}
                   <Carousel.Item>
                     <img src={codebadge} className="d-block w-100" />
                   </Carousel.Item>
                 </Carousel>
               </div>
             </div>
+            <div class="row">
+              <div
+                class="col-md-6 col-12 mt-10"
+                style={{ display: "flex", justifyContent: "space-around" }}
+              >
+                <Carousel
+                  className="mt-7"
+                  activeIndex={donutIndex}
+                  onSelect={handleSelect("donut")}
+                >
+                  <Carousel.Item>
+                    <img src={donut} className="d-block w-100" />
+                  </Carousel.Item>
+                  {/* <Carousel.Item>
+                    <img src={codebadge} className="d-block w-100" />
+                  </Carousel.Item> */}
+                </Carousel>
+              </div>
+              <div class="col-md-6 col-12 mt-10">
+                <h1>Spansberry</h1>
+                <p style={{ textAlign: "justify" }}>
+                  Spansberry is a community-oriented discussion platform that
+                  comes with an intelligent dashboard mechanism that helps
+                  manage the ongoing discussions in organized and structural
+                  ways. Within the discussion forum, it allows tracking and
+                  assigning tasks within the discussion forum from the replied
+                  thread itself. It helps review team workload alongside
+                  creating polls and surveys, and schedule draft messages inside
+                  the discussions. The exuberant feature of this project is that
+                  it helps turn a new or existing message within the ongoing
+                  discussion into a task, set a deadline for any user, assign it
+                  to a teammate or anyone, add comments or attach documents and
+                  files, and get reminded automatically for meetings,
+                  announcements, projects and any discussions through the bot.
+                </p>
+                <div
+                  class="container mt-7"
+                  style={{ display: "flex", justifyContent: "space-around" }}
+                >
+                  <div class="row">
+                    <a
+                      href="#"
+                      class="btn btn-primary shadow lift mr-1"
+                      style={{
+                        borderRadius: "50%",
+                        backgroundColor: " #22247A",
+                      }}
+                    >
+                      <span class="fe fe-github"></span>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-primary shadow lift mr-1"
+                      style={{
+                        borderRadius: "50%",
+                        backgroundColor: " #22247A",
+                      }}
+                    >
+                      <span class="fe fe-youtube"></span>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-primary shadow lift mr-1"
+                      style={{
+                        borderRadius: "50%",
+                        backgroundColor: " #22247A",
+                      }}
+                    >
+                      <span class="fe fe-file"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="index-content">
-          <div class="form-row">
-            <div class="shadow-light-lg overflow-hidden">
-              <div class="row">
-                <div class="col-12">
-                  <div class="card shadow-light-lg overflow-hidden text-center text-lg-left">
-                    <div class="row">
-                      <div class="col-md-7">
-                        <div class="card-body py-7 py-md-9">
-                          <h4 class="font-weight-bold">Design Project</h4>
-                          <p class="text-muted mb-0">
-                            To all the designers in the world something big is
-                            comming soon! Update your tools for the battle.
-                          </p>
-                        </div>
+        <div class="index-content mt-10">
+          <div class="shadow-light-lg overflow-hidden p-4">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-10 shadow-light-lg overflow-hidden text-center text-lg-left">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="card-body ml-5 py-7 py-md-9">
+                        <h4 class="font-weight-bold design-banner-heading">
+                          Design Project
+                          <span className="coming-soon">COMING SOON</span>
+                        </h4>
+                        <p class="text-muted banner-text mb-0">
+                          To all the designers in the world something big is
+                          comming soon! Update your tools for the battle.
+                        </p>
                       </div>
-                      <div class="col-md-3">
-                        <h1 class="mt-5">Coming Soon</h1>
-                      </div>
-                      <div class="col-md-2">
-                        <img
-                          alt="image"
-                          src={card}
-                          class="h-75 position-absolute right-0 mt-6 mr-3"
-                          alt="Productivity"
-                        />
-                      </div>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-2">
+                      <img
+                        alt="image"
+                        src={card}
+                        class="h-75 position-absolute right-0 mt-6 mr-11"
+                        alt="Productivity"
+                      />
                     </div>
                   </div>
                 </div>
@@ -204,7 +278,7 @@ const Projects = () => {
         </div>
         {/* <img alt="image" src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
       </div>
-      <section class="pt-30 mt-n15 bg-gray-200 position-relative"></section>
+      <section class="pt-20 mt-n17 bg-gray-200 position-relative"></section>
     </section>
   );
 };

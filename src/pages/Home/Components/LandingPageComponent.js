@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../images/banner.svg";
 import poster from "../images/poster.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 import DonateCard from "../../../components/DonateUs/Donate";
 const LandingPageComponent = () => {
@@ -33,14 +34,14 @@ const LandingPageComponent = () => {
             <div class="text-center text-md-left">
               <a
                 href="https://github.com/codeuino"
-                class="btn btn-primary shadow lift pr-5 mr-1"
+                class="btn btn-primary shadow lift pr-5 mr-5"
                 style={{ backgroundColor: " #22247A" }}
               >
                 <span class="fe fe-github mr-1"></span>Github
               </a>
               <a
                 href="http://slack.codeuino.org"
-                class="btn btn-primary shadow lift pr-5 mr-1"
+                class="btn btn-primary shadow lift pr-5"
                 style={{ backgroundColor: " #22247A" }}
               >
                 <span class="fe fe-slack mr-1"></span>Slack
@@ -90,9 +91,13 @@ const LandingPageComponent = () => {
                 projects to improve the quality of outreaching, interaction and
                 collaboration for the people in developing nations. We consist
                 of various teams from Development, Documentation, Designers and
-                Donut Platform. Everyone at Codeuino contributes to increase
-                efficiency, outreaching for the user and expedite idea
-                generation for social networking.
+                &nbsp;
+                <Link to="#" className="custom-links">
+                  Donut Platform
+                </Link>
+                . Everyone at Codeuino contributes to increase efficiency,
+                outreaching for the user and expedite idea generation for social
+                networking.
               </p>
             </div>
             <div class="col-md-4 col-12">
@@ -103,16 +108,19 @@ const LandingPageComponent = () => {
               <h2>What do we do?</h2>
               <p style={{ textAlign: "justify" }}>
                 Codeuino takes into the house the development of some of the
-                coolest Open Source Projects that are made with the sole motive
-                to benefit more and more people present all over the world.
-                Teams within organization design and develop some basic set of
-                software and networking plugins to help users/organisations to
-                build up their own platform to interact for feeds, projects,
-                Scholarships, etc. We build social networking Kit/FOSS for
-                various organisations to build up the social environment for
-                their organisation to showcase their products and services for
-                their community along with the collaboration platform to
-                interact with one another.
+                coolest{" "}
+                <Link to="/#projects" className="custom-links">
+                  Open Source Projects
+                </Link>{" "}
+                that are made with the sole motive to benefit more and more
+                people present all over the world. Teams within organization
+                design and develop some basic set of software and networking
+                plugins to help users/organisations to build up their own
+                platform to interact for feeds, projects, Scholarships, etc. We
+                build social networking Kit/FOSS for various organisations to
+                build up the social environment for their organisation to
+                showcase their products and services for their community along
+                with the collaboration platform to interact with one another.
               </p>
             </div>
           </div>

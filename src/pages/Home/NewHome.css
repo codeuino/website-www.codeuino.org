@@ -9,6 +9,10 @@
         margin: auto;
     }
 
+    .SandboxRoot.env-bp-970 .timeline-Tweet-text {
+        font-size: 16px !important;
+    }
+
     .fe {
         font-family: Feather!important;
         speak: none;
@@ -1334,9 +1338,9 @@
             max-width: 960px
         }
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
         .container {
-            max-width: 1200px
+            max-width: 1300px
         }
     }
     .container-fluid {
@@ -8375,6 +8379,10 @@
     .mt-n16,
     .my-n16 {
         margin-top: -25rem!important
+    }
+    .mt-n17,
+    .my-n17 {
+        margin-top: -29rem!important
     }
     .mr-n16,
     .mx-n16 {
@@ -16274,9 +16282,7 @@
         padding:0;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
-        border-radius:4px;
-        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-    
+        border-radius:4px;    
     }
     /* p{
         font-size: 0.3rem;
@@ -16292,7 +16298,8 @@
         }
     }
     .index-content .card:hover{
-        box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+        box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.253);
+        transition: box-shadow 0.5s ease;
         color:black;
     }
     .index-content .card img{
