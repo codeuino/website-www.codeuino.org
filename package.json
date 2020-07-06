@@ -47,7 +47,8 @@
     "start": "serve -s build -l 3000",
     "build": "CI=false && set \"CI=false\" && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
