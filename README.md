@@ -26,7 +26,9 @@ To run the application on your local system follow these steps
  2. Move to the project directory.
  3. `git checkout development`
  4. `npm install`
- 5. Open `localhost:3000` to view the website on your local browser.
+ 5. `npm run build`
+ 6. `npm start`
+ 7. Open `localhost:5000` to view the website on your local browser.
 
 ## File Structure
 
