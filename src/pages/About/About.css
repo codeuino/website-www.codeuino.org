@@ -1,0 +1,19 @@
+.cover-img-wrapper {
+    text-align: center;
+    padding:20px;
+    position: relative;
+    background: url('./codeuino-banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 100%;
+}
+.cover-img-wrapper > img {
+    width:auto;
+    height:25vh
+}
+@media screen and (max-width:661px) {
+    .cover-img-wrapper > img {
+        width:100%;
+    }
+}
