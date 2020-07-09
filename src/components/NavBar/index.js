@@ -1,16 +1,40 @@
-import React from "react";
-import { Image } from "react-bootstrap";
+import React, { useRef } from "react";
+import { Image, Navbar } from "react-bootstrap";
 import "./NavBar.css";
 import logo from "../../newlogo.png";
 import { HashLink as Link } from "react-router-hash-link";
 const NavBar = ({ onScroll }) => {
+
+  const navbarRef = useRef(null);
+  
+  const smoothScroll = el => {
+    console.log(navbarRef.current.offsetHeight);
+    window.scrollTo({
+      top: el.offsetTop - navbarRef.current.offsetHeight,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
+
+    <React.Fragment>
+
     <nav
-      className={`navbar navbar-expand-lg navbar-light bg-light fixed-top ${onScroll}`}
-      id="myNav"
-    >
+      className={`navbar navbar-expand-lg navbar-light bg-light`}>
+      <Link className="navbar-brand" to="/">
+        <Image
+          id="logo"
+          src={logo}
+          alt="codeuino logo"
+          style={{ heigth: "20vh", width: "10vw" }}
+        />
+      </Link>
+    </nav>
+
+    <Navbar variant="light" bg="light" expand="lg" fixed="top" className={`${onScroll}`} id="myNav" ref={navbarRef}>
       <div className="container">
-        <Link class="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/">
           <Image
             id="logo"
             src={logo}
@@ -19,7 +43,7 @@ const NavBar = ({ onScroll }) => {
           />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -27,57 +51,58 @@ const NavBar = ({ onScroll }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <Link class="nav-link" to="/#aboutUs">
-                About Us<span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs">
+                About Us<span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/#projects">
-                Project<span class="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link scroll={smoothScroll} className="nav-link" to="/#projects">
+                Project<span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/#programs">
-                Programs<span class="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link scroll={smoothScroll} className="nav-link" to="/#programs">
+                Programs<span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/team">
-                Team<span class="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link className="nav-link" to="/team">
+                Team<span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://docs.codeuino.org/documentation/"
               >
-                Docs<span class="sr-only">(current)</span>
+                Docs<span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/#collaborate">
-                Collaborate<span class="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link scroll={smoothScroll} className="nav-link" to="/#collaborate">
+                Collaborate<span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/codeofconduct">
-                Code of Conduct<span class="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link className="nav-link" to="/codeofconduct">
+                Code of Conduct<span className="sr-only">(current)</span>
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/joinus">
-                Join Us<span class="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link className="nav-link" to="/joinus">
+                Join Us<span className="sr-only">(current)</span>
               </Link>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </Navbar>
+    </React.Fragment>
   );
 };
 export default NavBar;
