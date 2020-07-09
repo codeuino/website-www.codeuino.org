@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
 const TeamCard = (props) => {
-  console.log(props);
+  //console.log(props);
   return (
     <Card style={{ marginBottom: "2vh", border: "0px", textAlign: "left" }}>
       <Image src={props.member.profile} rounded className="mx-auto" />

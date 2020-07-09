@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const JoinUs = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  })
   return (
     <div>
       <div class="mt-12"></div>

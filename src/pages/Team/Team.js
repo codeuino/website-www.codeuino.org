@@ -32,10 +32,11 @@ class Team extends Component {
       "https://s3.ap-south-1.amazonaws.com/pr-webhook-contributors-json/contributors.json";
     axios.get(jsonURL).then((res) => {
       this.setState({ contributors: res.data });
-      console.log(this.state);
+      //console.log(this.state);
     });
   }
   render() {
+    window.scrollTo(0, 0);
     let contributors = this.state.contributors;
     // console.log(contributors)
     var contrilist = contributors.map((contri) => {
