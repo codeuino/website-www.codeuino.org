@@ -1,7 +1,7 @@
 {
   "name": "codeuino",
   "version": "0.1.0",
-  "homepage": "https://shubhamgupta2956.github.io/website-www.codeuino.org/",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
