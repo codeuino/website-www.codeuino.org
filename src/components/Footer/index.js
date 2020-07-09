@@ -1,13 +1,14 @@
 import React from "react";
 import "./Footer.css";
+import { Container, Row, Col } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className=" container footer-container">
-        <div className="row text-left">
-          <div className="col-md-10">
+      <Container>
+        <Row style={{textAlign: "left"}}>
+          <Col lg={8} sm={12}>
             <p className="footer-para-question">Want to know more about CodeUino?</p>
             <p>
               Codeuino is an Open Source Social Networking organisation that
@@ -23,70 +24,59 @@ const Footer = () => {
             >
               Discover more
             </button>
-          </div>
-        </div>
-        <div className="col-md-6 footer-clickables">
-          <div className="footer-links">
-            <div className="footer-route-links">
-              <div>
-                <a className="footer-link" href="/">Home</a>
-              </div>
-              <div>
-                <Link className="footer-link" to="/#aboutUs">About Us</Link>
-              </div>
-              <div>
-                <Link className="footer-link" to="/#projects">Project</Link>
-              </div>
-              <div>
-                <Link className="footer-link" to="/#programs">Programs</Link>
-              </div>
-              <div>
-                <Link className="footer-link" to="/team">Team</Link>
-              </div>
-            </div>
-            <div className="ml-8">
-              <div>
-                <a className="footer-link" href="https://docs.codeuino.org/documentation/">Docs</a>
-              </div>
-              <div>
-                <Link className="footer-link" className="footer-link" to="/#collaborate">Collaborate</Link>
-              </div>
-              <div>
-                <Link className="footer-link" to="/codeofconduct">Code Of Conduct</Link>
-              </div>
-              <div>
-                <Link className="footer-link" to="/joinus">Join Us</Link>
-              </div>
-            </div>
-          </div>
-          <div className="my-5">
-            <a className="mr-6" href="https://twitter.com/codeuino?lang=en">
+          </Col>
+          <Col lg={4} sm={12}>
+            <Row style={{marginBottom: "30px", height: "80%"}}>
+              <Col lg={6} sm={12} xs={6} className="footer-links">
+                  <a className="footer-link" href="/">Home</a>
+                  <Link className="footer-link" to="/#aboutUs">About Us</Link>
+                  <Link className="footer-link" to="/#projects">Project</Link>
+                  <Link className="footer-link" to="/#programs">Programs</Link>
+                  <Link className="footer-link" to="/team">Team</Link>
+              </Col>
+              <Col lg={6} sm={12} xs={6} className="footer-links">
+                  <a className="footer-link" href="https://docs.codeuino.org/documentation/">Docs</a>
+                  <Link className="footer-link" to="/#collaborate">Collaborate</Link>
+                  <Link className="footer-link" to="/codeofconduct">Code Of Conduct</Link>
+                  <Link className="footer-link" to="/joinus">Join Us</Link>
+                  <div className="blank"></div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="footer-icon" sm={2} xs={4}>
+            <a href="https://twitter.com/codeuino?lang=en">
               <i class="fab fa-twitter fa-2x text-white"></i>
             </a>
-            <a className="mr-6" href="https://www.facebook.com/codeuino/">
+          </Col>
+          <Col className="footer-icon" sm={2} xs={4}>
+            <a href="https://www.facebook.com/codeuino/">
               <i class="fab fa-facebook-f fa-2x text-white"></i>
             </a>
-            <a className="mr-6" href="https://github.com/codeuino">
+          </Col>
+          <Col className="footer-icon" sm={2} xs={4}>
+            <a href="https://github.com/codeuino">
               <i class="fab fa-github fa-2x text-white"></i>
             </a>
-            <a
-              className="mr-6"
-              href="https://www.linkedin.com/company/codeuino/"
-            >
+          </Col>
+          <Col className="footer-icon" sm={2} xs={4}>
+            <a href="https://www.linkedin.com/company/codeuino/">
               <i class="fab fa-linkedin-in fa-2x text-white"></i>
             </a>
-            <a
-              className="mr-6"
-              href="https://www.youtube.com/channel/UCmC2EOPv_oyJIevTyzlZTDQ"
-            >
+          </Col>
+          <Col className="footer-icon" sm={2} xs={4}>
+            <a href="https://www.youtube.com/channel/UCmC2EOPv_oyJIevTyzlZTDQ">
               <i class="fab fa-youtube fa-2x text-white"></i>
             </a>
-            <a className="" href="https://medium.com/codeuino">
+          </Col>
+          <Col className="footer-icon" sm={2} xs={4}>
+            <a href="https://medium.com/codeuino">
               <i class="fab fa-medium-m fa-2x text-white"></i>
             </a>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </footer>
   );
 };
