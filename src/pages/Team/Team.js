@@ -48,8 +48,7 @@ class Team extends Component {
               title={contri.name}
               src={" " + contri.image + " "}
               alt=""
-              style={{ width: "8vw", height: "8vw", borderRadius: "50%" }}
-            />
+              style={{ width: "8vw", height: "8vw", borderRadius: "50%" }}/>
           </a>{" "}
         </div>
       );
@@ -63,26 +62,23 @@ class Team extends Component {
                 style={{ outline: "none" }}
                 tabindex="-1"
                 role="group"
-                id="gatsby-focus-wrapper"
-              >
+                id="gatsby-focus-wrapper">
                 <div class="mt-12"></div>
-                <h className="team-heading">Our Team</h>
+                <h3 className="team-heading">Our Team</h3>
                 <div class="container pt-8 pb-6 mb-10">
                   <BoardMembersWrapper />
                 </div>
-                <h className="team-sub-heading">Our Backbone</h>
+                <h3 className="team-sub-heading">Our Backbone</h3>
                 <div
                   class="container pt-8 pb-6 mb-10"
-                  style={{ display: "flex", justifyContent: "space-evenly" }}
-                >
+                  style={{ display: "flex", justifyContent: "space-evenly" }}>
                   <CoreContributorsWrapper />
                 </div>
-                <h className="team-sub-heading">Our Awesome Contributors</h>
+                <h3 className="team-sub-heading">Our Awesome Contributors</h3>
                 <div id="cotributors" className="container d-flex">
                   <div
                     class="row mt-7 mb-10"
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
+                    style={{ display: "flex", justifyContent: "center" }}>
                     {contrilist}
                   </div>
                 </div>
