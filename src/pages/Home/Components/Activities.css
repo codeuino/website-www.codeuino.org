@@ -9,3 +9,27 @@
   background-color: #22247a;
   border-color: #22247a;
 }
+
+.activity-card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.activity-cards {
+  height: 610px;
+}
+
+.activity-cards:last-child {
+  height: 300px;
+}

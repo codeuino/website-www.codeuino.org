@@ -32,8 +32,6 @@ export class TwitterFeeds extends Component {
                             )
                         }
                     </div>
-                    <br/>
-                    <a href="https://twitter.com/codeuino" class="shadow lift mr-1" style={{color:"#22247A"}}><u>Read More on Twitter</u></a>
                 </div>
             </div>
         );
