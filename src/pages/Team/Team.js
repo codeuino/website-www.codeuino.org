@@ -34,9 +34,9 @@ class Team extends Component {
       this.setState({ contributors: res.data });
       //console.log(this.state);
     });
+    window.scrollTo(0, 0);
   }
   render() {
-    window.scrollTo(0, 0);
     let contributors = this.state.contributors;
     // console.log(contributors)
     var contrilist = contributors.map((contri) => {
