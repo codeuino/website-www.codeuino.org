@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Image, Navbar } from "react-bootstrap";
+import { Image, Navbar, Container, Nav } from "react-bootstrap";
 import "./NavBar.css";
 import logo from "../../newlogo.png";
 import { HashLink as Link } from "react-router-hash-link";
@@ -17,92 +17,83 @@ const NavBar = ({ onScroll }) => {
   }
 
   return (
-
-    <React.Fragment>
-
-    <nav
-      className={`navbar navbar-expand-lg navbar-light bg-light`}>
-      <Link className="navbar-brand" to="/">
-        <Image
-          id="logo"
-          src={logo}
-          alt="codeuino logo"
-          style={{ heigth: "20vh", width: "10vw" }}
-        />
-      </Link>
-    </nav>
-
-    <Navbar variant="light" bg="light" expand="lg" fixed="top" className={`${onScroll}`} id="myNav" ref={navbarRef}>
-      <div className="container">
-        <Link className="navbar-brand" to="/">
+  <React.Fragment>
+    <Navbar expand="lg" variant="light" bg="light">
+      <Navbar.Brand>
+        <Link to="/">
           <Image
             id="logo"
             src={logo}
             alt="codeuino logo"
-            style={{ heigth: "20vh", width: "10vw" }}
-          />
+            style={{ heigth: "20vh", width: "10vw" }}/>
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
+      </Navbar.Brand>
+    </Navbar>
+
+    <Navbar variant="light" bg="light" expand="lg" fixed="top" className={`${onScroll}`} id="myNav" ref={navbarRef}>
+      <Container>
+        <Navbar.Brand>
+          <Link to="/">
+            <Image
+              id="logo"
+              src={logo}
+              alt="codeuino logo"
+              style={{ heigth: "20vh", width: "10vw" }}/>
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          lable="Toggle navigation"
+          aria-controls="navbarSupportedContent">
+        </Navbar.Toggle>
+        <Navbar.Collapse id="navbarSupportedContent">
+          <Nav className="ml-auto">
+            <Nav.Item>
               <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs">
                 About Us<span className="sr-only">(current)</span>
               </Link>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <Link scroll={smoothScroll} className="nav-link" to="/#projects">
                 Project<span className="sr-only">(current)</span>
               </Link>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <Link scroll={smoothScroll} className="nav-link" to="/#programs">
                 Programs<span className="sr-only">(current)</span>
               </Link>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <Link className="nav-link" to="/team">
                 Team<span className="sr-only">(current)</span>
               </Link>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <a
                 className="nav-link"
-                href="https://docs.codeuino.org/documentation/"
-              >
+                href="https://docs.codeuino.org/documentation/">
                 Docs<span className="sr-only">(current)</span>
               </a>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <Link scroll={smoothScroll} className="nav-link" to="/#collaborate">
                 Collaborate<span className="sr-only">(current)</span>
               </Link>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <Link className="nav-link" to="/codeofconduct">
                 Code of Conduct<span className="sr-only">(current)</span>
               </Link>
-            </li>
-            <li className="nav-item">
+            </Nav.Item>
+            <Nav.Item>
               <Link className="nav-link" to="/joinus">
                 Join Us<span className="sr-only">(current)</span>
               </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
-    </React.Fragment>
+  </React.Fragment>
   );
 };
 export default NavBar;

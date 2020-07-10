@@ -7,8 +7,7 @@ const ActivityCard = (props) => {
       <img
         src={props.activity.image}
         alt=""
-        className="activity-card-img-top activity"
-      />
+        className="activity-card-img-top activity"/>
 
       <div className="activity-card-body text-dark flex-column d-flex">
         <h4 className="activity-card-title activity" style={{ height: "100" }}>

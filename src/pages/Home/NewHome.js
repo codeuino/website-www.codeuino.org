@@ -16,8 +16,7 @@ const NewHome = () => {
           style={{ outline: "none" }}
           tabindex="-1"
           role="group"
-          id="gatsby-focus-wrapper"
-        >
+          id="gatsby-focus-wrapper">
           <div class="mt-12">
             <LandingPageComponent />
             <div id="projects">
@@ -38,8 +37,7 @@ const NewHome = () => {
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="codeuino"
-                options={{ height: 500, width: 700, fontSize:1 }}
-              />
+                options={{ height: 500, width: 700, fontSize:1 }}/>
             </div>
           </div>
         </div>

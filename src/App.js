@@ -13,6 +13,7 @@ import BlogList from "./pages/Blogs/BlogList";
 // import Codebadge from './pages/Codebadge/Codebadge';
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Header from "./Header/header"
 function App() {

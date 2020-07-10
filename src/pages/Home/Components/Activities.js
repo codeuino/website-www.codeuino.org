@@ -14,7 +14,7 @@ class Activities extends React.Component {
 
   render() {
     return (
-      <div id='activity'>
+      <div id='activity' className="pt-10">
         <h1 className='component-heading'>Codeuino's Participations</h1>
         <div className='container d-flex justify-content-center'>
           <div className='row'>
@@ -24,8 +24,7 @@ class Activities extends React.Component {
                   <ActivityCard
                     key={index}
                     activity={currentActivity}
-                    page={this.state.page}
-                  />
+                    page={this.state.page}/>
                 </div>
               );
             })}

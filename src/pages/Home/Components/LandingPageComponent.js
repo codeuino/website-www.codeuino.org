@@ -6,6 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import DonateCard from "../../../components/DonateUs/Donate";
 const LandingPageComponent = () => {
   return (
+    <React.Fragment>
     <section class="pt-4 pt-md-5">
       <div class="container">
         <div class="row align-items-center">
@@ -49,18 +50,19 @@ const LandingPageComponent = () => {
             </div>
           </div>
         </div>
-        <DonateCard />
-        <div
-          class="container mt-10 ml-0"
-          id="aboutUs"
-          style={{ width: "100%", alignContent: "left" }}
-        >
+      </div>
+    </section>
+    <DonateCard />
+    <section class="pt-10"
+      id="aboutUs"
+      style={{ width: "100%", alignContent: "left" }}>
+      <div class="container">
+        <div class="row align-items-center">
           <div class="row" style={{ textAlign: "left" }}>
             <div class="col-md-4 col-12">
               <span
                 class="fa fa-question-circle fa-2x mr-1"
-                style={{ color: " #22247A" }}
-              ></span>
+                style={{ color: " #22247A" }}></span>
               <h2>What is Codeuino?</h2>
               <p style={{ textAlign: "justify" }}>
                 Codeuino is an Open Source Social Networking organisation that
@@ -128,6 +130,7 @@ const LandingPageComponent = () => {
         <img class="mt-10" src={poster} style={{ width: "100%" }} />
       </div>
     </section>
+    </React.Fragment>
   );
 };
 

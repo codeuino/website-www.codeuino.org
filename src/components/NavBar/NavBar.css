@@ -19,6 +19,14 @@ a:hover{
     transform: scale(1.05);
 }
 
+.nav-link:visited{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link.active, .nav-link.disabled, .nav-link:focus, .nav-link {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .blue:hover{
     color : lightblue;
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 import donut from "../images/donut.jpg";
+import spansberry from "../images/spansberry.png";
 import codebadge from "../images/Codebadge.png";
 import card from "../images/card.svg";
 import "./common.css";
@@ -18,7 +19,7 @@ const Projects = () => {
     }
   };
   return (
-    <section class="mt-5 pt-md-11">
+    <section class="pt-10">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-11 col-lg-11 text-center">
@@ -176,7 +177,7 @@ const Projects = () => {
                   onSelect={handleSelect("donut")}
                 >
                   <Carousel.Item>
-                    <img src={donut} className="d-block w-100" />
+                    <img src={spansberry} className="d-block w-100" />
                   </Carousel.Item>
                   {/* <Carousel.Item>
                     <img src={codebadge} className="d-block w-100" />
