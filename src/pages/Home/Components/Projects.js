@@ -27,23 +27,17 @@ const Projects = () => {
               <span class="h6 text-uppercase font-weight-bold">Opensource</span>
             </span>
             <h1 class="component-heading">Our Projects</h1>
-            {/* <p class="font-size-lg text-muted mb-7">Codeuino is a Non-Profit Open Source Social Networking organisation that provides various robust frameworks solutions which could span the entire world through building all kinds of social environments, discussion portals and collaboration platforms by giving prospectus to various other organisations, users and outreachers to showcase their products in a custom way. This wide social open networking framework organisation is driven by the volunteers all over the globe. This helps open source enthusiast to build up various technocratic social wide living softwares and researching FOSS projects under code survivors and challenging world. Codeuino takes into house the development of some of the coolest Open Source Projects that are made with the sole motive to benefit more and more people present all over the world.</p> */}
             <div class="row">
               <div
                 class="col-md-6 col-12"
-                style={{ display: "flex", justifyContent: "space-around" }}
-              >
+                style={{ display: "flex", justifyContent: "space-around" }}>
                 <Carousel
                   className="mt-7"
                   activeIndex={donutIndex}
-                  onSelect={handleSelect("donut")}
-                >
+                  onSelect={handleSelect("donut")}>
                   <Carousel.Item>
-                    <img src={donut} className="d-block w-100" />
+                    <img alt="donut project" src={donut} className="d-block w-100" />
                   </Carousel.Item>
-                  {/* <Carousel.Item>
-                    <img src={codebadge} className="d-block w-100" />
-                  </Carousel.Item> */}
                 </Carousel>
               </div>
               <div class="col-md-6 col-12">
@@ -61,8 +55,7 @@ const Projects = () => {
                 </p>
                 <div
                   class="container mt-7"
-                  style={{ display: "flex", justifyContent: "space-around" }}
-                >
+                  style={{ display: "flex", justifyContent: "space-around" }}>
                   <div class="row">
                     <a
                       href="https://github.com/codeuino/Social-Platform-Donut"
@@ -70,8 +63,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-github"></span>
                     </a>
                     <a
@@ -80,8 +72,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-youtube"></span>
                     </a>
                     <a
@@ -90,8 +81,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-file"></span>
                     </a>
                   </div>
@@ -112,8 +102,7 @@ const Projects = () => {
                 </p>
                 <div
                   class="container mt-7"
-                  style={{ display: "flex", justifyContent: "space-around" }}
-                >
+                  style={{ display: "flex", justifyContent: "space-around" }}>
                   <div class="row">
                     <a
                       href="https://github.com/codeuino/Codebadge"
@@ -121,8 +110,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-github"></span>
                     </a>
                     <a
@@ -131,8 +119,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-youtube"></span>
                     </a>
                     <a
@@ -141,8 +128,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-file"></span>
                     </a>
                   </div>
@@ -150,18 +136,13 @@ const Projects = () => {
               </div>
               <div
                 class="col-md-6 col-12 mt-10"
-                style={{ display: "flex", justifyContent: "space-around" }}
-              >
+                style={{ display: "flex", justifyContent: "space-around" }}>
                 <Carousel
                   className="mt-7"
                   activeIndex={codebadgeIndex}
-                  onSelect={handleSelect("codebadge")}
-                >
-                  {/* <Carousel.Item>
-                    <img src={donut} className="d-block w-100" />
-                  </Carousel.Item> */}
+                  onSelect={handleSelect("codebadge")}>
                   <Carousel.Item>
-                    <img src={codebadge} className="d-block w-100" />
+                    <img alt="codebage project" src={codebadge} className="d-block w-100" />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -169,19 +150,14 @@ const Projects = () => {
             <div class="row">
               <div
                 class="col-md-6 col-12 mt-10"
-                style={{ display: "flex", justifyContent: "space-around" }}
-              >
+                style={{ display: "flex", justifyContent: "space-around" }}>
                 <Carousel
                   className="mt-7"
                   activeIndex={donutIndex}
-                  onSelect={handleSelect("donut")}
-                >
+                  onSelect={handleSelect("donut")}>
                   <Carousel.Item>
-                    <img src={spansberry} className="d-block w-100" />
+                    <img alt="spansberry project" src={spansberry} className="d-block w-100" />
                   </Carousel.Item>
-                  {/* <Carousel.Item>
-                    <img src={codebadge} className="d-block w-100" />
-                  </Carousel.Item> */}
                 </Carousel>
               </div>
               <div class="col-md-6 col-12 mt-10">
@@ -203,8 +179,7 @@ const Projects = () => {
                 </p>
                 <div
                   class="container mt-7"
-                  style={{ display: "flex", justifyContent: "space-around" }}
-                >
+                  style={{ display: "flex", justifyContent: "space-around" }}>
                   <div class="row">
                     <a
                       href="#"
@@ -212,8 +187,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-github"></span>
                     </a>
                     <a
@@ -222,8 +196,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-youtube"></span>
                     </a>
                     <a
@@ -232,8 +205,7 @@ const Projects = () => {
                       style={{
                         borderRadius: "50%",
                         backgroundColor: " #22247A",
-                      }}
-                    >
+                      }}>
                       <span class="fe fe-file"></span>
                     </a>
                   </div>
@@ -242,11 +214,11 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div class="index-content mt-10">
-          <div class="shadow-light-lg overflow-hidden p-4">
-            <div class="row">
+        <div class="index-content">
+          <div class="shadow-light-lg overflow-hidden">
+            <div class="row m-0">
               <div class="col-12">
-                <div class="card mb-10 shadow-light-lg overflow-hidden text-center text-lg-left">
+                <div class="card mt-5 mb-10 shadow-light-lg overflow-hidden text-center text-lg-left">
                   <div class="row">
                     <div class="col-md-8">
                       <div class="card-body ml-5 py-7 py-md-9">
@@ -267,17 +239,14 @@ const Projects = () => {
                         alt="image"
                         src={card}
                         class="h-75 position-absolute right-0 mt-6 mr-11"
-                        alt="Productivity"
-                      />
+                        alt="Productivity"/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </div>
         </div>
-        {/* <img alt="image" src="https://d33wubrfki0l68.cloudfront.net/952392990c72334768fe8a1bbf2abb95f18dabfc/574b9/static/dashboard-screen-a4681e6a8cbc13190924ce784fdcc815.png" alt="DashboardScreenshot" class="img-fluid" /> */}
       </div>
       <section class="pt-20 mt-n17 bg-gray-200 position-relative"></section>
     </section>

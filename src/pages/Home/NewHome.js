@@ -33,6 +33,9 @@ const NewHome = () => {
             </div>
             <ScrollToTopBtn />
             <div class="twitter-feed d-flex flex-column align-items-center mt-10 mb-10 container">
+            <span class="badge badge-pill badge-primary-soft mb-3 text-center">
+              <span class="h6 text-uppercase font-weight-bold">UPDATES</span>
+            </span>
               <h1 className="mb-10 component-heading">Latest Updates</h1>
               <TwitterTimelineEmbed
                 sourceType="profile"

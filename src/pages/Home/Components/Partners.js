@@ -30,8 +30,11 @@ const Partners = () => {
           </div>
         </div>
       </div> */}
+      <span class="badge badge-pill badge-primary-soft mb-3 text-center">
+        <span class="h6 text-uppercase font-weight-bold">Donate</span>
+      </span>
       <div className="container mb-7">
-        <div className="component-heading mt-13">
+        <div className="component-heading">
           Codeuino's supporters and friends
         </div>
         <div className="" style={{ width: "100%" }}>

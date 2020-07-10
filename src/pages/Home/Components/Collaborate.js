@@ -13,6 +13,9 @@ const Collaborate = () => {
           id="collaborate"
           style={{ width: "100%", alignContent: "left" }}
         >
+          <span class="badge badge-pill badge-primary-soft mb-3 text-center">
+            <span class="h6 text-uppercase font-weight-bold">Collaborate</span>
+          </span>
           <h1 class="component-heading">Collaborate</h1>
 
           <div class="row" style={{ textAlign: "left" }}>

@@ -15,6 +15,9 @@ class Activities extends React.Component {
   render() {
     return (
       <div id='activity' className="pt-10">
+        <span class="badge badge-pill badge-primary-soft mb-3 text-center">
+          <span class="h6 text-uppercase font-weight-bold">Programs</span>
+        </span>
         <h1 className='component-heading'>Codeuino's Participations</h1>
         <div className='container d-flex justify-content-center'>
           <div className='row'>

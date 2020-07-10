@@ -3,7 +3,6 @@ import Banner from "../images/banner.svg";
 import poster from "../images/poster.svg";
 import { HashLink as Link } from "react-router-hash-link";
 
-import DonateCard from "../../../components/DonateUs/Donate";
 const LandingPageComponent = () => {
   return (
     <React.Fragment>
@@ -27,43 +26,57 @@ const LandingPageComponent = () => {
                 </span>
               </span>
             </h1>
-            <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+            <p className="lead text-center text-md-left text-muted mb-6 mb-lg-8">
               We are an Open Source Social Networking organisation that provides
               various robust frameworks solutions which could span the entire
               world.
             </p>
-            <div class="text-center text-md-left">
+            <div className="text-center text-md-left">
               <a
                 href="https://github.com/codeuino"
                 class="btn btn-primary shadow lift pr-5 mr-5"
                 style={{ backgroundColor: " #22247A" }}
               >
-                <span class="fe fe-github mr-1"></span>Github
+              <span className="fe fe-github mr-1"></span>Github
               </a>
               <a
                 href="http://slack.codeuino.org"
                 class="btn btn-primary shadow lift pr-5"
                 style={{ backgroundColor: " #22247A" }}
               >
-                <span class="fe fe-slack mr-1"></span>Slack
+              <span className="fe fe-slack mr-1"></span>Slack
               </a>
+            </div>
+            <div className="text-center text-md-left mt-10 mt-md-8">
+              <h2>Our Mission</h2>
+              <p style={{ textAlign: "justify" }}>
+                Communications technology has enabled new approaches to communities and 
+                end-users in which stakeholders across sectors and organizations are engaged 
+                in consensus building and implementation processes for open source ecosystem. 
+                So Codeuino works with a vision to have open sustainability within social 
+                networking and build OSS/FOSS social-environmental tools with a sole motive 
+                to benefit organizations and individuals to have a common platform for 
+                collaboration.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <DonateCard />
     <section class="pt-10"
       id="aboutUs"
       style={{ width: "100%", alignContent: "left" }}>
       <div class="container">
+        <span class="badge badge-pill badge-primary-soft mb-6 mb-md-8 text-center">
+          <span class="h6 text-uppercase font-weight-bold">About Us</span>
+        </span>
         <div class="row align-items-center">
           <div class="row" style={{ textAlign: "left" }}>
             <div class="col-md-4 col-12">
-              <span
-                class="fa fa-question-circle fa-2x mr-1"
-                style={{ color: " #22247A" }}></span>
-              <h2>What is Codeuino?</h2>
+              <p className="text-md-left text-center mb-md-0"><span
+                class="fa fa-question-circle fa-2x mr-1 "
+                style={{ color: " #22247A" }}></span></p>
+              <h2 className="text-md-left text-center">What is Codeuino?</h2>
               <p style={{ textAlign: "justify" }}>
                 Codeuino is an Open Source Social Networking organisation that
                 provides various robust frameworks solutions which could span
@@ -81,12 +94,11 @@ const LandingPageComponent = () => {
                 world..
               </p>
             </div>
-            <div class="col-md-4 col-12">
-              <span
+            <div class="col-md-4 col-12 pt-md-0 pt-6">
+              <p className="text-md-left text-center mb-md-0"><span
                 class="fa fa-user-circle fa-2x mr-1"
-                style={{ color: " #22247A" }}
-              ></span>
-              <h2>Who we Are?</h2>
+                style={{ color: " #22247A" }}></span></p>
+              <h2 className="text-md-left text-center">Who we Are?</h2>
               <p style={{ textAlign: "justify" }}>
                 We are a group of young open-source contributors creatively
                 leveraging our expertise in Social networking and development
@@ -102,12 +114,11 @@ const LandingPageComponent = () => {
                 networking.
               </p>
             </div>
-            <div class="col-md-4 col-12">
-              <span
+            <div class="col-md-4 col-12 pt-md-0 pt-6">
+              <p className="text-md-left text-center mb-md-0"><span
                 class="fa fa-check fa-2x mr-1"
-                style={{ color: " #22247A" }}
-              ></span>
-              <h2>What do we do?</h2>
+                style={{ color: " #22247A" }}></span></p>
+              <h2 className="text-md-left text-center">What do we do?</h2>
               <p style={{ textAlign: "justify" }}>
                 Codeuino takes into the house the development of some of the
                 coolest{" "}
