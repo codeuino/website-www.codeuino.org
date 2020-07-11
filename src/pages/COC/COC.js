@@ -1,5 +1,8 @@
-import React from 'react';
-export default function componentName() {
+import React, {useEffect} from 'react';
+export default function ComponentName() {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div>
       <div class="mt-12"></div>

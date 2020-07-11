@@ -1,62 +1,99 @@
-import React from 'react'
-import {
-    Navbar,
-    Nav,
-    NavDropdown,
-    Image,
-    Form,
-    FormControl,
-    Button
-} from 'react-bootstrap'
-import './NavBar.css'
-import logo from '../../newlogo.png';
-import {Link, Route} from 'react-router-dom';
-const NavBar = () => {
-    return (
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="myNav">
-        <div className="container">
-        <Link class="navbar-brand" to="/"><Image id="logo" src={logo} alt="codeuino logo" style={{heigth:"20vh",width:"10vw"}}/></Link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
-            </li>
-            <li class="nav-item dropdown">
-              <Link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Activities
+import React, { useRef } from "react";
+import { Image, Navbar, Container, Nav } from "react-bootstrap";
+import "./NavBar.css";
+import logo from "../../newlogo.png";
+import { HashLink as Link } from "react-router-hash-link";
+const NavBar = ({ onScroll }) => {
+
+  const navbarRef = useRef(null);
+  
+  const smoothScroll = el => {
+    console.log(navbarRef.current.offsetHeight);
+    window.scrollTo({
+      top: el.offsetTop - navbarRef.current.offsetHeight,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  return (
+  <React.Fragment>
+    <Navbar expand="lg" variant="light" bg="light">
+      <Navbar.Brand>
+        <Link to="/">
+          <Image
+            id="logo"
+            src={logo}
+            alt="codeuino logo"
+            style={{ heigth: "20vh", width: "10vw" }}/>
+        </Link>
+      </Navbar.Brand>
+    </Navbar>
+
+    <Navbar variant="light" bg="light" expand="lg" fixed="top" className={`${onScroll}`} id="myNav" ref={navbarRef}>
+      <Container>
+        <Navbar.Brand>
+          <Link to="/">
+            <Image
+              id="logo"
+              src={logo}
+              alt="codeuino logo"
+              style={{ heigth: "20vh", width: "10vw" }}/>
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          lable="Toggle navigation"
+          aria-controls="navbarSupportedContent">
+        </Navbar.Toggle>
+        <Navbar.Collapse id="navbarSupportedContent">
+          <Nav className="ml-auto">
+            <Nav.Item>
+              <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs">
+                About Us<span className="sr-only">(current)</span>
               </Link>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://docs.codeuino.org/documentation/activities/google-summer-of-code-2019" style={{textAlign : "center"}}>GSOC 2019</a>
-                <a class="dropdown-item" href="https://github.com/codeuino/gci" style={{textAlign : "center"}}>GCI 2019-20</a>
-                <a class="dropdown-item" href="https://kwoc.kossiitkgp.org/" style={{textAlign : "center"}}>KWOC 2018</a>
-                <a class="dropdown-item" href="https://www.gssoc.tech/index.html" style={{textAlign : "center"}}>GSSOC 2019</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/team">Team<span class="sr-only">(current)</span></Link>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://docs.codeuino.org/documentation/">Docs<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/about">About Us<span class="sr-only">(current)</span></Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/bloglist">Blogs<span class="sr-only">(current)</span></Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/codeofconduct">Code of Conduct<span class="sr-only">(current)</span></Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/joinus">Join Us<span class="sr-only">(current)</span></Link>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-    )
-}
-export default NavBar
+            </Nav.Item>
+            <Nav.Item>
+              <Link scroll={smoothScroll} className="nav-link" to="/#projects">
+                Project<span className="sr-only">(current)</span>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link scroll={smoothScroll} className="nav-link" to="/#programs">
+                Programs<span className="sr-only">(current)</span>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/team">
+                Team<span className="sr-only">(current)</span>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <a
+                className="nav-link"
+                href="https://docs.codeuino.org/documentation/">
+                Docs<span className="sr-only">(current)</span>
+              </a>
+            </Nav.Item>
+            <Nav.Item>
+              <Link scroll={smoothScroll} className="nav-link" to="/#collaborate">
+                Collaborate<span className="sr-only">(current)</span>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/codeofconduct">
+                Code of Conduct<span className="sr-only">(current)</span>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/joinus">
+                Join Us<span className="sr-only">(current)</span>
+              </Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  </React.Fragment>
+  );
+};
+export default NavBar;
