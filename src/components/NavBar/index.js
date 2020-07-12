@@ -3,7 +3,7 @@ import { Image, Navbar, Container, Nav } from "react-bootstrap";
 import "./NavBar.css";
 import logo from "../../newlogo.png";
 import { HashLink as Link } from "react-router-hash-link";
-const NavBar = ({ onScroll }) => {
+const NavBar = () => {
 
   const navbarRef = useRef(null);
   
@@ -19,18 +19,18 @@ const NavBar = ({ onScroll }) => {
   return (
   <React.Fragment>
     <Navbar expand="lg" variant="light" bg="light">
-      <Navbar.Brand>
+      <Navbar.Brand className="mr-0">
         <Link to="/">
           <Image
             id="logo"
             src={logo}
             alt="codeuino logo"
-            style={{ heigth: "20vh", width: "10vw" }}/>
+            style={{ heigth: "20vh", width: "12vw" }}/>
         </Link>
       </Navbar.Brand>
     </Navbar>
 
-    <Navbar variant="light" bg="light" expand="lg" fixed="top" className={`${onScroll}`} id="myNav" ref={navbarRef}>
+    <Navbar variant="light" bg="light" expand="lg" fixed="top" id="myNav" ref={navbarRef}>
       <Container>
         <Navbar.Brand>
           <Link to="/">
@@ -38,7 +38,7 @@ const NavBar = ({ onScroll }) => {
               id="logo"
               src={logo}
               alt="codeuino logo"
-              style={{ heigth: "20vh", width: "10vw" }}/>
+              style={{ heigth: "20vh", width: "12vw" }}/>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle

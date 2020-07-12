@@ -1,0 +1,53 @@
+.collaborate-card.option {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.collaborate-card.option:hover {
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+    transition: box-shadow 1s ease;
+}
+
+.collaborate-card.option.collaborate-card-body {
+    padding: 1rem 0;
+}
+
+.collaborate-card.option.card-text {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container.fluid.row {
+    padding-top: 6rem;
+}
+
+.collaborate-card {
+    height: 40rem;
+    width: 25rem;
+    border: 1px solid gray;
+    padding: 2rem;
+}
+
+.collaborate-card-img-top.option {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    height: 10rem;
+    object-fit: scale-down;
+}
+
+.collaborate-card-img-top.option:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.collaborate-card-description {
+    text-align: left;
+}
+
+.collaborate-card-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: max-content !important;
+    font-weight: bold;
+}
