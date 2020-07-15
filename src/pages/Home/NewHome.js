@@ -17,7 +17,7 @@ const NewHome = () => {
           tabindex="-1"
           role="group"
           id="gatsby-focus-wrapper">
-          <div class="mt-12">
+          <div class="mt-10">
             <LandingPageComponent />
             <div id="projects">
               <Projects />

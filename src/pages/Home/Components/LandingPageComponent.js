@@ -26,11 +26,10 @@ const LandingPageComponent = () => {
                 </span>
               </span>
             </h1>
-            <p className="lead text-center text-md-left text-muted mb-6 mb-lg-8">
-              We are an Open Source Social Networking organisation that provides
-              various robust frameworks solutions which could span the entire
-              world.
-            </p>
+            <h2 className="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+              The Codeuino Community - An open source social networking software development 
+              community which accounts the house of sustainable and networking products line.
+            </h2>
             <div className="text-center text-md-left">
               <a
                 href="https://github.com/codeuino"
@@ -47,22 +46,28 @@ const LandingPageComponent = () => {
               <span className="fe fe-slack mr-1"></span>Slack
               </a>
             </div>
-            <div className="text-center text-md-left mt-10 mt-md-8">
-              <h2>Our Mission</h2>
-              <p style={{ textAlign: "justify" }}>
-                Communications technology has enabled new approaches to communities and 
-                end-users in which stakeholders across sectors and organizations are engaged 
-                in consensus building and implementation processes for open source ecosystem. 
-                So Codeuino works with a vision to have open sustainability within social 
-                networking and build OSS/FOSS social-environmental tools with a sole motive 
-                to benefit organizations and individuals to have a common platform for 
-                collaboration.
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="mt-10 container lift" style={{borderRadius:"25px",textAlign:"left",color:"white",backgroundColor:" #22247A",width:"100%"}}>
+			<div class="row pt-6 pb-6 pl-md-6 pr-md-6">
+            <div className="col-md-3 text-center p-0" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+				      <h1 className="m-0 display-3">Mission</h1>
+              <p className="m-0">Of our Community</p>
+            </div>
+				    <p className="col-md-9 m-0 p-md-0" style={{textAlign: 'justify'}}>
+              Communications technology has enabled new approaches to communities and 
+              end-users in which stakeholders across sectors and organizations are engaged 
+              in consensus building and implementation processes for open source ecosystem. 
+              So Codeuino works with a vision to have open sustainability within social 
+              networking and build OSS/FOSS social-environmental tools with a sole motive 
+              to benefit organizations and individuals to have a common platform for 
+              collaboration.
+            </p>
+
+			</div>
+		</div>
     <section class="pt-10"
       id="aboutUs"
       style={{ width: "100%", alignContent: "left" }}>
@@ -138,7 +143,7 @@ const LandingPageComponent = () => {
             </div>
           </div>
         </div>
-        <img class="mt-10" src={poster} style={{ width: "100%" }} />
+        <img alt="about us graphics" class="mt-10" src={poster} style={{ width: "100%" }} />
       </div>
     </section>
     </React.Fragment>

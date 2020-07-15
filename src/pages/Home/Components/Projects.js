@@ -41,7 +41,8 @@ const Projects = () => {
                 </Carousel>
               </div>
               <div class="col-md-6 col-12">
-                <h1>Donut</h1>
+                <h1 className="mb-0">Donut</h1>
+                <h3 className="muted mb-4">Open source, community-oriented social media platform</h3>
                 <p style={{ textAlign: "justify" }}>
                   Donut is an open-source, feature-rich, highly flexible and
                   privacy-friendly, social networking platform built for
@@ -54,41 +55,40 @@ const Projects = () => {
                   tools, writing your own or integrating other software.
                 </p>
                 <div
-                  class="container mt-7"
-                  style={{ display: "flex", justifyContent: "space-around" }}>
+                  class="container mt-2"
+                  style={{ display: "flex", justifyContent: "flex-start" }}>
                   <div class="row">
                     <a
+                      href="https://github.com/codeuino/social-platform-donut-frontend"
+                      class="custom-links mr-2 ml-2">
+                      Frontend Code on Github
+                    </a>
+                    <a
+                      href="https://github.com/codeuino/social-platform-donut-backend"
+                      class="custom-links mr-2 ml-2">
+                      Backend Code on Github
+                    </a>
+                    <a
                       href="https://github.com/codeuino/Social-Platform-Donut"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-github"></span>
+                      class="custom-links mr-2 ml-2">
+                      Donut Design Mockups
                     </a>
                     <a
                       href="https://www.youtube.com/watch?v=wYk71_KY6Bk"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-youtube"></span>
+                      class="custom-links mr-2 ml-2">
+                      Youtube
                     </a>
                     <a
                       href="https://docs.codeuino.org/documentation/donut-docs/donut-documentation"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-file"></span>
+                      class="custom-links mr-2 ml-2">
+                      Documentation
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 col-12 mt-10">
-                <h1>Codebadge</h1>
+                <h1 className="mb-0">Codebadge</h1>
+                <h3 className="muted mb-4">Tool for measuring contributor's health in the community</h3>
                 <p style={{ textAlign: "justify" }}>
                   Codebadge is an open-source, user-friendly, visual-oriented
                   collaboration tool which incorporates development of badges
@@ -101,35 +101,28 @@ const Projects = () => {
                   appropriate dashboards.
                 </p>
                 <div
-                  class="container mt-7"
-                  style={{ display: "flex", justifyContent: "space-around" }}>
+                  class="container mt-2"
+                  style={{ display: "flex", justifyContent: "flex-start" }}>
                   <div class="row">
                     <a
-                      href="https://github.com/codeuino/Codebadge"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-github"></span>
+                      href="https://github.com/codeuino/codebadge-frontend"
+                      class="custom-links mr-2 ml-2">
+                      Frontend Code on Github
+                    </a>
+                    <a
+                      href="https://github.com/codeuino/codebadge-backend"
+                      class="custom-links mr-2 ml-2">
+                      Backend Code on Github
                     </a>
                     <a
                       href="https://www.youtube.com/watch?v=s1gDGjJtmpk"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-youtube"></span>
+                      class="custom-links mr-2 ml-2">
+                      Youtube
                     </a>
                     <a
                       href="https://docs.codeuino.org/documentation/codebadge/codebadge-documentation"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-file"></span>
+                      class="custom-links mr-2 ml-2">
+                      Documentation
                     </a>
                   </div>
                 </div>
@@ -161,7 +154,8 @@ const Projects = () => {
                 </Carousel>
               </div>
               <div class="col-md-6 col-12 mt-10">
-                <h1>Spansberry</h1>
+                <h1 className="mb-0">Spansberry</h1>
+                <h3 className="muted mb-4">Open source, community-oriented discussion platform</h3>
                 <p style={{ textAlign: "justify" }}>
                   Spansberry is a community-oriented discussion platform that
                   comes with an intelligent dashboard mechanism that helps
@@ -178,35 +172,28 @@ const Projects = () => {
                   announcements, projects and any discussions through the bot.
                 </p>
                 <div
-                  class="container mt-7"
-                  style={{ display: "flex", justifyContent: "space-around" }}>
+                  class="container mt-2"
+                  style={{ display: "flex", justifyContent: "flex-start" }}>
                   <div class="row">
                     <a
-                      href="#"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-github"></span>
+                      href="https://github.com/codeuino/community-forum-frontend"
+                      class="custom-links mr-2 ml-2">
+                      Frontend Code on Github
+                    </a>
+                    <a
+                      href="https://github.com/codeuino/community-forum-backend"
+                      class="custom-links mr-2 ml-2">
+                      Backend Code on Github
                     </a>
                     <a
                       href="#"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-youtube"></span>
+                      class="custom-links mr-2 ml-2">
+                      Youtube
                     </a>
                     <a
                       href="#"
-                      class="btn btn-primary shadow lift mr-1"
-                      style={{
-                        borderRadius: "50%",
-                        backgroundColor: " #22247A",
-                      }}>
-                      <span class="fe fe-file"></span>
+                      class="custom-links mr-2 ml-2">
+                      Documentation
                     </a>
                   </div>
                 </div>
