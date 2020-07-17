@@ -8,3 +8,15 @@
 img{
     width:75%;
 }
+
+.team-heading {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.team-sub-heading {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}

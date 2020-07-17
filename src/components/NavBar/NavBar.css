@@ -1,14 +1,32 @@
 #myNav{
     background-color: white;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.navbar-scroll {
     box-shadow: 0px 2px 15px grey;
 }
+
 a {
     transition: transform 0.6s;
 }
+
 a:hover{
     text-decoration:none;
     transform: scale(1.05);
 }
+
+.nav-link:visited{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link.active, .nav-link.disabled, .nav-link:focus, .nav-link {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .blue:hover{
     color : lightblue;
 }

@@ -1,35 +1,25 @@
-.card.activity {
-  width: 20rem;
-  height: 400px;
+.activity-card.activity {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-.card.activity:hover {
+.activity-card.activity:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+  transition: box-shadow 1s ease;
 }
 
-.card.activity.card-body {
-  padding: 3rem 0;
+.activity-card.activity.activity-card-body {
+  padding: 1rem 0;
 }
 
-.card.activity.card-text {
+.activity-card.activity.card-text {
   font-size: 0.9rem;
   padding: 0.4rem 1.9rem;
 }
 
 .container.fluid.row {
   padding-top: 6rem;
-}
-
-.card-img-top.activity {
-  transform: scale(1);
-  transition: transform 0.5s ease;
-  height: 150px;
-  object-fit: scale-down;
-}
-
-.card-img-top.activity:hover {
-  transform: scale(1.8);
-  overflow: hidden;
 }
 
 .btn.activity {
@@ -44,6 +34,41 @@
   border-color: #22247a;
 }
 
-.card-title.activity {
+.activity-card {
+  height: 40rem;
+  width: 25rem;
+  border: 1px solid gray;
+  padding: 2rem;
+}
+
+.activity-card-img-top.activity {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  height: 10rem;
+  object-fit: scale-down;
+}
+
+.activity-card-img-top.activity:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.activity-card-description {
+  text-align: left;
+}
+
+.activity-card-links {
+  text-align: right;
+  float: bottom;
+}
+
+.activity-card-link {
+  margin: 0.5rem;
+}
+
+.activity-card-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  height: max-content !important;
   font-weight: bold;
 }
