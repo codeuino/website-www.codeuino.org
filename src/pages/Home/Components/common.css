@@ -1,34 +1,35 @@
-.component-heading{
-    margin-bottom: 60px;
-    font-weight: 600;
-    font-size:48px;
+.component-heading {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 48px;
 }
 
-.aws-sld.--exit.aws-sld--moveRight, .aws-sld.--exit.aws-sld--moveLeft {
-    animation: scaleOut var(--slider-transition-duration) both
+.aws-sld.--exit.aws-sld--moveRight,
+.aws-sld.--exit.aws-sld--moveLeft {
+  animation: scaleOut var(--slider-transition-duration) both
     var(--transition-bezier);
 }
-  
-  @keyframes scaleOut {
-    to {
-      transform: scale(0.85);
-    }
+
+@keyframes scaleOut {
+  to {
+    transform: scale(0.85);
   }
+}
 
 .aws-btn {
-    --slider-height-percentage: 60%;
-    --slider-transition-duration: 670ms;
-    --organic-arrow-thickness: 5px;
-    --organic-arrow-border-radius: 30px;
-    --organic-arrow-height: 22px;
-    --organic-arrow-color: #cccccc;
-    --control-button-width: 8%;
-    --control-button-height: 80%;
-    --control-button-background: transparent;
-    --control-bullet-color: #22247a;
-    --control-bullet-active-color: #22247a;
-    --loader-bar-color: #ffffff;
-    --loader-bar-height: 4px;
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 670ms;
+  --organic-arrow-thickness: 5px;
+  --organic-arrow-border-radius: 30px;
+  --organic-arrow-height: 22px;
+  --organic-arrow-color: #cccccc;
+  --control-button-width: 8%;
+  --control-button-height: 80%;
+  --control-button-background: transparent;
+  --control-bullet-color: #22247a;
+  --control-bullet-active-color: #22247a;
+  --loader-bar-color: #ffffff;
+  --loader-bar-height: 4px;
 }
 
 .custom-links {
@@ -59,4 +60,55 @@
 
 .banner-text {
   font-size: 22px;
+}
+
+#mission {
+  text-align: left;
+  color: inherit;
+  background-image: url("../images/grey-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1),
+    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+}
+
+.mission-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-heading-icon {
+  background-image: url("../images/lightbulb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+}
+
+.mission-heading-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mission-heading-heading {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-tagline {
+  color: inherit;
+}
+
+#collaborate .skew {
+  width: 100vw;
+  height: 47vh;
+  position: absolute;
+  top: 50%;
+  transform: skewY(-10deg) scaleX(2) translateX(-30%) translateY(-50%);
+  z-index: 0;
 }
