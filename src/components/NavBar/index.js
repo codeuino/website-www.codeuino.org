@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import { Image, Navbar, Container, Nav } from "react-bootstrap";
 import "./NavBar.css";
 import logo from "../../newlogo.png";
@@ -15,6 +15,7 @@ const NavBar = () => {
       behavior: 'smooth'
     });
   }
+  const [expanded, setExpanded] = useState(false);
 
   return (
   <React.Fragment>
@@ -30,7 +31,7 @@ const NavBar = () => {
       </Navbar.Brand>
     </Navbar>
 
-    <Navbar variant="light" bg="light" expand="lg" fixed="top" id="myNav" ref={navbarRef}>
+    <Navbar expanded={expanded} variant="light" bg="light" expand="lg" fixed="top" id="myNav" ref={navbarRef}>
       <Container>
         <Navbar.Brand>
           <Link to="/">
@@ -42,50 +43,51 @@ const NavBar = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle
+        onClick={() => setExpanded(expanded ? false : "expanded")}
           lable="Toggle navigation"
           aria-controls="navbarSupportedContent">
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="ml-auto">
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs">
+              <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 About Us<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#projects">
+              <Link scroll={smoothScroll} className="nav-link" to="/#projects" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Project<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#programs">
+              <Link scroll={smoothScroll} className="nav-link" to="/#programs" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Programs<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link className="nav-link" to="/team">
+              <Link className="nav-link" to="/team" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Team<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
             <Nav.Item>
               <a
                 className="nav-link"
-                href="https://docs.codeuino.org/documentation/">
+                href="https://docs.codeuino.org/documentation/" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Docs<span className="sr-only">(current)</span>
               </a>
             </Nav.Item>
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#collaborate">
+              <Link scroll={smoothScroll} className="nav-link" to="/#collaborate" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Collaborate<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link className="nav-link" to="/codeofconduct">
+              <Link className="nav-link" to="/codeofconduct" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Code of Conduct<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link className="nav-link" to="/joinus">
+              <Link className="nav-link" to="/joinus" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 Join Us<span className="sr-only">(current)</span>
               </Link>
             </Nav.Item>
