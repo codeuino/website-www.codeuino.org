@@ -48,7 +48,7 @@ const NavBar = () => {
           aria-controls="navbarSupportedContent">
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
-          <Nav className="ml-auto">
+          <Nav className ='nav-scroll'>
             <Nav.Item>
               <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs" onClick={() => setExpanded(expanded ? false : "expanded")}>
                 About Us<span className="sr-only">(current)</span>
