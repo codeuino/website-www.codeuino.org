@@ -30,3 +30,11 @@ a:hover{
 .blue:hover{
     color : lightblue;
 }
+.nav-scroll{
+    float:right;
+    
+}
+#navbarSupportedContent{
+    width: max-content;
+    margin-left: auto;
+}
