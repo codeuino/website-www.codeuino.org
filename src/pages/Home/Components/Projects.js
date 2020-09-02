@@ -215,7 +215,7 @@ const Projects = () => {
                         </h4>
                         <p class="text-muted banner-text mb-0">
                           To all the designers in the world something big is
-                          comming soon! Update your tools for the battle.
+                          coming soon! Update your tools for the battle.
                         </p>
                       </div>
                     </div>
