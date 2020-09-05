@@ -9,6 +9,11 @@
   transition: box-shadow 1s ease;
 }
 
+.activity-card.activity:hover .activity-card-img-top.activity {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
 .activity-card.activity.activity-card-body {
   padding: 1rem 0;
 }
@@ -46,11 +51,6 @@
   transition: transform 0.5s ease;
   height: 10rem;
   object-fit: scale-down;
-}
-
-.activity-card-img-top.activity:hover {
-  transform: scale(1.2);
-  overflow: hidden;
 }
 
 .activity-card-description {
