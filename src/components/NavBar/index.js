@@ -66,7 +66,7 @@ const NavBar = () => {
                   className="nav-link"
                   to="/#projects"
                 >
-                  Project<span className="sr-only">(current)</span>
+                  Projects<span className="sr-only">(current)</span>
                 </Link>
               </Nav.Item>
               <Nav.Item>
