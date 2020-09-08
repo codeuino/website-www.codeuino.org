@@ -20,7 +20,6 @@ class Twitter extends React.Component {
     axios
       .get(base + "/getTweets")
       .then(Response => {
-        console.log(Response);
         this.allTweets = Response.data.filter(tweet => !tweet.retweeted_status);
         this.retweetedTweets = Response.data.filter(
           tweet => tweet.retweeted_status
