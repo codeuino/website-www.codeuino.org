@@ -8,7 +8,6 @@ exports.handler = async () => {
     const data = response.data;
     xml2js.parseString(data, (err, result) => {
       const sendthis = result.rss.channel[0].item.slice(0, 3);
-      console.log(sendthis,'swac')
       return ( {
         statusCode: 200,
         headers: {
