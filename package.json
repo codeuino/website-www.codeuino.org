@@ -54,8 +54,6 @@
   "scripts": {
     "lambda-serve": "netlify-lambda serve netlify-functions",
     "heroku-postbuild": "npm run build",
-    "start:app": "serve -s build -l 3000",
-    "start:server": "netlify-lambda serve netlify-functions",
     "start": "netlify-lambda serve netlify-functions & serve -s build -l 3000",
     "prebuild": "netlify-lambda build netlify-functions",
     "build": "CI=false && set \"CI=false\" && react-scripts build",
