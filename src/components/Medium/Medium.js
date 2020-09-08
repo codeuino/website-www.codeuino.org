@@ -19,18 +19,18 @@ class Medium extends React.Component {
     }
   }
   componentDidMount() {
-    this.fetchBlogs()
+   // this.fetchBlogs()
   }
 
   render() {
     return (
-      <div class="container" style={{ width: "100%", alignContent: "left" }}>
-        <h1 class="component-heading">Latest Blogs</h1>
+      <div className="container" style={{ width: "100%", alignContent: "left" }}>
+        <h1 className="component-heading">Latest Blogs</h1>
         <div
-          class="row justify-content-center Medium"
+          className="row justify-content-center Medium"
           style={{ textAlign: "left" }}
         >
-          {this.state.posts.map((post, index) => (
+          {/*this.state.posts.map((post, index) => (
             <div className="col-md-4 Medium-post" key={index}>
               <a class="outer-link" href={post.link[0]}>
                 <div>
@@ -41,7 +41,7 @@ class Medium extends React.Component {
                 </div>
               </a>
             </div>
-          ))}
+          ))*/}
         </div>
       </div>
     );

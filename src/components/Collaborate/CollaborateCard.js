@@ -9,7 +9,7 @@ const CollaborateCard = props => {
         <h4 className="collaborate-card-title option" style={{ height: "100" }}>
           {props.title}
         </h4>
-        <p className="collaborate-card-description">{props.description}</p>
+        <div className="collaborate-card-description">{props.description}</div>
       </div>
     </div>
   );

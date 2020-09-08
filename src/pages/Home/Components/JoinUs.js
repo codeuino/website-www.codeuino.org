@@ -42,14 +42,14 @@ const joinUsMethods = {
 const JoinUs = () => {
   return (
     <div
-      class="container pt-10"
+      className="container pt-10"
       style={{ width: "100%", alignContent: "left" }}
     >
-      <span class="badge badge-pill badge-primary-soft mb-3 text-center">
-        <span class="h6 text-uppercase font-weight-bold">Join Us</span>
+      <span className="badge badge-pill badge-primary-soft mb-3 text-center">
+        <span className="h6 text-uppercase font-weight-bold">Join Us</span>
       </span>
-      <h1 class="component-heading">How can I get Involved?</h1>
-      <div class="row justify-content-center" style={{ textAlign: "left" }}>
+      <h1 className="component-heading">How can I get Involved?</h1>
+      <div className="row justify-content-center" style={{ textAlign: "left" }}>
         <div className="col-md-4 p-0">
           <a href="http://slack.codeuino.org/">
             <CollaborateCard {...joinUsMethods.slack} />

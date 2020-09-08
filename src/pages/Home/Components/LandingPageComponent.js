@@ -52,7 +52,7 @@ const LandingPageComponent = () => {
           <div className="row pt-12 pb-12 pl-md-6 pr-md-6">
             <div className="mission-heading col-md-3 text-center p-0">
               <div className="mission-heading-heading">
-                <div class="mission-heading-icon"></div>
+                <div className="mission-heading-icon"></div>
                 <div className="mission-heading-text">
                   <h1 className="m-0 display-3">Mission</h1>
                   <p className="m-0">Of our Community</p>

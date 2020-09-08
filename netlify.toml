@@ -4,3 +4,4 @@
 # provide twitter api key
 [build.environment]
   TWITTER_API_KEY = "AAAAAAAAAAAAAAAAAAAAAIWYFwEAAAAAA3RBpjzS8nlirryXCXM%2FTsl8sKo%3DaWb1t2lrgmUeZqvFF6OTiyALws9gdVKkO0009mYmqvDcr2LAy2"
+Access-Control-Allow-Origin = "*"

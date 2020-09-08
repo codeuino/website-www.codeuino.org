@@ -6,8 +6,8 @@ import Medium from "../../../components/Medium/Medium";
 const Updates = () => {
   return (
     <div className="pt-10">
-      <span class="badge badge-pill badge-primary-soft mb-3 text-center">
-        <span class="h6 text-uppercase font-weight-bold">UPDATES</span>
+      <span className="badge badge-pill badge-primary-soft mb-3 text-center">
+        <span className="h6 text-uppercase font-weight-bold">UPDATES</span>
       </span>
       <Medium />
       <Testimonials />

@@ -41,16 +41,16 @@ const Testimonials = () => {
         containerClass="carousel-container"
         itemClass="carousel-item-class"
       >
-        {Data.map(testimonial => {
+        {Data.map((testimonial,index) => {
           return (
-            <div class="container">
-              <div class="testimonial-card">
-                <div class="text">
+            <div className="container" key={index}>
+              <div className="testimonial-card">
+                <div className="text">
                   {testimonial.quote} <i class="fas fa-quote-right quote"></i>
                 </div>
-                <div class="testimonial-card-footer-outer">
-                  <div class="testimonial-card-footer">
-                    <div class="image">
+                <div className="testimonial-card-footer-outer">
+                  <div className="testimonial-card-footer">
+                    <div className="image">
                       <img
                         alt="testimonial pic"
                         width="100%"

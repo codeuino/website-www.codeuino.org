@@ -10,8 +10,8 @@ import "./common.css";
 const Partners = () => {
   return (
     <section className="pt-10">
-      <span class="badge badge-pill badge-primary-soft mb-3 text-center">
-        <span class="h6 text-uppercase font-weight-bold">Donate</span>
+      <span className="badge badge-pill badge-primary-soft mb-3 text-center">
+        <span className="h6 text-uppercase font-weight-bold">Donate</span>
       </span>
       <div className="container mb-7">
         <h1 className="component-heading">Codeuino's supporters and friends</h1>
@@ -43,8 +43,8 @@ const Partners = () => {
           />
         </div>
       </div>
-      <section class="pt-4 pt-md-5">
-        <div class="container">
+      <section className="pt-4 pt-md-5">
+        <div className="container">
           <DonateCard />
         </div>
       </section>

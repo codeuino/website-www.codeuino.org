@@ -81,17 +81,17 @@ const collaborationMethods = [
 const Collaborate = () => {
   return (
     <div
-      class="container pt-10"
+      className="container pt-10"
       id="collaborate"
       style={{ width: "100%", alignContent: "left" }}
     >
-      <span class="badge badge-pill badge-primary-soft mb-3 text-center">
-        <span class="h6 text-uppercase font-weight-bold">Collaborate</span>
+      <span className="badge badge-pill badge-primary-soft mb-3 text-center">
+        <span className="h6 text-uppercase font-weight-bold">Collaborate</span>
       </span>
-      <h1 class="component-heading">How Can I Support?</h1>
-      <div class="row" style={{ textAlign: "left" }}>
+      <h1 className="component-heading">How Can I Support?</h1>
+      <div className="row" style={{ textAlign: "left" }}>
         {collaborationMethods.map((ele, index) => (
-          <div className="col-md-3 p-0">
+          <div className="col-md-3 p-0" key={index}>
             <CollaborateCard {...ele} key={index} />
           </div>
         ))}

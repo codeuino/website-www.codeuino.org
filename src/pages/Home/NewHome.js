@@ -15,7 +15,7 @@ const NewHome = () => {
       <div id="___gatsby">
         <div
           style={{ outline: "none" }}
-          tabindex="-1"
+          tabIndex="-1"
           role="group"
           id="gatsby-focus-wrapper"
         >
