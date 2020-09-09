@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../../../components/Layout/Heading";
 import { Row, Col, Image } from "react-bootstrap";
 import spansberryImage from "../images/spansberry.png";
-import codebadgeImage from "../images/codebadge.png";
+import codebadgeImage from "../images/Codebadge.png";
 import donutImage from "../images/donut.jpg";
 import designImage from "../images/designSketch.svg";
 
