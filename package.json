@@ -59,7 +59,7 @@
     "build": "CI=false || set \"CI=false\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-dev": "react-scripts start"
+    "start-dev": "npm run lambda-serve & react-scripts start && fg"
   },
   "eslintConfig": {
     "extends": "react-app"

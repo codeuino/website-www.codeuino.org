@@ -3,4 +3,3 @@ node_modules/
 ngrok
 build/
 lambda/
-package-lock.json
