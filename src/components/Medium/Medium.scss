@@ -1,0 +1,52 @@
+.medium-post {
+  border: 1px solid $white;
+  height: 500px;
+  margin: 20px;
+  max-width: 340px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 20px;
+  text-align: left;
+  transition: box-shadow 1s ease;
+
+  &:hover {
+    border: 1px solid $shadow-black;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px $shadow-black;
+
+    .medium-view-more-bar {
+      bottom: 0;
+    }
+  }
+
+  .medium-outer-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .medium-fading-box {
+    background-color: linear-gradient(to bottom, transparent, white);
+    bottom: 0;
+    height: 40%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.medium-fading-box {
+  .medium-view-more-bar {
+    background-color: $primary-blue;
+    bottom: -70px;
+    border: 2px solid $primary-blue;
+    border-radius: 0 0 10px 10px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
+    position: absolute;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+}

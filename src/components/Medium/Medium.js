@@ -1,49 +1,43 @@
 import React from "react";
 import axios from "axios";
-import "./Medium.css";
+import { Row, Col } from "react-bootstrap";
 import base from "../../helpers/apiBase";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser";
 
 class Medium extends React.Component {
   state = {
-    posts: []
+    posts: [],
   };
 
   fetchBlogs = async () => {
     try {
       this.setState({
-        posts: (await axios.get(base+"/getBlogs")).data
-      })
+        posts: (await axios.get(base + "/getBlogs")).data,
+      });
     } catch (err) {
-      console.log(err.message)
+      console.log(err.message);
     }
-  }
+  };
   componentDidMount() {
-    this.fetchBlogs()
+    this.fetchBlogs();
   }
 
   render() {
     return (
-      <div class="container" style={{ width: "100%", alignContent: "left" }}>
-        <h1 class="component-heading">Latest Blogs</h1>
-        <div
-          class="row justify-content-center Medium"
-          style={{ textAlign: "left" }}
-        >
+      <React.Fragment>
+        <Row>
           {this.state.posts.map((post, index) => (
-            <div className="col-md-4 Medium-post" key={index}>
-              <a class="outer-link" href={post.link[0]}>
-                <div>
-                  { ReactHtmlParser(post["content:encoded"][0]) }
-                </div>
-                <div className="fading-box">
-                  <div className="view-more">View More</div>
+            <Col md={4} className="col-md-4 medium-post" key={index}>
+              <a class="medium-outer-link" href={post.link[0]}>
+                <div>{ReactHtmlParser(post["content:encoded"][0])}</div>
+                <div className="medium-fading-box">
+                  <div className="medium-view-more-bar">View More</div>
                 </div>
               </a>
-            </div>
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </React.Fragment>
     );
   }
 }

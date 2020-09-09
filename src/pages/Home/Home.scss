@@ -1,0 +1,230 @@
+//home styles
+.home-heading {
+  color: $primary-blue;
+  font-size: 55px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.home-subheading {
+  font-size: 18px;
+  max-width: 90%;
+}
+
+.home-image-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.home-banner {
+  max-width: 100%;
+}
+
+.home-github-button {
+  background-color: $github-button-black;
+  border: 0;
+  border-radius: 30px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 25px;
+  margin: 5px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    box-shadow: 0 8px 15px $shadow-black;
+    background: $black;
+    color: $white;
+    transform: translateY(-5px);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus,
+  &:focus {
+    background-color: $black;
+    border: 0;
+    box-shadow: 0 0 0 0.2rem $secondary-blue;
+    color: $white;
+  }
+}
+
+.home-github-icon {
+  height: 20px;
+  margin: 5px 10px 5px 5px;
+  width: 20px;
+}
+
+.home-slack-button {
+  background-color: $white;
+  border: 1px solid $shadow-black;
+  border-radius: 30px;
+  color: $black;
+  font-weight: 600;
+  padding: 6px 25px;
+  margin: 5px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    border: 1px solid $shadow-black;
+    box-shadow: 0 8px 15px $shadow-black;
+    background-color: $white;
+    color: $black;
+    transform: translateY(-5px);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus,
+  &:focus {
+    background-color: $white;
+    border: 1px solid $shadow-black;
+    box-shadow: 0 0 0 0.2rem $secondary-blue;
+    color: $black;
+  }
+}
+
+.home-slack-icon {
+  height: 25px;
+  margin: 2px 10px 3px 5px;
+  width: 25px;
+}
+
+.home-mission {
+  background-color: $secondary-blue;
+  border-radius: 10px;
+  padding: 25px 40px 15px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.home-mission-heading {
+  color: $primary-blue;
+  font-size: 50px;
+}
+
+.home-mission-content {
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .home-image-container {
+    margin-top: 30px;
+  }
+}
+//home ends
+
+//about styles
+.about-card-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  .col-md-6,
+  .col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about-card {
+  border: 1px solid $white;
+  display: inline-block;
+  max-width: 370px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    border: 1px solid $shadow-black;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px $shadow-black;
+  }
+}
+.about-card-heading {
+  color: $primary-blue;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-card-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  text-align: center;
+}
+
+.about-sketch {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  max-width: 80%;
+  text-align: center;
+}
+//about ends
+
+//project styles
+.project-container {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.project-image-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.project-image {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 95%;
+}
+
+.project-heading {
+  color: $primary-blue;
+  font-size: 45px;
+}
+
+.project-subheading {
+  font-size: 20px;
+}
+
+.project-anchor-container {
+  text-align: justify;
+}
+
+.project-design-container {
+  border: 1px solid $shadow-black;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 15px 20px;
+}
+
+.project-design-heading {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.project-design-text {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+
+.project-design-image-container {
+  margin-left: auto;
+  text-align: right;
+}
+
+.project-design-image {
+  max-height: 200px;
+  max-width: 60%;
+}
+//project ends

@@ -1,123 +1,107 @@
 import React, { useRef } from "react";
-import { Image, Navbar, Container, Nav } from "react-bootstrap";
-import "./NavBar.css";
-import logo from "../../newlogo.png";
-import { HashLink as Link } from "react-router-hash-link";
+import {
+  HashLink as Link,
+  NavHashLink as NavLink,
+} from "react-router-hash-link";
+import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
+import logo from "../../logo.png";
 
 const NavBar = () => {
   const navbarRef = useRef(null);
 
-  const smoothScroll = el => {
+  const smoothScroll = (el) => {
     window.scrollTo({
       top: el.offsetTop - navbarRef.current.offsetHeight,
       left: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   return (
     <React.Fragment>
-      <Navbar expand="lg" variant="light" bg="light">
-        <Navbar.Brand className="mr-0">
-          <Link to="/">
-            <Image
-              id="logo"
-              src={logo}
-              alt="codeuino logo"
-              style={{ heigth: "20vh", width: "12vw" }}
-            />
-          </Link>
-        </Navbar.Brand>
-      </Navbar>
-
       <Navbar
+        className="navbar-container"
         variant="light"
-        bg="light"
+        bg="white"
         expand="lg"
         fixed="top"
-        id="myNav"
         ref={navbarRef}
       >
-        <Container>
-          <Navbar.Brand>
-            <Link to="/">
-              <Image
-                id="logo"
-                src={logo}
-                alt="codeuino logo"
-                style={{ heigth: "20vh", width: "12vw" }}
-              />
-            </Link>
-          </Navbar.Brand>
-          <Navbar.Toggle
-            lable="Toggle navigation"
-            aria-controls="navbarSupportedContent"
-          ></Navbar.Toggle>
-          <Navbar.Collapse id="navbarSupportedContent">
-            <Nav className="ml-auto">
-              <Nav.Item>
-                <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs">
-                  About Us<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  scroll={smoothScroll}
-                  className="nav-link"
-                  to="/#projects"
-                >
-                  Project<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  scroll={smoothScroll}
-                  className="nav-link"
-                  to="/#programs"
-                >
-                  Programs<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  scroll={smoothScroll}
-                  className="nav-link"
-                  to="/#collaborate"
-                >
-                  Collaborate<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link scroll={smoothScroll} className="nav-link" to="/#joinUs">
-                  Join Us<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link scroll={smoothScroll} className="nav-link" to="/#donate">
-                  Donate<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link className="nav-link" to="/team">
-                  Team<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link className="nav-link" to="/codeofconduct">
-                  Code of Conduct<span className="sr-only">(current)</span>
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <a
-                  className="nav-link"
-                  href="https://docs.codeuino.org/documentation/"
-                >
-                  Docs<span className="sr-only">(current)</span>
-                </a>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+        <Link to="/">
+          <Image className="navbar-logo" src={logo} alt="Codeuino Logo" />
+        </Link>
+        <Navbar.Toggle
+          lable="Toggle navigation"
+          aria-controls="navbarSupportedContent"
+        ></Navbar.Toggle>
+        <Navbar.Collapse id="navbarSupportedContent">
+          <Nav className="ml-auto">
+            <NavLink scroll={smoothScroll} to="/#aboutUs">
+              About Us
+            </NavLink>
+            <NavLink scroll={smoothScroll} to="/#projects">
+              Projects
+            </NavLink>
+            <NavLink scroll={smoothScroll} to="/#programs">
+              Programs
+            </NavLink>
+            <NavLink scroll={smoothScroll} to="/#collaborate">
+              Collaborate
+            </NavLink>
+            <NavDropdown
+              className="navbar-nav active"
+              title="Updates"
+              id="navbarUpdates"
+            >
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#blogs"
+              >
+                Blog Posts
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#testimonials"
+              >
+                Testimonials
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#updates"
+              >
+                Social Handles
+              </Link>
+            </NavDropdown>
+            <NavLink scroll={smoothScroll} to="/#joinUs">
+              Join Us
+            </NavLink>
+            <NavLink scroll={smoothScroll} to="/#donate">
+              Donate
+            </NavLink>
+            <NavDropdown
+              className="navbar-nav active"
+              title="Documentation"
+              id="navbarDocumentation"
+            >
+              <a
+                className="dropdown-item"
+                href="https://docs.codeuino.org/documentation/"
+              >
+                Codeuino <br /> Documentation
+              </a>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/codeofconduct"
+              >
+                Code of Conduct
+              </Link>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </React.Fragment>
   );

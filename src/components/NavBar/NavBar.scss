@@ -1,0 +1,41 @@
+.navbar-container {
+  height: 80px;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 170px;
+}
+
+.navbar-nav {
+  .active {
+    color: $black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    &:hover {
+      color: $primary-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.dropdown {
+  .dropdown-item {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $primary-blue;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-link {
+  padding: 0;
+}

@@ -1,0 +1,44 @@
+.mainContent {
+  margin-top: 170px;
+}
+
+.main-heading {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-heading-text {
+  color: $primary-blue;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.main-heading-subtext {
+  font-size: 18px;
+}
+
+.main-heading-line {
+  background-color: $primary-blue;
+  color: $primary-blue;
+  height: 3px;
+  max-width: 20%;
+}
+
+.highlight-text {
+  color: $primary-blue;
+  font-weight: 600;
+}
+
+.anchor-text {
+  color: $primary-blue;
+  font-weight: 600;
+  text-decoration: underline;
+  &:hover {
+    color: $link-blue;
+    text-decoration: underline;
+  }
+}
