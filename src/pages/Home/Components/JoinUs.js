@@ -27,9 +27,9 @@ const joinUsMethods = {
     title: "Contribute on Github",
     description: (
       <p>
-        Whether you're helping us fix bugs, improve the docs, or spread the
-        word, we'd love to have you as part of the Codeuino community! Check out
-        our{" "}
+        No contribution is a small contribution. Whether you're helping us fix
+        bugs, improve the docs, or spread the word, we'd love to have you as
+        part of the Codeuino community! Check out our{" "}
         <a href="https://github.com/codeuino" className="anchor-text">
           Github
         </a>{" "}

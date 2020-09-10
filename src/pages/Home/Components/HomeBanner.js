@@ -7,7 +7,7 @@ import BannerImage from "../images/homeBanner.svg";
 const HomeBannerComponent = () => {
   return (
     <React.Fragment>
-      <Row className="mainContent">
+      <Row className="main-content">
         <Col md={6}>
           <h1 className="home-heading">
             Learn. Build. <br /> Contribute. Grow.

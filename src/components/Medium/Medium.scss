@@ -1,12 +1,20 @@
+.medium-post-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .medium-post {
   border: 1px solid $white;
   height: 500px;
-  margin: 20px;
-  max-width: 340px;
   overflow-y: hidden;
   overflow-x: hidden;
-  padding: 20px;
-  text-align: left;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 340px;
+  padding: 10px;
+  text-align: center;
   transition: box-shadow 1s ease;
 
   &:hover {
@@ -33,6 +41,12 @@
     width: 100%;
     z-index: 1;
   }
+}
+
+.medium-post-content {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
 }
 
 .medium-fading-box {

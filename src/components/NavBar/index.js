@@ -17,6 +17,13 @@ const NavBar = () => {
     });
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <React.Fragment>
       <Navbar
@@ -27,7 +34,7 @@ const NavBar = () => {
         fixed="top"
         ref={navbarRef}
       >
-        <Link to="/">
+        <Link to="" onClick={() => scrollToTop()}>
           <Image className="navbar-logo" src={logo} alt="Codeuino Logo" />
         </Link>
         <Navbar.Toggle
@@ -36,18 +43,41 @@ const NavBar = () => {
         ></Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="ml-auto">
-            <NavLink scroll={smoothScroll} to="/#aboutUs">
-              About Us
-            </NavLink>
-            <NavLink scroll={smoothScroll} to="/#projects">
-              Projects
-            </NavLink>
-            <NavLink scroll={smoothScroll} to="/#programs">
-              Programs
-            </NavLink>
-            <NavLink scroll={smoothScroll} to="/#collaborate">
-              Collaborate
-            </NavLink>
+            <Nav.Item>
+              <NavLink scroll={smoothScroll} to="/#aboutUs">
+                About Us
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink scroll={smoothScroll} to="/#projects">
+                Projects
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink scroll={smoothScroll} to="/#programs">
+                Programs
+              </NavLink>
+            </Nav.Item>
+            <NavDropdown
+              className="navbar-nav active"
+              title="Join"
+              id="navbarJoin"
+            >
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#collaborate"
+              >
+                Collaborate
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#joinUs"
+              >
+                Join Us
+              </Link>
+            </NavDropdown>
             <NavDropdown
               className="navbar-nav active"
               title="Updates"
@@ -75,12 +105,11 @@ const NavBar = () => {
                 Social Handles
               </Link>
             </NavDropdown>
-            <NavLink scroll={smoothScroll} to="/#joinUs">
-              Join Us
-            </NavLink>
-            <NavLink scroll={smoothScroll} to="/#donate">
-              Donate
-            </NavLink>
+            <Nav.Item>
+              <NavLink scroll={smoothScroll} to="/#donate">
+                Donate
+              </NavLink>
+            </Nav.Item>
             <NavDropdown
               className="navbar-nav active"
               title="Documentation"
@@ -100,6 +129,7 @@ const NavBar = () => {
                 Code of Conduct
               </Link>
             </NavDropdown>
+            <Nav.Item></Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

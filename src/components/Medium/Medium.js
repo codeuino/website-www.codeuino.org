@@ -25,15 +25,17 @@ class Medium extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Row>
+        <Row className="medium-post-container">
           {this.state.posts.map((post, index) => (
-            <Col md={4} className="col-md-4 medium-post" key={index}>
-              <a class="medium-outer-link" href={post.link[0]}>
-                <div>{ReactHtmlParser(post["content:encoded"][0])}</div>
-                <div className="medium-fading-box">
-                  <div className="medium-view-more-bar">View More</div>
-                </div>
-              </a>
+            <Col md={6} lg={4} className="medium-post">
+              <div className="medium-post-content" key={index}>
+                <a class="medium-outer-link" href={post.link[0]}>
+                  <div>{ReactHtmlParser(post["content:encoded"][0])}</div>
+                  <div className="medium-fading-box">
+                    <div className="medium-view-more-bar">View More</div>
+                  </div>
+                </a>
+              </div>
             </Col>
           ))}
         </Row>

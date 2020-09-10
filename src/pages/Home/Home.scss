@@ -105,6 +105,7 @@
 .home-mission-content {
   margin-top: 10px;
 }
+
 @media (max-width: 768px) {
   .home-image-container {
     margin-top: 30px;
@@ -117,6 +118,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
   .col-md-6,
   .col-lg-4 {
     padding-left: 0;
@@ -131,6 +133,7 @@
   padding-bottom: 10px;
   padding-top: 10px;
   transition: all 0.3s ease 0s;
+
   &:hover {
     border: 1px solid $shadow-black;
     border-radius: 10px;
@@ -173,6 +176,7 @@
   padding-left: 0;
   padding-right: 0;
 }
+
 .project-image {
   margin-left: auto;
   margin-right: auto;
@@ -228,3 +232,46 @@
   max-width: 60%;
 }
 //project ends
+
+//backer styles
+.backer-row {
+  padding-bottom: 50px;
+}
+
+.backer-logo-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.backer-logo {
+  max-width: 33%;
+  padding-left: 15px;
+  padding-right: 15px;
+  object-fit: cover;
+}
+
+.backer-logo2 {
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  object-fit: cover;
+}
+
+.backer-gitbook-logo {
+  max-width: 45%;
+}
+
+@media (max-width: 992px) {
+  .backer-logo,
+  .backer-logo2 {
+    max-width: 185px;
+  }
+
+  .backer-gitbook-logo {
+    max-width: 150px;
+  }
+}
+//backer ends

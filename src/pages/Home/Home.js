@@ -16,19 +16,19 @@ const Home = () => {
   }, []);
   return (
     <React.Fragment>
-      <Container>
-        <HomeBanner />
-        <About />
-        <Projects />
-        <Programs />
-        <Collaborate />
-        <JoinUs />
-        <Partners />
-        <Updates />
-      </Container>
-      <div className="mt-10">
+      <Container fluid>
+        <Container>
+          <HomeBanner />
+          <About />
+          <Projects />
+          <Programs />
+          <Collaborate />
+          <JoinUs />
+          <Partners />
+          <Updates />
+        </Container>
         <ScrollToTopBtn />
-      </div>
+      </Container>
     </React.Fragment>
   );
 };

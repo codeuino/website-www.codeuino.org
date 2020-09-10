@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import Heading from "../../../components/Layout/Heading";
-import wwc from "../images/wwc.jpeg";
-import dgocean from "../images/dgocean.svg";
-import jetbrains from "../images/jetbrains.png";
-import gitbook from "../images/gitbook.png";
-import linuxFoundation from "../images/LinuxFoundation.png";
+import wwcImage from "../images/wwc.jpeg";
+import dgoceanImage from "../images/dgocean.svg";
+import jetbrainsImage from "../images/jetbrains.png";
+import gitbookImage from "../images/gitbook.png";
+import linuxFoundationImage from "../images/LinuxFoundation.png";
 import DonateCard from "../../../components/DonateUs/Donate";
 
 const Partners = () => {
@@ -16,34 +16,37 @@ const Partners = () => {
         heading="Our Backers"
         subheading="Codeuino's supporters and friends"
       />
-
-      <div className="" style={{ width: "100%" }}>
-        <img
-          src={wwc}
-          alt="women who code"
-          style={{ width: "15%", marginRight: 70 }}
-        />
-        <img
-          src={dgocean}
-          alt="digital ocean"
-          style={{ width: "15%", marginRight: 70 }}
-        />
-        <img
-          src={jetbrains}
-          alt="jet brains"
-          style={{ width: "15%", marginRight: 70 }}
-        />
-        <img
-          src={linuxFoundation}
-          alt="the linux foundation"
-          style={{ width: "15%", marginRight: 70 }}
-        />
-        <img
-          src={gitbook}
-          alt="gitbook"
-          style={{ width: "15%", marginRight: 0 }}
-        />
-      </div>
+      <Row className="backer-row">
+        <Col lg={7} className="backer-logo-container">
+          <Image
+            className="backer-logo"
+            src={wwcImage}
+            alt="Women Who Code Logo"
+          />
+          <Image
+            className="backer-logo"
+            src={dgoceanImage}
+            alt="Women Who Code Logo"
+          />
+          <Image
+            className="backer-logo"
+            src={jetbrainsImage}
+            alt="Women Who Code Logo"
+          />
+        </Col>
+        <Col lg={5} className="backer-logo-container">
+          <Image
+            className="backer-logo2"
+            src={linuxFoundationImage}
+            alt="Women Who Code Logo"
+          />
+          <Image
+            className="backer-logo2 backer-gitbook-logo"
+            src={gitbookImage}
+            alt="Women Who Code Logo"
+          />
+        </Col>
+      </Row>
       <DonateCard />
     </React.Fragment>
   );

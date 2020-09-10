@@ -1,5 +1,7 @@
 .navbar-container {
-  height: 80px;
+  height: 90px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .navbar-logo {
@@ -8,19 +10,30 @@
 }
 
 .navbar-nav {
+  background-color: $white;
+  border: 0;
+
   .active {
     color: $black;
     font-size: 18px;
     font-weight: 600;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 10px;
 
     &:hover {
       color: $primary-blue;
       text-decoration: none;
     }
   }
+}
+
+.navbar-collapse {
+  padding-top: 10px;
+}
+
+.nav-item {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .dropdown {
@@ -37,5 +50,5 @@
 }
 
 .nav-link {
-  padding: 0;
+  padding-top: 0;
 }

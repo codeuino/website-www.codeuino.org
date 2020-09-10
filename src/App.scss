@@ -1,4 +1,4 @@
-.mainContent {
+.main-content {
   margin-top: 170px;
 }
 
@@ -37,8 +37,32 @@
   color: $primary-blue;
   font-weight: 600;
   text-decoration: underline;
+
   &:hover {
     color: $link-blue;
     text-decoration: underline;
+  }
+}
+
+.scroll-button {
+  background-color: $primary-blue;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 8px 15px $shadow-black;
+  color: $white;
+  padding: 10px;
+}
+
+.scroll-icon {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 999;
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    margin-top: 120px;
   }
 }
