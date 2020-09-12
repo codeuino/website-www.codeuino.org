@@ -110,6 +110,17 @@
   .home-image-container {
     margin-top: 30px;
   }
+
+  .home-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-github-button,
+  .home-slack-button {
+    padding: 6px 15px;
+  }
 }
 //home ends
 
@@ -140,6 +151,7 @@
     box-shadow: 0 8px 15px $shadow-black;
   }
 }
+
 .about-card-heading {
   color: $primary-blue;
   font-size: 40px;
@@ -160,11 +172,133 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 70px;
   max-width: 80%;
   text-align: center;
 }
 //about ends
+
+//values styles
+.value-tabs-container {
+  padding-left: 20px;
+}
+
+.value-tab {
+  border-left: 3px solid $secondary-blue;
+  cursor: pointer;
+  max-height: 100px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+  h6 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &.active {
+    border-left: 5px solid $primary-blue;
+    color: $primary-blue;
+  }
+}
+
+.value-description {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+@media (max-width: 450px) {
+  .value-tabs-container,
+  .padding-description-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .value-tab {
+    padding-left: 5px;
+    padding-right: 0;
+
+    h6 {
+      font-size: 18px;
+      max-width: 100%;
+    }
+  }
+  .value-description {
+    font-size: 16px;
+  }
+}
+//values ends
+
+//timeline styles
+.timeline-card-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  &:first-child,
+  &:last-child {
+    .timeline-card {
+      &::before {
+        background-color: $primary-blue;
+        border: 0;
+        border-radius: 50%;
+        bottom: 20px;
+        color: $primary-blue;
+        content: "";
+        display: block;
+        height: 25px;
+        left: -5px;
+        padding: 8px;
+        position: absolute;
+        width: 25px;
+        z-index: 10;
+      }
+    }
+  }
+
+  &:last-child {
+    .timeline-card {
+      border-bottom: 8px solid $white;
+    }
+  }
+}
+
+.timeline-container {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 250px;
+  max-width: none;
+  overflow-x: scroll;
+  padding-left: 20px;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $secondary-blue;
+  }
+}
+
+.timeline-card {
+  border-bottom: 8px solid $primary-blue;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.timeline-card-content {
+  max-width: 85%;
+}
+//timeline ends
 
 //project styles
 .project-container {

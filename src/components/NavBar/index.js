@@ -43,11 +43,33 @@ const NavBar = () => {
         ></Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="ml-auto">
-            <Nav.Item>
-              <NavLink scroll={smoothScroll} to="/#aboutUs">
+            <NavDropdown
+              className="navbar-nav active"
+              title="About"
+              id="navbarJoin"
+            >
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#aboutUs"
+              >
                 About Us
-              </NavLink>
-            </Nav.Item>
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#values"
+              >
+                Our Values
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#timeline"
+              >
+                History
+              </Link>
+            </NavDropdown>
             <Nav.Item>
               <NavLink scroll={smoothScroll} to="/#projects">
                 Projects
