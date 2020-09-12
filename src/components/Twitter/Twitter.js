@@ -1,15 +1,14 @@
 import React from "react";
 import axios from "axios";
-import "./Twitter.css";
 import base from "../../helpers/apiBase";
-import { Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
 class Twitter extends React.Component {
   state = {
     allTweetsDisplay: [],
     likedTweetsDisplay: [],
-    retweetedTweetsDisplay: []
+    retweetedTweetsDisplay: [],
   };
 
   allTweets = null;
@@ -19,24 +18,25 @@ class Twitter extends React.Component {
   componentDidMount() {
     axios
       .get(base + "/getTweets")
-      .then(Response => {
-        this.allTweets = Response.data.filter(tweet => !tweet.retweeted_status);
+      .then((Response) => {
+        this.allTweets = Response.data.filter(
+          (tweet) => !tweet.retweeted_status
+        );
         this.retweetedTweets = Response.data.filter(
-          tweet => tweet.retweeted_status
+          (tweet) => tweet.retweeted_status
         );
         this.loadAllTweets();
         this.loadRetweetedTweets();
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
 
     axios
       .get(base + "/getLikedTweets")
-      .then(Response => {
-        console.log(Response);
+      .then((Response) => {
         this.likedTweets = Response.data;
         this.loadLikedTweets();
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }
 
   loadAllTweets = () => {
@@ -65,13 +65,10 @@ class Twitter extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <p style={{ textAlign: "left" }}>
-              Likes By <a href="https://twitter.com/codeuino">@codeuino</a>
-            </p>
-            <div id="likedTweets">
+      <React.Fragment>
+        <Row className="twitter-container">
+          <Col md={6} lg={4} className="twitter-column-container">
+            <div id="likedTweets" className="twitter-container">
               {
                 <React.Fragment>
                   {this.state.likedTweetsDisplay.map((tweet, index) => (
@@ -80,7 +77,7 @@ class Twitter extends React.Component {
                   {this.likedTweets && (
                     <Button
                       id="loadTweets"
-                      variant="outline-primary"
+                      className="donate-button tweet-button"
                       onClick={this.loadLikedTweets}
                     >
                       Load More
@@ -89,12 +86,9 @@ class Twitter extends React.Component {
                 </React.Fragment>
               }
             </div>
-          </div>
-          <div className="col-md-4">
-            <p style={{ textAlign: "left" }}>
-              Tweets By <a href="https://twitter.com/codeuino">@codeuino</a>
-            </p>
-            <div id="allTweets">
+          </Col>
+          <Col md={6} lg={4} className="twitter-column-container">
+            <div id="allTweets" className="twitter-container">
               {
                 <React.Fragment>
                   {this.state.allTweetsDisplay.map((tweet, index) => (
@@ -103,7 +97,7 @@ class Twitter extends React.Component {
                   {this.allTweets && (
                     <Button
                       id="loadTweets"
-                      variant="outline-primary"
+                      className="donate-button tweet-button"
                       onClick={this.loadAllTweets}
                     >
                       Load More
@@ -112,12 +106,9 @@ class Twitter extends React.Component {
                 </React.Fragment>
               }
             </div>
-          </div>
-          <div className="col-md-4">
-            <p style={{ textAlign: "left" }}>
-              Retweets By <a href="https://twitter.com/codeuino">@codeuino</a>
-            </p>
-            <div id="retweetedTweets">
+          </Col>
+          <Col md={6} lg={4} className="twitter-column-container">
+            <div id="retweetedTweets" className="tweet-container">
               {
                 <React.Fragment>
                   {this.state.retweetedTweetsDisplay.map((tweet, index) => (
@@ -126,7 +117,7 @@ class Twitter extends React.Component {
                   {this.retweetedTweets && (
                     <Button
                       id="loadTweets"
-                      variant="outline-primary"
+                      className="donate-button tweet-button"
                       onClick={this.loadRetweetedTweets}
                     >
                       Load More
@@ -135,9 +126,9 @@ class Twitter extends React.Component {
                 </React.Fragment>
               }
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </React.Fragment>
     );
   }
 }
