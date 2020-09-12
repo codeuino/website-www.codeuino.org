@@ -10,7 +10,7 @@ var CoreContributors = [
     headline: "GSoC '20 Codeuino",
     profile: "https://avatars0.githubusercontent.com/u/31209617?s=460&v=4",
     github: "https://github.com/Rupeshiya",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/rupesh-jha-7aab6b155/"
   },
   {
     name: "Asel Peiris",
@@ -18,7 +18,7 @@ var CoreContributors = [
     headline: "GSoC '20 Codeuino",
     profile: aselPeiris,
     github: "https://github.com/AuraOfDivinity",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/asel-peiris-76536158"
   },
   {
     name: "Devansh Agarwal",

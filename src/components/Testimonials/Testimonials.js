@@ -37,22 +37,22 @@ const Testimonials = () => {
           containerClass="testimonial-container"
           itemClass="testimonial-item"
         >
-          {Data.map((testimonial) => {
+          {Data.map((testimonial,index) => {
             return (
-              <div class="testimonial-card">
-                <div class="testimonial-card-text">{testimonial.quote}</div>
-                <div class="testimonial-card-footer-container">
-                  <div class="testimonial-card-footer">
-                    <div class="testimonial-image">
+              <div className="testimonial-card" key={index}>
+                <div className="testimonial-card-text">{testimonial.quote}</div>
+                <div className="testimonial-card-footer-container">
+                  <div className="testimonial-card-footer">
+                    <div className="testimonial-image">
                       <Image
                         alt="User Image"
                         width="100%"
                         src={testimonial.image}
                       />
                     </div>
-                    <h3 class="testimonial-person-name">{testimonial.name}</h3>
-                    <h4 class="testimonial-person-role">{testimonial.role}</h4>
-                    <p class="testimonial-person-description">
+                    <h3 className="testimonial-person-name">{testimonial.name}</h3>
+                    <h4 className="testimonial-person-role">{testimonial.role}</h4>
+                    <p className="testimonial-person-description">
                       {testimonial.description}
                     </p>
                   </div>

@@ -19,7 +19,7 @@ class Medium extends React.Component {
     }
   };
   componentDidMount() {
-    this.fetchBlogs();
+    //this.fetchBlogs();
   }
 
   render() {
