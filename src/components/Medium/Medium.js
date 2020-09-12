@@ -19,37 +19,11 @@ class Medium extends React.Component {
     }
   };
   componentDidMount() {
-<<<<<<< HEAD
-   // this.fetchBlogs()
-=======
     this.fetchBlogs();
->>>>>>> 5f39e11a78b2020372b1e618c95d41be694b7e18
   }
 
   render() {
     return (
-<<<<<<< HEAD
-      <div className="container" style={{ width: "100%", alignContent: "left" }}>
-        <h1 className="component-heading">Latest Blogs</h1>
-        <div
-          className="row justify-content-center Medium"
-          style={{ textAlign: "left" }}
-        >
-          {/*this.state.posts.map((post, index) => (
-            <div className="col-md-4 Medium-post" key={index}>
-              <a class="outer-link" href={post.link[0]}>
-                <div>
-                  { ReactHtmlParser(post["content:encoded"][0]) }
-                </div>
-                <div className="fading-box">
-                  <div className="view-more">View More</div>
-                </div>
-              </a>
-            </div>
-          ))*/}
-        </div>
-      </div>
-=======
       <React.Fragment>
         <Row className="medium-post-container">
           {this.state.posts.map((post, index) => (
@@ -66,7 +40,6 @@ class Medium extends React.Component {
           ))}
         </Row>
       </React.Fragment>
->>>>>>> 5f39e11a78b2020372b1e618c95d41be694b7e18
     );
   }
 }
