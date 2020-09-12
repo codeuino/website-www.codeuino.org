@@ -38,7 +38,7 @@ const Partners = () => {
           <Image
             className="backer-logo2"
             src={linuxFoundationImage}
-            alt="Women Who Code Logo"
+            alt="Linux Foundation Image"
           />
           <Image
             className="backer-logo2 backer-gitbook-logo"
