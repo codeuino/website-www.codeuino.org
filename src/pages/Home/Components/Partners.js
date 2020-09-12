@@ -26,7 +26,7 @@ const Partners = () => {
           <Image
             className="backer-logo"
             src={dgoceanImage}
-            alt="Women Who Code Logo"
+            alt="Digital Ocean Image"
           />
           <Image
             className="backer-logo"
