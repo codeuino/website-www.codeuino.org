@@ -43,7 +43,7 @@ const Partners = () => {
           <Image
             className="backer-logo2 backer-gitbook-logo"
             src={gitbookImage}
-            alt="Women Who Code Logo"
+            alt="Gitbook Image"
           />
         </Col>
       </Row>
