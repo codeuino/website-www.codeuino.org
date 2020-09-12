@@ -1,0 +1,52 @@
+.program-card {
+  border: 1px solid $white;
+  display: inline-block;
+  max-width: 370px;
+  padding: 20px 15px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    border: 1px solid $shadow-black;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px $shadow-black;
+  }
+}
+
+.program-card-image {
+  height: 100px;
+  max-width: 60%;
+  object-fit: contain;
+}
+
+.program-card-title {
+  color: $primary-blue;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.program-card-description {
+  color: $black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  text-align: justify;
+}
+
+.program-card-link-container {
+  text-align: center;
+}
+
+.program-anchor-text {
+  border-bottom: 3px solid $primary-blue;
+  color: $primary-blue;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+  &:hover {
+    border-bottom: 3px solid $link-blue;
+    color: $link-blue;
+    text-decoration: none;
+  }
+}

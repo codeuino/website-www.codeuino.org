@@ -1,0 +1,68 @@
+.main-content {
+  margin-top: 170px;
+}
+
+.main-heading {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-heading-text {
+  color: $primary-blue;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.main-heading-subtext {
+  font-size: 18px;
+}
+
+.main-heading-line {
+  background-color: $primary-blue;
+  color: $primary-blue;
+  height: 3px;
+  max-width: 20%;
+}
+
+.highlight-text {
+  color: $primary-blue;
+  font-weight: 600;
+}
+
+.anchor-text {
+  color: $primary-blue;
+  font-weight: 600;
+  text-decoration: underline;
+
+  &:hover {
+    color: $link-blue;
+    text-decoration: underline;
+  }
+}
+
+.scroll-button {
+  background-color: $primary-blue;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 8px 15px $shadow-black;
+  color: $white;
+  padding: 10px;
+}
+
+.scroll-icon {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 999;
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    margin-top: 120px;
+  }
+}
