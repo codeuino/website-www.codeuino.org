@@ -12,7 +12,7 @@ var BoardMembers = [
     headline:
       "Founder @Codeuino, Google summer of code & Code In mentor at @sugar_labs, @jbossorg, member at @OpenSourceOrg, Mentor at @kossiitkgp, @microsoft Educator Expert",
     profile: jaskirat,
-    github: "https://github.com/jaskirat2000",
+    github: "https://github.com/jaskiratsingh2000",
     linkedin: "https://www.linkedin.com/in/jaskiratsingh2000/"
   },
   {
