@@ -33,6 +33,7 @@ class Twitter extends React.Component {
     axios
       .get(base + "/getLikedTweets")
       .then((Response) => {
+        console.log(Response);
         this.likedTweets = Response.data;
         this.loadLikedTweets();
       })
@@ -64,6 +65,7 @@ class Twitter extends React.Component {
   };
 
   render() {
+    
     return (
       <React.Fragment>
         <Row className="twitter-container">

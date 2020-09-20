@@ -15,6 +15,7 @@
     "highlight.js": "^9.17.1",
     "history": "^4.10.1",
     "html-to-markdown": "^1.0.0",
+    "http-proxy-middleware": "^1.0.5",
     "list-react-files": "^0.2.0",
     "markdown-it": "^10.0.0",
     "markdown-it-abbr": "^1.0.4",
@@ -54,7 +55,7 @@
   "scripts": {
     "lambda-serve": "netlify-lambda serve netlify-functions",
     "heroku-postbuild": "npm run build",
-    "start": "serve -s build -l 3000",
+    "start": "netlify-lambda serve netlify-functions & serve -s build -l 3000",
     "prebuild": "netlify-lambda build netlify-functions",
     "build": "CI=false || set \"CI=false\" && react-scripts build",
     "test": "react-scripts test",
@@ -79,4 +80,5 @@
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
+  
 }

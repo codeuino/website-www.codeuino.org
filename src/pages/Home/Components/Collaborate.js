@@ -89,8 +89,8 @@ const Collaborate = () => {
       />
       <Row className="about-card-container">
         {collaborationMethods.map((ele, index) => (
-          <Col sm={6} md={4} lg={3} className="collaborate-card-container">
-            <CollaborateCard {...ele} key={index} />
+          <Col key={index}  sm={6} md={4} lg={3} className="collaborate-card-container">
+            <CollaborateCard {...ele}  />
           </Col>
         ))}
       </Row>
