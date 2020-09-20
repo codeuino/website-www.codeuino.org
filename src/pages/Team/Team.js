@@ -1,82 +1,66 @@
 import React, { Component } from "react";
+import { Container, Row } from "react-bootstrap";
+import Heading from "../../components/Layout/Heading";
+import TeamMembersWrapper from "./TeamMembers";
 import BoardMembersWrapper from "./BoardMembers";
-import CoreContributorsWrapper from "./CoreContributors";
 import ScrollToTopBtn from "../../components/ScrollToTopBtn/ScrollToTopBtn.js";
 import axios from "axios";
-import "./Team.css";
 
 class Team extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      boardMembers: [],
-      contributors: []
-    };
-  }
+  state = {
+    contributors: [],
+  };
 
   componentDidMount() {
     var jsonURL =
       "https://s3.ap-south-1.amazonaws.com/pr-webhook-contributors-json/contributors.json";
-    axios.get(jsonURL).then(res => {
+    axios.get(jsonURL).then((res) => {
       this.setState({ contributors: res.data });
     });
     window.scrollTo(0, 0);
   }
   render() {
-    let contributors = this.state.contributors;
-    var contrilist = contributors.map((contri, index) => {
+    let { contributors } = this.state;
+    var contributorsList = contributors.map((contri, index) => {
       return (
-        <div key={index} className="col-xs-2 lawyer-post g-mb-50 m-4">
+        <div key={index} className="team-contributor">
           <a href={contri.url}>
             <img
-              className="img-responsive full-width g-mb-25"
+              className="team-contributor-image"
               title={contri.name}
               src={" " + contri.image + " "}
-              alt=""
-              style={{ width: "8vw", height: "8vw", borderRadius: "50%" }}
             />
-          </a>{" "}
+          </a>
         </div>
       );
     });
+
     return (
-      <>
-        <div>
-          <div>
-            <div id="___gatsby">
-              <div
-                style={{ outline: "none" }}
-                tabIndex="-1"
-                role="group"
-                id="gatsby-focus-wrapper"
-              >
-                <div className="mt-12"></div>
-                <h3 className="team-heading">Our Team</h3>
-                <div className="container pt-8 pb-6 mb-10">
-                  <BoardMembersWrapper />
-                </div>
-                <h3 className="team-sub-heading">Our Backbone</h3>
-                <div
-                  className="container pt-8 pb-6 mb-10"
-                  style={{ display: "flex", justifyContent: "space-evenly" }}
-                >
-                  <CoreContributorsWrapper />
-                </div>
-                <h3 className="team-sub-heading">Our Awesome Contributors</h3>
-                <div id="cotributors" className="container d-flex">
-                  <div
-                    className="row mt-7 mb-10"
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
-                    {contrilist}
-                  </div>
-                </div>
-              </div>
+      <Container fluid>
+        <Container>
+          <Heading
+            heading="Team"
+            subheading="Meet the amazing people leading this community"
+          />
+          <Row>
+            <TeamMembersWrapper />
+          </Row>
+          <Heading classname="team-second-heading" heading="Board Members" />
+          <Row>
+            <BoardMembersWrapper />
+          </Row>
+          <Heading
+            heading="Contributors"
+            subheading="Kudos to the amazing people contributing to Codeuino"
+          />
+          <Row>
+            <div className="team-contributors-container">
+              {contributorsList}
             </div>
-          </div>
-        </div>
+          </Row>
+        </Container>
         <ScrollToTopBtn />
-      </>
+      </Container>
     );
   }
 }

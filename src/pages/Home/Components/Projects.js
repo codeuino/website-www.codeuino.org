@@ -15,14 +15,14 @@ const Projects = () => {
         subheading="Have a look at the amazing products we have built"
       />
       <Row className="project-container">
-        <Col md={5} className="project-image-container">
+        <Col md={6} className="project-image-container">
           <Image
             src={donutImage}
             className="project-image"
             alt="Donut Platform"
           />
         </Col>
-        <Col md={7}>
+        <Col md={6} className="project-card">
           <h2 className="project-heading">Donut</h2>
           <h6 className="project-subheading">
             Open source, community-oriented social media platform
@@ -38,40 +38,42 @@ const Projects = () => {
             using third party tools, writing your own or integrating other
             software.
           </p>
-          <a
-            href="https://github.com/codeuino/social-platform-donut-frontend"
-            className="program-anchor-text"
-          >
-            Frontend
-          </a>
-          <a
-            href="https://github.com/codeuino/social-platform-donut-backend"
-            className="program-anchor-text"
-          >
-            Backend
-          </a>
-          <a
-            href="https://www.figma.com/file/iZvb7rLYRp3Di3wILVQ7V9/CodeUino-Donut"
-            className="program-anchor-text"
-          >
-            Design
-          </a>
-          <a
-            href="https://www.youtube.com/watch?v=wYk71_KY6Bk"
-            className="program-anchor-text"
-          >
-            Youtube
-          </a>
-          <a
-            href="https://docs.codeuino.org/documentation/donut-docs/donut-documentation"
-            className="program-anchor-text"
-          >
-            Documentation
-          </a>
+          <div className="project-anchor-container">
+            <a
+              href="https://github.com/codeuino/social-platform-donut-frontend"
+              className="program-anchor-text"
+            >
+              Frontend
+            </a>
+            <a
+              href="https://github.com/codeuino/social-platform-donut-backend"
+              className="program-anchor-text"
+            >
+              Backend
+            </a>
+            <a
+              href="https://www.figma.com/file/iZvb7rLYRp3Di3wILVQ7V9/CodeUino-Donut"
+              className="program-anchor-text"
+            >
+              Design
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=wYk71_KY6Bk"
+              className="program-anchor-text"
+            >
+              Youtube
+            </a>
+            <a
+              href="https://docs.codeuino.org/documentation/donut-docs/donut-documentation"
+              className="program-anchor-text"
+            >
+              Documentation
+            </a>
+          </div>
         </Col>
       </Row>
       <Row className="project-container">
-        <Col md={7}>
+        <Col md={6} className="project-card">
           <h2 className="project-heading">CodeBadge</h2>
           <h6 className="project-subheading">
             Tool for measuring contributor's health in the community
@@ -86,38 +88,40 @@ const Projects = () => {
             organization-oriented project that provides an essential impetus to
             Admins and users with an appropriate dashboards.
           </p>
-          <a
-            href="https://github.com/codeuino/codebadge-frontend"
-            className="program-anchor-text"
-          >
-            Frontend
-          </a>
-          <a
-            href="https://github.com/codeuino/codebadge-backend"
-            className="program-anchor-text"
-          >
-            Backend
-          </a>
-          <a
-            href="https://www.figma.com/file/rvyLIe0MxcB7vAl2ut24VY/CodeUino-CodeBadge?node-id=0%3A1"
-            className="program-anchor-text"
-          >
-            Design
-          </a>
-          <a
-            href="https://www.youtube.com/watch?v=s1gDGjJtmpk"
-            className="program-anchor-text"
-          >
-            Youtube
-          </a>
-          <a
-            href="https://docs.codeuino.org/documentation/codebadge/codebadge-documentation"
-            className="program-anchor-text"
-          >
-            Documentation
-          </a>
+          <div className="project-anchor-container">
+            <a
+              href="https://github.com/codeuino/codebadge-frontend"
+              className="program-anchor-text"
+            >
+              Frontend
+            </a>
+            <a
+              href="https://github.com/codeuino/codebadge-backend"
+              className="program-anchor-text"
+            >
+              Backend
+            </a>
+            <a
+              href="https://www.figma.com/file/rvyLIe0MxcB7vAl2ut24VY/CodeUino-CodeBadge?node-id=0%3A1"
+              className="program-anchor-text"
+            >
+              Design
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=s1gDGjJtmpk"
+              className="program-anchor-text"
+            >
+              Youtube
+            </a>
+            <a
+              href="https://docs.codeuino.org/documentation/codebadge/codebadge-documentation"
+              className="program-anchor-text"
+            >
+              Documentation
+            </a>
+          </div>
         </Col>
-        <Col md={5} className="project-image-container">
+        <Col md={6} className="project-image-container">
           <Image
             src={codebadgeImage}
             className="project-image"
@@ -126,14 +130,14 @@ const Projects = () => {
         </Col>
       </Row>
       <Row className="project-container">
-        <Col md={5} className="project-image-container">
+        <Col md={6} className="project-image-container">
           <Image
             src={spansberryImage}
             className="project-image"
             alt="Spansberry Platform"
           />
         </Col>
-        <Col md={7}>
+        <Col md={6} className="project-card">
           <h2 className="project-heading">Spansberry</h2>
           <h6 className="project-subheading">
             Open source, community-oriented discussion platform
@@ -148,34 +152,34 @@ const Projects = () => {
             draft messages inside the discussions. The exuberant feature of this
             project is that it helps turn a new or existing message within the
             ongoing discussion into a task, set a deadline for any user, assign
-            it to a teammate or anyone, add comments or attach documents and
-            files, and get reminded automatically for meetings, announcements,
-            projects and any discussions through the bot.
+            it to a teammate or anyone, and much more.
           </p>
-          <a
-            href="https://github.com/codeuino/community-forum-frontend"
-            className="program-anchor-text"
-          >
-            Frontend
-          </a>
-          <a
-            href="https://github.com/codeuino/community-forum-backend"
-            className="program-anchor-text"
-          >
-            Backend
-          </a>
-          <a
-            href="https://www.figma.com/file/iZvb7rLYRp3Di3wILVQ7V9/CodeUihttps://www.figma.com/file/mctd10gi5LjvAmZzaxC7vS/Forums-Project-Donut?node-id=0%3A1no-Donut"
-            className="program-anchor-text"
-          >
-            Design
-          </a>
-          <a href="#" className="program-anchor-text">
-            Youtube
-          </a>
-          <a href="#" className="program-anchor-text">
-            Documentation
-          </a>
+          <div className="project-anchor-container">
+            <a
+              href="https://github.com/codeuino/community-forum-frontend"
+              className="program-anchor-text"
+            >
+              Frontend
+            </a>
+            <a
+              href="https://github.com/codeuino/community-forum-backend"
+              className="program-anchor-text"
+            >
+              Backend
+            </a>
+            <a
+              href="https://www.figma.com/file/iZvb7rLYRp3Di3wILVQ7V9/CodeUihttps://www.figma.com/file/mctd10gi5LjvAmZzaxC7vS/Forums-Project-Donut?node-id=0%3A1no-Donut"
+              className="program-anchor-text"
+            >
+              Design
+            </a>
+            <a href="#" className="program-anchor-text">
+              Youtube
+            </a>
+            <a href="#" className="program-anchor-text">
+              Documentation
+            </a>
+          </div>
         </Col>
       </Row>
       <Row className="project-design-container">

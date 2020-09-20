@@ -13,13 +13,26 @@ const TimelineComponent = () => {
         subheading="Have a look at our journey so far"
       />
       <Row className="timeline-container">
+        <Col xs={12} sm={10} md={8} lg={5} className="timeline-card-container">
+          <div className="timeline-summary-container timeline-card">
+            <h3 className="timeline-summary-heading">A brief history</h3>
+            <hr className="timeline-summary-hr" />
+            <p className="timeline-summary-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </Col>
         {TIMELINE_CONTENT.map((milestone, index) => {
           return (
             <Col
               key={index}
               xs={12}
-              sm={5}
-              md={4}
+              sm={7}
+              md={6}
+              lg={4}
               className="timeline-card-container"
             >
               <div className="timeline-card">

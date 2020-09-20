@@ -7,6 +7,7 @@ import Timeline from "./Components/Timeline";
 import Projects from "./Components/Projects";
 import Programs from "./Components/Programs";
 import Collaborate from "./Components/Collaborate";
+import Statistics from "./Components/Statistics";
 import Partners from "./Components/Partners";
 import JoinUs from "./Components/JoinUs";
 import Updates from "./Components/Updates";
@@ -27,6 +28,7 @@ const Home = () => {
           <Projects />
           <Programs />
           <Collaborate />
+          <Statistics />
           <JoinUs />
           <Partners />
           <Updates />

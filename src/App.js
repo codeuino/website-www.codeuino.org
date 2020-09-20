@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
 import COC from "./pages/COC/COC";
 import Team from "./pages/Team/Team";
+import Mentorship from "./pages/Mentorship/Mentorship";
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
                   </Route>
                   <Route path="/codeofconduct">
                     <COC />
+                  </Route>
+                  <Route path="/mentorship">
+                    <Mentorship />
                   </Route>
                   <Route exact path="/">
                     <Home />
