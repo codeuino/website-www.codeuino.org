@@ -10,30 +10,31 @@ class Team extends Component {
     super(props);
     this.state = {
       boardMembers: [],
-      contributors: [],
+      contributors: []
     };
   }
 
   componentDidMount() {
     var jsonURL =
       "https://s3.ap-south-1.amazonaws.com/pr-webhook-contributors-json/contributors.json";
-    axios.get(jsonURL).then((res) => {
+    axios.get(jsonURL).then(res => {
       this.setState({ contributors: res.data });
     });
     window.scrollTo(0, 0);
   }
   render() {
     let contributors = this.state.contributors;
-    var contrilist = contributors.map((contri) => {
+    var contrilist = contributors.map((contri, index) => {
       return (
-        <div class="col-xs-2 lawyer-post g-mb-50 m-4">
+        <div key={index} className="col-xs-2 lawyer-post g-mb-50 m-4">
           <a href={contri.url}>
             <img
-              class="img-responsive full-width g-mb-25"
+              className="img-responsive full-width g-mb-25"
               title={contri.name}
               src={" " + contri.image + " "}
               alt=""
-              style={{ width: "8vw", height: "8vw", borderRadius: "50%" }}/>
+              style={{ width: "8vw", height: "8vw", borderRadius: "50%" }}
+            />
           </a>{" "}
         </div>
       );
@@ -45,25 +46,31 @@ class Team extends Component {
             <div id="___gatsby">
               <div
                 style={{ outline: "none" }}
-                tabindex="-1"
+                tabIndex="-1"
                 role="group"
-                id="gatsby-focus-wrapper">
-                <div class="mt-12"></div>
+                id="gatsby-focus-wrapper"
+              >
+                <div className="mt-12"></div>
                 <h3 className="team-heading">Our Team</h3>
-                <div class="container pt-8 pb-6 mb-10">
+                <div className="container pt-8 pb-6 mb-10">
                   <BoardMembersWrapper />
                 </div>
-                <h3 className="team-sub-heading">Our Backbone</h3>
+               <h3 className="team-sub-heading" style={{textAlign:'center'}}>Our Backbone</h3>
+
                 <div
-                  class="container pt-8 pb-6 mb-10"
-                  style={{ display: "flex", justifyContent: "space-evenly" }}>
+                  className="container pt-8 pb-6 mb-10"
+                  style={{ display: "flex", justifyContent: "space-evenly" }}
+                >
                   <CoreContributorsWrapper />
                 </div>
-                <h3 className="team-sub-heading">Our Awesome Contributors</h3>
+                <h3 className="team-sub-heading" style={{
+                  textAlign:"center"
+                }}>Our Awesome Contributors</h3>
                 <div id="cotributors" className="container d-flex">
                   <div
-                    class="row mt-7 mb-10"
-                    style={{ display: "flex", justifyContent: "center" }}>
+                    className="row mt-7 mb-10"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     {contrilist}
                   </div>
                 </div>

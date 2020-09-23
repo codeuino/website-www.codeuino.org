@@ -1,55 +1,54 @@
 import React, { Component } from "react";
-import './ScrollToTopBtn.css';
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 class ScrollToTopBtn extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            is_visible: false
-        };
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      is_visible: false,
+    };
+  }
 
-    componentDidMount() {
-        var scrollComponent = this;
-        document.addEventListener("scroll", function (e) {
-            scrollComponent.toggleVisibility();
-        });
-    }
+  componentDidMount() {
+    var scrollComponent = this;
+    document.addEventListener("scroll", function (e) {
+      scrollComponent.toggleVisibility();
+    });
+  }
 
-    toggleVisibility() {
-        if (window.pageYOffset > 50) {
-            this.setState({
-                is_visible: true
-            });
-        } else {
-            this.setState({
-                is_visible: false
-            });
-        }
+  toggleVisibility() {
+    if (window.pageYOffset > 50) {
+      this.setState({
+        is_visible: true,
+      });
+    } else {
+      this.setState({
+        is_visible: false,
+      });
     }
+  }
 
-    scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
-    render() {
-        const { is_visible } = this.state;
-        return (
-            <div className="scroll-to-top">
-                {is_visible && (
-                    <div onClick={() => this.scrollToTop()}>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-arrow-up fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                )}
+  render() {
+    const { is_visible } = this.state;
+    return (
+      <div className="scroll-icon">
+        {is_visible && (
+          <div onClick={() => this.scrollToTop()}>
+            <div className="scroll-button">
+              <ArrowUpwardIcon />
             </div>
-        );
-    }
+          </div>
+        )}
+      </div>
+    );
+  }
 }
 
 export default ScrollToTopBtn;

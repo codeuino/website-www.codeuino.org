@@ -1,88 +1,139 @@
 import React from "react";
-import "./Footer.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <Container>
-        <Row style={{textAlign: "left"}}>
-          <Col lg={8} sm={12}>
-            <h1 className="footer-para-question">Wants to know about Codeuino Founder?</h1>
-            <p>
-              Codeuino is an Open Source Social Networking organisation that
-              provides various robust frameworks solutions which could span the
-              entire world through building all kinds of social environments,
-              discussion portals and collaboration.
-            </p>
-            <button
-              type="button"
-              id="discover1"
-              className="footer-button ml-0 btn btn-primary shadow lift"
-              style={{color:" #22247A",backgroundColor:"white"}}
-            >
-              Discover more
-            </button>
-          </Col>
-          <Col lg={4} sm={12}>
-            <Row style={{marginBottom: "30px", height: "80%"}}>
-              <Col lg={6} sm={12} xs={6} className="footer-links">
-                  <a className="footer-link" href="/">Home</a>
-                  <Link className="footer-link" to="/#aboutUs">About Us</Link>
-                  <Link className="footer-link" to="/#projects">Project</Link>
-                  <Link className="footer-link" to="/#programs">Programs</Link>
-                  <Link className="footer-link" to="/team">Team</Link>
-              </Col>
-              <Col lg={6} sm={12} xs={6} className="footer-links">
-                  <a className="footer-link" href="https://docs.codeuino.org/documentation/">Docs</a>
-                  <Link className="footer-link" to="/#collaborate">Collaborate</Link>
-                  <Link className="footer-link" to="/codeofconduct">Code Of Conduct</Link>
-                  <Link className="footer-link" to="/joinus">Join Us</Link>
-                  <div className="blank"></div>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={0} lg={8}></Col>
-          <Col md={12} lg={4}>
+class Footer extends React.Component {
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  smoothScroll = (el) => {
+    window.scrollTo({
+      top: el.offsetTop - 100,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  render() {
+    return (
+      <React.Fragment>
+        <Container fluid className="footer-container-fluid">
+          <Container>
             <Row>
-              <Col className="footer-icon" sm={2} xs={4}>
+              <Col lg={8}>
+                <h1 className="footer-heading">
+                  Want to know about Codeuino Founder?
+                </h1>
+                <p>
+                  Jaskirat is an Open Source Research Strategist and Tech
+                  Diversity Specialist, developing new and improving existing,
+                  computer-based technologies, system and solutions in advanced
+                  open source computer vision topics.
+                </p>
+                <button
+                  href="https://www.linkedin.com/in/jaskiratsingh2000/"
+                  className="footer-button"
+                >
+                  Discover more
+                </button>
+              </Col>
+              <Col lg={4}>
+                <Row>
+                  <Col xs={4} className="footer-links">
+                    <h6>
+                      <Link to="" onClick={() => this.scrollToTop()}>
+                        Home
+                      </Link>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.smoothScroll} to="/#aboutUs">
+                        About Us
+                      </Link>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.smoothScroll} to="/#projects">
+                        Project
+                      </Link>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.smoothScroll} to="/#programs">
+                        Programs
+                      </Link>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.smoothScroll} to="/team">
+                        Team
+                      </Link>
+                    </h6>
+                  </Col>
+                  <Col xs={8} className="footer-links">
+                    <h6>
+                      <a
+                        className="footer-link"
+                        href="https://docs.codeuino.org/documentation/"
+                      >
+                        Docs
+                      </a>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.smoothScroll} to="/#collaborate">
+                        Collaborate
+                      </Link>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.scrollToTop} to="/codeofconduct">
+                        Code Of Conduct
+                      </Link>
+                    </h6>
+                    <h6>
+                      <Link scroll={this.smoothScroll} to="/#joinUs">
+                        Join Us
+                      </Link>
+                    </h6>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row className="footer-icon-container">
+              <Col xs={2} md={1}>
                 <a href="https://twitter.com/codeuino?lang=en">
-                  <i class="fab fa-twitter fa-2x text-white"></i>
+                  <TwitterIcon className="footer-icon" />
                 </a>
               </Col>
-              <Col className="footer-icon" sm={2} xs={4}>
+              <Col xs={2} md={1}>
                 <a href="https://www.facebook.com/codeuino/">
-                  <i class="fab fa-facebook-f fa-2x text-white"></i>
+                  <FacebookIcon className="footer-icon" />
                 </a>
               </Col>
-              <Col className="footer-icon" sm={2} xs={4}>
+              <Col xs={2} md={1}>
                 <a href="https://github.com/codeuino">
-                  <i class="fab fa-github fa-2x text-white"></i>
+                  <GitHubIcon className="footer-icon" />
                 </a>
               </Col>
-              <Col className="footer-icon" sm={2} xs={4}>
+              <Col xs={2} md={1}>
                 <a href="https://www.linkedin.com/company/codeuino/">
-                  <i class="fab fa-linkedin-in fa-2x text-white"></i>
+                  <LinkedInIcon className="footer-icon" />
                 </a>
               </Col>
-              <Col className="footer-icon" sm={2} xs={4}>
+              <Col xs={2} md={1}>
                 <a href="https://www.youtube.com/channel/UCmC2EOPv_oyJIevTyzlZTDQ">
-                  <i class="fab fa-youtube fa-2x text-white"></i>
-                </a>
-              </Col>
-              <Col className="footer-icon" sm={2} xs={4}>
-                <a href="https://medium.com/codeuino">
-                  <i class="fab fa-medium-m fa-2x text-white"></i>
+                  <YouTubeIcon className="footer-icon" />
                 </a>
               </Col>
             </Row>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  );
-};
+          </Container>
+        </Container>
+      </React.Fragment>
+    );
+  }
+}
 export default Footer;
