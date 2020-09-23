@@ -183,7 +183,7 @@ const Projects = () => {
           <h3 className="project-design-heading">Design Project</h3>
           <h6 className="project-design-text">COMING SOON</h6>
           <p>
-            To all the designers in the world something big is comming soon!
+            To all the designers in the world something big is coming soon!
             Update your tools for the battle.
           </p>
         </Col>
