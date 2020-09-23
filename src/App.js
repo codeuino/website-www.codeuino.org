@@ -1,47 +1,44 @@
-import { Switch, Route, HashRouter as Router } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import React from "react";
-import "./App.css";
-import NewHome from "./pages/Home/NewHome";
+import { Switch, Route } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import NavBar from "./components/NavBar";
+import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
-import Team from "./pages/Team/Team";
 import COC from "./pages/COC/COC";
+import Team from "./pages/Team/Team";
 
-function App() {
+const App = () => {
   return (
-    <div className="App" style={{ width: "100%" }}>
-      <Router>
-        <NavBar />
-        <Route
-          render={({ location }) => {
-            return (
-              <TransitionGroup>
-                <CSSTransition
-                  timeout={450}
-                  classNames="fade"
-                  key={location.pathname}
-                >
-                  <Switch location={location}>
-                    <Route path="/team">
-                      <Team />
-                    </Route>
-                    <Route path="/codeofconduct">
-                      <COC />
-                    </Route>
-                    <Route exact path="/">
-                      <NewHome />
-                    </Route>
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            );
-          }}
-        />
-        <Footer />
-      </Router>
-    </div>
+    <React.Fragment>
+      <NavBar />
+      <Route
+        render={({ location }) => {
+          return (
+            <TransitionGroup>
+              <CSSTransition
+                timeout={450}
+                classNames="fade"
+                key={location.pathname}
+              >
+                <Switch location={location}>
+                  <Route path="/team">
+                    <Team />
+                  </Route>
+                  <Route path="/codeofconduct">
+                    <COC />
+                  </Route>
+                  <Route exact path="/">
+                    <Home />
+                  </Route>
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          );
+        }}
+      />
+      <Footer />
+    </React.Fragment>
   );
-}
+};
 
 export default App;

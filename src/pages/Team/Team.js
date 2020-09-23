@@ -55,14 +55,17 @@ class Team extends Component {
                 <div className="container pt-8 pb-6 mb-10">
                   <BoardMembersWrapper />
                 </div>
-                <h3 className="team-sub-heading">Our Backbone</h3>
+               <h3 className="team-sub-heading" style={{textAlign:'center'}}>Our Backbone</h3>
+
                 <div
                   className="container pt-8 pb-6 mb-10"
                   style={{ display: "flex", justifyContent: "space-evenly" }}
                 >
                   <CoreContributorsWrapper />
                 </div>
-                <h3 className="team-sub-heading">Our Awesome Contributors</h3>
+                <h3 className="team-sub-heading" style={{
+                  textAlign:"center"
+                }}>Our Awesome Contributors</h3>
                 <div id="cotributors" className="container d-flex">
                   <div
                     className="row mt-7 mb-10"

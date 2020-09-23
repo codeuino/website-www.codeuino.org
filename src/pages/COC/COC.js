@@ -1,20 +1,18 @@
 import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Heading from "../../components/Layout/Heading";
 
 const CodeOfConduct = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
-      <div className="mt-12"></div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-2"></div>
-          <div className="col-md-8" style={{ maxWidth: "100%" }}>
-            <h2 style={{ textAlign: "left" }}>
-              <b>Code of conduct</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+    <React.Fragment>
+      <Container>
+        <Row>
+          <Col className="mainContentCOC">
+            <Heading heading="Code of Conduct" />
+            <p className="cocText">
               The world we currently live in is full of technologies. Like the
               technical community as a whole, the Codeuino is an open Source
               organisation that helps to bring amazing people together to
@@ -33,11 +31,10 @@ const CodeOfConduct = () => {
               accomplish the missions. We have agreed upon the following Code of
               Conduct as a guide to our collaboration and cooperation.
             </p>
-            <br />
-            <h2 style={{ textAlign: "left" }}>
-              <b> Be considerate</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Be considerate</h2>
+            </div>
+            <p className="cocText">
               Your work will be used by other people, and you in turn will
               depend on the work of others. Any decision you take will affect
               the users and the contributors working on particular project, So
@@ -48,11 +45,10 @@ const CodeOfConduct = () => {
               find it difficult in concentrating on previous part which may
               result in either losing or getting out of track.
             </p>
-
-            <h2 style={{ textAlign: "left" }}>
-              <b> Be Respectful</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Be Respectful</h2>
+            </div>
+            <p className="cocText">
               Codeuino community believes in healthiness and respectfulness of
               every decision made. Not all of us will agree all the time, but
               disagreement is no excuse for unacceptable behavior and manners.
@@ -65,24 +61,21 @@ const CodeOfConduct = () => {
               threats of violence or violent language directed against another
               person should not be included.
             </p>
-
-            <p className="text" style={{ textAlign: "justify" }}>
+            <p className="cocText">
               Be careful in the words that you choose. We are a world-wide
               Community of experts and potential contributors .Be kind to
               others. Do not insult or put down other aspirants. Harassment and
               other exclusionary behavior aren't acceptable. This includes, but
               is not limited to:
             </p>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <p className="cocText">
               Violent threats or language directed against another person for
               any type of decision can make you dismiss from the community.
             </p>
-
-            <h2 style={{ textAlign: "left" }}>
-              <b> Be careful in the words you choose</b>
-            </h2>
-
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Be careful in the words you choose</h2>
+            </div>
+            <p className="cocText">
               Discriminatory jokes not allowed while talking. Posting sexually
               explicit or violent material can make you banned from this
               community and the issue will be raised about this. Personal
@@ -94,12 +87,10 @@ const CodeOfConduct = () => {
               We have agreed upon the following Code of Conduct in order to
               maintain the unity, cooperation and collaboration.
             </p>
-
-            <h2 style={{ textAlign: "left" }}>
-              <b>Be collaborative</b>
-            </h2>
-
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Be collaborative</h2>
+            </div>
+            <p className="cocText">
               Codeuino community has various projects which works on the basis
               of working together and collaboration. So Collaboration is the
               essential part for an Open Source community. Collaboration between
@@ -113,11 +104,10 @@ const CodeOfConduct = () => {
               We prefer to work transparently and involve interested parties as
               early as possible.
             </p>
-
-            <h2 style={{ textAlign: "left" }}>
-              <b>Credit</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Credit</h2>
+            </div>
+            <p className="cocText">
               A good leader does not seek the limelight, but celebrates team
               members for the work they do. Leaders may be more visible than
               members of the team, good ones use that visibility to highlight
@@ -126,21 +116,20 @@ const CodeOfConduct = () => {
               every contributor in the community and everyone is allowed to
               celebrate the success.
             </p>
-            <h2 style={{ textAlign: "left" }}>
-              <b>Ask for help when unsure</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Ask for help when unsure</h2>
+            </div>
+            <p className="cocText">
               Nobody is expected to be perfect in this community. Asking
               questions early avoids many problems later, so questions are
               always encouraged, though they may be directed to the appropriate
               forum but will be appropriate. Those who are asked for assistance
               should be responsive and helpful.
             </p>
-
-            <h2 style={{ textAlign: "left" }}>
-              <b>Step down considerately</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Step down considerately</h2>
+            </div>
+            <p className="cocText">
               When somebody leaves or disengages from the project, we ask that
               they do so in a way that minimises disruption to the project. They
               should tell people they are leaving and take the proper steps to
@@ -148,11 +137,10 @@ const CodeOfConduct = () => {
               the project has been created by single person that would be
               considered under License of that user in the community.
             </p>
-
-            <h2 style={{ textAlign: "left" }}>
-              <b>Scope.</b>
-            </h2>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <div className="cocHeadingContainer">
+              <h2 className="cocHeading">Scope</h2>
+            </div>
+            <p className="cocText">
               This Code of Conduct applies both within project spaces and in
               public spaces when an individual is representing the project or
               its community. For examples if a person is representing a project
@@ -165,12 +153,22 @@ const CodeOfConduct = () => {
             </p>
             <p className="text" style={{ textAlign: "justify" }}>
               Some content has been taken from{" "}
-              <a href="https://www.ubuntu.com/community/code-of-conduct">
+              <a
+                className="anchor-text"
+                href="https://www.ubuntu.com/community/code-of-conduct"
+              >
                 Ubuntu
               </a>{" "}
-              and <a href="https://www.djangoproject.com/conduct/">Django</a>{" "}
+              and{" "}
+              <a
+                className="anchor-text"
+                href="https://www.djangoproject.com/conduct/"
+              >
+                Django
+              </a>{" "}
               Code of Conduct. This work is licensed under a{" "}
               <a
+                className="anchor-text"
                 rel="license"
                 href="http://creativecommons.org/licenses/by-sa/3.0/"
               >
@@ -179,11 +177,10 @@ const CodeOfConduct = () => {
               . You may re-use it for your own project, and modify it as you
               wish.
             </p>
-          </div>
-          <div className="col-md-2"></div>
-        </div>
-      </div>
-    </div>
+          </Col>
+        </Row>
+      </Container>
+    </React.Fragment>
   );
 };
 

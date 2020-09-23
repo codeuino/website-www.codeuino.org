@@ -1,19 +1,31 @@
 import React from "react";
+import Heading from "../../../components/Layout/Heading";
 import Testimonials from "../../../components/Testimonials/Testimonials";
 import Twitter from "../../../components/Twitter/Twitter";
 import Medium from "../../../components/Medium/Medium";
 
 const Updates = () => {
   return (
-    <div className="pt-10">
-      <span class="badge badge-pill badge-primary-soft mb-3 text-center">
-        <span class="h6 text-uppercase font-weight-bold">UPDATES</span>
-      </span>
+    <React.Fragment>
+      <Heading
+        section="blogs"
+        heading="Blog Posts"
+        subheading="Updates from the Codeuino Community"
+      />
       <Medium />
+      <Heading
+        section="testimonials"
+        heading="Testimonials"
+        subheading="What others say about Coduino"
+      />
       <Testimonials />
-      <h1 className="mb-10 component-heading">Latest Updates</h1>
+      <Heading
+        section="updates"
+        heading="Latest Updates"
+        subheading="Tune in to our social handles"
+      />
       <Twitter />
-    </div>
+    </React.Fragment>
   );
 };
 
