@@ -1,0 +1,33 @@
+.donate-subheading {
+  color: $primary-blue;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.donate-button {
+  background-color: $primary-blue;
+  border: 0;
+  border-radius: 8px;
+  color: $white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: $primary-blue;
+    box-shadow: 0 8px 15px $shadow-black;
+    color: $white;
+    transform: translateY(-5px);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus,
+  &:focus {
+    background-color: $primary-blue;
+    border: 1px solid $secondary-blue;
+    box-shadow: 0 0 0 0.2rem $secondary-blue;
+    color: $white;
+  }
+}
