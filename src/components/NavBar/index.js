@@ -13,7 +13,6 @@ class NavBar extends React.Component {
     thirdIsOpen: false,
     fourthIsOpen: false,
   };
-
   navbarRef = createRef();
 
   smoothScroll = (el) => {
@@ -31,16 +30,15 @@ class NavBar extends React.Component {
     });
   };
 
-  handleOpen = (dropdownNo) => {
+  handleToggle = (dropdownNo) => {
     let newState = {};
-    newState[dropdownNo] = true;
-    this.setState(newState);
-  };
-
-  handleClose = (dropdownNo) => {
-    let newState = {};
-    newState[dropdownNo] = false;
-    this.setState(newState);
+    if (this.state[dropdownNo] == false) {
+      newState[dropdownNo] = true;
+      this.setState(newState);
+    } else {
+      newState[dropdownNo] = false;
+      this.setState(newState);
+    }
   };
 
   render() {
@@ -68,10 +66,10 @@ class NavBar extends React.Component {
                 title="About"
                 id="navbarJoin"
                 onMouseEnter={() => {
-                  this.handleOpen("firstIsOpen");
+                  this.handleToggle("firstIsOpen");
                 }}
                 onMouseLeave={() => {
-                  this.handleClose("firstIsOpen");
+                  this.handleToggle("firstIsOpen");
                 }}
                 show={this.state.firstIsOpen}
               >
@@ -119,10 +117,10 @@ class NavBar extends React.Component {
                 title="Collaborate"
                 id="navbarJoin"
                 onMouseEnter={() => {
-                  this.handleOpen("secondIsOpen");
+                  this.handleToggle("secondIsOpen");
                 }}
                 onMouseLeave={() => {
-                  this.handleClose("secondIsOpen");
+                  this.handleToggle("secondIsOpen");
                 }}
                 show={this.state.secondIsOpen}
               >
@@ -153,10 +151,10 @@ class NavBar extends React.Component {
                 title="Updates"
                 id="navbarUpdates"
                 onMouseEnter={() => {
-                  this.handleOpen("thirdIsOpen");
+                  this.handleToggle("thirdIsOpen");
                 }}
                 onMouseLeave={() => {
-                  this.handleClose("thirdIsOpen");
+                  this.handleToggle("thirdIsOpen");
                 }}
                 show={this.state.thirdIsOpen}
               >
@@ -192,10 +190,10 @@ class NavBar extends React.Component {
                 title="Documentation"
                 id="navbarDocumentation"
                 onMouseEnter={() => {
-                  this.handleOpen("fourthIsOpen");
+                  this.handleToggle("fourthIsOpen");
                 }}
                 onMouseLeave={() => {
-                  this.handleClose("fourthIsOpen");
+                  this.handleToggle("fourthIsOpen");
                 }}
                 show={this.state.fourthIsOpen}
               >
@@ -213,7 +211,6 @@ class NavBar extends React.Component {
                   Code of Conduct
                 </Link>
               </NavDropdown>
-              <Nav.Item></Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

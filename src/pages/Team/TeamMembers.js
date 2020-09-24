@@ -1,6 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import TeamCard from "./TeamCard";
+import SaurabhImage from "./Images/Saurabh.jpg";
 
 var TeamMembers = [
   {
@@ -31,11 +32,10 @@ var TeamMembers = [
     linkedin: "https://www.linkedin.com/in/asel-peiris-76536158/",
   },
   {
-    name: "Saurabh Raj",
+    name: " Kumar Saurabh Raj",
     post: "Maintainer",
     headline: "CommunityBridge Mentee at Codeuino | MERN developer",
-    profile:
-      "https://avatars1.githubusercontent.com/u/39027928?s=460&u=e9678c517c8ba536b5f8bba195dc5ea33b637ed8&v=4",
+    profile: SaurabhImage,
     github: "https://github.com/ksraj123",
     linkedin: "https://www.linkedin.com/in/kumarsaurabhraj/",
   },

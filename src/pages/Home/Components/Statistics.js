@@ -5,53 +5,80 @@ const axios = require("axios");
 
 class Statistics extends React.Component {
   state = {
-    members: 0,
-    forks: 0,
-    stars: 0,
-    contributors: 0,
+    stats: 0,
   };
 
   getMembers = async () => {
-    this.setState({
-      members: (await axios.get("https://api.github.com/orgs/codeuino/members"))
-        .data.length,
-    });
+    try {
+      return {
+        members: (
+          await axios.get("https://api.github.com/orgs/codeuino/members")
+        ).data.length,
+      };
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   getForksAndStars = async () => {
     let totalStars = 0;
     let totalForks = 0;
-    await axios
-      .get("https://api.github.com/orgs/codeuino/repos")
-      .then((response) => {
-        response.data.forEach((repo) => {
-          totalForks += repo["forks"];
-          totalStars += repo["stargazers_count"];
-        });
+    try {
+      let response = await axios.get(
+        "https://api.github.com/orgs/codeuino/repos"
+      );
+      response.data.forEach((repo) => {
+        totalForks += repo["forks"];
+        totalStars += repo["stargazers_count"];
       });
-    this.setState({ forks: totalForks, stars: totalStars });
+      return { forks: totalForks, stars: totalStars };
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   getContributors = async () => {
-    let response = (
-      await axios.get("https://api.github.com/orgs/codeuino/repos")
-    ).data;
     let totalContributors = 0;
-    response.forEach(async (repo) => {
-      let contributors = (
-        await axios.get(
-          `https://api.github.com/repos/codeuino/${repo.name}/contributors`
-        )
-      ).data.length;
-      totalContributors += contributors;
-      this.setState({ contributors: totalContributors });
-    });
+    try {
+      let response = await axios.get(
+        "https://api.github.com/orgs/codeuino/repos"
+      );
+      for (let repo of response.data) {
+        try {
+          let contributors = (
+            await axios.get(
+              `https://api.github.com/repos/codeuino/${repo.name}/contributors`
+            )
+          ).data.length;
+          totalContributors += contributors;
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      return { contributors: totalContributors };
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  getStatistics = async () => {
+    let stats = {
+      ...(await this.getMembers()),
+      ...(await this.getForksAndStars()),
+      ...(await this.getContributors()),
+    };
+    if (this._mounted == true) {
+      this.setState(stats);
+    }
   };
 
   componentDidMount() {
-    this.getMembers();
-    this.getForksAndStars();
-    this.getContributors();
+    this._mounted = true;
+    this.getStatistics();
+  }
+
+  componentWillUnmount() {
+    this._mounted = false;
   }
 
   render() {

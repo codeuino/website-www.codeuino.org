@@ -4,9 +4,11 @@ import { Row, Col } from "react-bootstrap";
 class Heading extends React.Component {
   render() {
     let mainClass;
-    if (this.props.classname)
+    if (this.props.classname) {
       mainClass = "main-heading " + this.props.classname;
-    else mainClass = "main-heading";
+    } else {
+      mainClass = "main-heading";
+    }
     return (
       <Row className={mainClass} id={this.props.section}>
         <Col>
