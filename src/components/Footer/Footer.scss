@@ -14,13 +14,21 @@
   background-color: $white;
   border: 0;
   border-radius: 6px;
-  color: $primary-blue;
-  font-size: 18px;
-  font-weight: 600;
   margin-bottom: 30px;
   margin-top: 15px;
   padding: 15px 30px;
   transition: all 0.3s ease 0s;
+
+  a {
+    color: $primary-blue;
+    font-size: 18px;
+    font-weight: 600;
+
+    &:hover {
+      color: $primary-blue;
+      text-decoration: none;
+    }
+  }
 
   &:hover {
     box-shadow: 0 8px 15px $shadow-black;

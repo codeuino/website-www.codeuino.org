@@ -39,11 +39,10 @@ class Footer extends React.Component {
                   computer-based technologies, system and solutions in advanced
                   open source computer vision topics.
                 </p>
-                <button
-                  href="https://www.linkedin.com/in/jaskiratsingh2000/"
-                  className="footer-button"
-                >
-                  Discover more
+                <button className="footer-button">
+                  <a href="https://www.linkedin.com/in/jaskiratsingh2000/">
+                    Discover more
+                  </a>
                 </button>
               </Col>
               <Col lg={4}>
