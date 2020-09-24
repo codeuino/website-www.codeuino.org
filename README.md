@@ -1,6 +1,6 @@
 # Codeuino Website
 
-Offical site for Codeuino landing page. Please visit [http://www.codeuino.org/](http://www.codeuino.org/)
+Official site for Codeuino landing page. Please visit [http://www.codeuino.org/](http://www.codeuino.org/)
 
 ## Table of contents
 
@@ -64,11 +64,7 @@ If you see an open issue that you want to tackle, comment on the issue to let pe
 If an issue was opened a while ago, it’s possible that it’s being addressed somewhere else, or has already been resolved, so comment to ask for confirmation before starting work.
 If you opened an issue, but figured out the answer later on your own, comment on the issue to let people know, then close the issue. Even documenting that outcome is a contribution to the project.
 
-<<<<<<< HEAD
 ### Opening a pull request
-=======
-## Opening a pull request
->>>>>>> ab1812d... prettified readme.md with cool badges
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](http://makeapullrequest.com) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/codeuino/website-www.codeuino.org?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/codeuino/website-www.codeuino.org?logo=github)
 
@@ -80,10 +76,7 @@ A pull request doesn’t have to represent finished work. It’s usually better 
 
 ## Credits
 
-<<<<<<< HEAD
 This project is currently maintained by [Jaskirat Singh](https://github.com/jaskirat2000) .
-=======
 ---
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/codeuino?style=social)](https://twitter.com/codeuino) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/codeuino/Social-Platform-Donut)
->>>>>>> ab1812d... prettified readme.md with cool badges
