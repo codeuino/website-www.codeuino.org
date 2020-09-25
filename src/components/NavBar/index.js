@@ -8,10 +8,7 @@ import logo from "../../logo.png";
 
 class NavBar extends React.Component {
   state = {
-    firstIsOpen: false,
-    secondIsOpen: false,
-    thirdIsOpen: false,
-    fourthIsOpen: false,
+    navDrop: null
   };
   navbarRef = createRef();
 
@@ -30,15 +27,10 @@ class NavBar extends React.Component {
     });
   };
 
-  handleToggle = (dropdownNo) => {
-    let newState = {};
-    if (this.state[dropdownNo] == false) {
-      newState[dropdownNo] = true;
-      this.setState(newState);
-    } else {
-      newState[dropdownNo] = false;
-      this.setState(newState);
-    }
+  handleToggle = (dropdown) => {
+    this.setState({
+      navDrop: this.state.navDrop === dropdown ? null : dropdown,
+    });
   };
 
   render() {
@@ -66,12 +58,12 @@ class NavBar extends React.Component {
                 title="About"
                 id="navbarJoin"
                 onMouseEnter={() => {
-                  this.handleToggle("firstIsOpen");
+                  this.handleToggle("first");
                 }}
                 onMouseLeave={() => {
-                  this.handleToggle("firstIsOpen");
+                  this.handleToggle("first");
                 }}
-                show={this.state.firstIsOpen}
+                show={this.state.navDrop === "first"}
               >
                 <Link
                   className="dropdown-item"
@@ -117,12 +109,12 @@ class NavBar extends React.Component {
                 title="Collaborate"
                 id="navbarJoin"
                 onMouseEnter={() => {
-                  this.handleToggle("secondIsOpen");
+                  this.handleToggle("second");
                 }}
                 onMouseLeave={() => {
-                  this.handleToggle("secondIsOpen");
+                  this.handleToggle("second");
                 }}
-                show={this.state.secondIsOpen}
+                show={this.state.navDrop === "second"}
               >
                 <Link
                   className="dropdown-item"
@@ -151,12 +143,12 @@ class NavBar extends React.Component {
                 title="Updates"
                 id="navbarUpdates"
                 onMouseEnter={() => {
-                  this.handleToggle("thirdIsOpen");
+                  this.handleToggle("third");
                 }}
                 onMouseLeave={() => {
-                  this.handleToggle("thirdIsOpen");
+                  this.handleToggle("third");
                 }}
-                show={this.state.thirdIsOpen}
+                show={this.state.navDrop === "third"}
               >
                 <Link
                   className="dropdown-item"
@@ -190,12 +182,12 @@ class NavBar extends React.Component {
                 title="Documentation"
                 id="navbarDocumentation"
                 onMouseEnter={() => {
-                  this.handleToggle("fourthIsOpen");
+                  this.handleToggle("fourth");
                 }}
                 onMouseLeave={() => {
-                  this.handleToggle("fourthIsOpen");
+                  this.handleToggle("fourth");
                 }}
-                show={this.state.fourthIsOpen}
+                show={this.state.navDrop === "fourth"}
               >
                 <a
                   className="dropdown-item"
