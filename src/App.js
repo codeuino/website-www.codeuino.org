@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
 import COC from "./pages/COC/COC";
 import Team from "./pages/Team/Team";
+import NotFoundPage from "./components/NotFoundPage/NotFound";
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
                   </Route>
                   <Route exact path="/">
                     <Home />
+                  </Route>
+                  <Route exact path="*">
+                    <NotFoundPage />
                   </Route>
                 </Switch>
               </CSSTransition>
