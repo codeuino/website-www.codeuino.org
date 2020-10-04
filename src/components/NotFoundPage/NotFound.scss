@@ -1,0 +1,47 @@
+#not-found-content {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 100px;
+
+  h2 {
+    font-size: 18vw;
+    color: $primary-blue;
+    line-height: 1em;
+  }
+  h4 {
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: $black;
+    font-weight: 300;
+    display: inline-block;
+  }
+
+  p {
+    color: $github-button-black;
+    font-size: 1.2em;
+  }
+  a {
+    border-bottom: 3px solid $primary-blue;
+    color: $primary-blue;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+      border-bottom: 3px solid $link-blue;
+      color: $link-blue;
+    }
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+    p {
+      font-size: 1em;
+    }
+    a {
+      margin-top: 0px;
+    }
+  }
+}
