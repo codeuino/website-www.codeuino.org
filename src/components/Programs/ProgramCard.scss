@@ -1,6 +1,7 @@
 .program-card {
   border: 1px solid $white;
   display: inline-block;
+  min-height: 507px;
   max-width: 370px;
   padding: 20px 15px;
   transition: all 0.3s ease 0s;
@@ -45,8 +46,20 @@
   font-weight: 600;
   margin: 5px;
   &:hover {
-    border-bottom: 3px solid $link-blue;
-    color: $link-blue;
+    border-bottom: 3px solid $primary-orange;
+    color: $primary-orange;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .program-card {
+    min-height: 603px;
+  }
+}
+
+@media (max-width: 992px) {
+  .program-card {
+    min-height: 510px;
   }
 }

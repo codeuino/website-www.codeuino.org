@@ -1,5 +1,7 @@
+.vscode/
 node_modules/
 .DS_Store
 ngrok
 build/
 lambda/
+package-lock.json

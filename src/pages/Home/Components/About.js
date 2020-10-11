@@ -1,8 +1,7 @@
 import React from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
 import Heading from "../../../components/Layout/Heading";
-import aboutSketch from "../images/aboutSketch.svg";
 
 const AboutComponent = () => {
   return (
@@ -60,13 +59,6 @@ const AboutComponent = () => {
             </p>
           </div>
         </Col>
-      </Row>
-      <Row>
-        <Image
-          alt="Community Sketch"
-          className="about-sketch"
-          src={aboutSketch}
-        />
       </Row>
     </React.Fragment>
   );

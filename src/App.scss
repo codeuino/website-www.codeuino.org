@@ -11,10 +11,10 @@
 
 .main-heading-text {
   color: $primary-blue;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .main-heading-subtext {
@@ -22,9 +22,9 @@
 }
 
 .main-heading-line {
-  background-color: $primary-blue;
-  color: $primary-blue;
-  height: 3px;
+  background-color: $primary-orange;
+  color: $primary-orange;
+  height: 5px;
   max-width: 20%;
 }
 
@@ -39,7 +39,7 @@
   text-decoration: underline;
 
   &:hover {
-    color: $link-blue;
+    color: $primary-orange;
     text-decoration: underline;
   }
 }
@@ -64,5 +64,9 @@
 @media (max-width: 500px) {
   .main-content {
     margin-top: 120px;
+  }
+
+  .main-heading-text {
+    font-size: 40px;
   }
 }

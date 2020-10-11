@@ -8,6 +8,7 @@
   border: 1px solid $white;
   display: inline-block;
   max-width: 250px;
+  min-height: 390px;
   padding: 15px;
   transition: all 0.3s ease 0s;
   &:hover {
@@ -36,4 +37,16 @@
   margin-right: auto;
   max-width: 95%;
   text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  .collaborate-card {
+    min-height: 486px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collaborate-card {
+    min-height: 400px;
+  }
 }
