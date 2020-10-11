@@ -1,99 +1,140 @@
 import React, { useRef } from "react";
-import { Image, Navbar, Container, Nav } from "react-bootstrap";
-import "./NavBar.css";
-import logo from "../../newlogo.png";
-import { HashLink as Link } from "react-router-hash-link";
-const NavBar = () => {
+import {
+  HashLink as Link,
+  NavHashLink as NavLink,
+} from "react-router-hash-link";
+import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
+import logo from "../../logo.png";
 
+const NavBar = () => {
   const navbarRef = useRef(null);
-  
-  const smoothScroll = el => {
-    console.log(navbarRef.current.offsetHeight);
+
+  const smoothScroll = (el) => {
     window.scrollTo({
       top: el.offsetTop - navbarRef.current.offsetHeight,
       left: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
-  }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
-  <React.Fragment>
-    <Navbar expand="lg" variant="light" bg="light">
-      <Navbar.Brand className="mr-0">
-        <Link to="/">
-          <Image
-            id="logo"
-            src={logo}
-            alt="codeuino logo"
-            style={{ heigth: "20vh", width: "12vw" }}/>
+    <React.Fragment>
+      <Navbar
+        className="navbar-container"
+        variant="light"
+        bg="white"
+        expand="lg"
+        fixed="top"
+        ref={navbarRef}
+      >
+        <Link to="" onClick={() => scrollToTop()}>
+          <Image className="navbar-logo" src={logo} alt="Codeuino Logo" />
         </Link>
-      </Navbar.Brand>
-    </Navbar>
-
-    <Navbar variant="light" bg="light" expand="lg" fixed="top" id="myNav" ref={navbarRef}>
-      <Container>
-        <Navbar.Brand>
-          <Link to="/">
-            <Image
-              id="logo"
-              src={logo}
-              alt="codeuino logo"
-              style={{ heigth: "20vh", width: "12vw" }}/>
-          </Link>
-        </Navbar.Brand>
         <Navbar.Toggle
           lable="Toggle navigation"
-          aria-controls="navbarSupportedContent">
-        </Navbar.Toggle>
+          aria-controls="navbarSupportedContent"
+        ></Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="ml-auto">
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#aboutUs">
-                About Us<span className="sr-only">(current)</span>
-              </Link>
+              <NavLink scroll={smoothScroll} to="/#aboutUs">
+                About Us
+              </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#projects">
-                Project<span className="sr-only">(current)</span>
-              </Link>
+              <NavLink scroll={smoothScroll} to="/#projects">
+                Projects
+              </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#programs">
-                Programs<span className="sr-only">(current)</span>
-              </Link>
+              <NavLink scroll={smoothScroll} to="/#programs">
+                Programs
+              </NavLink>
             </Nav.Item>
-            <Nav.Item>
-              <Link className="nav-link" to="/team">
-                Team<span className="sr-only">(current)</span>
+            <NavDropdown
+              className="navbar-nav active"
+              title="Join"
+              id="navbarJoin"
+            >
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#collaborate"
+              >
+                Collaborate
               </Link>
-            </Nav.Item>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#joinUs"
+              >
+                Join Us
+              </Link>
+            </NavDropdown>
+            <NavDropdown
+              className="navbar-nav active"
+              title="Updates"
+              id="navbarUpdates"
+            >
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#blogs"
+              >
+                Blog Posts
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#testimonials"
+              >
+                Testimonials
+              </Link>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/#updates"
+              >
+                Social Handles
+              </Link>
+            </NavDropdown>
             <Nav.Item>
+              <NavLink scroll={smoothScroll} to="/#donate">
+                Donate
+              </NavLink>
+            </Nav.Item>
+            <NavDropdown
+              className="navbar-nav active"
+              title="Documentation"
+              id="navbarDocumentation"
+            >
               <a
-                className="nav-link"
-                href="https://docs.codeuino.org/documentation/">
-                Docs<span className="sr-only">(current)</span>
+                className="dropdown-item"
+                href="https://docs.codeuino.org/documentation/"
+              >
+                Codeuino <br /> Documentation
               </a>
-            </Nav.Item>
-            <Nav.Item>
-              <Link scroll={smoothScroll} className="nav-link" to="/#collaborate">
-                Collaborate<span className="sr-only">(current)</span>
+              <Link
+                className="dropdown-item"
+                scroll={smoothScroll}
+                to="/codeofconduct"
+              >
+                Code of Conduct
               </Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Link className="nav-link" to="/codeofconduct">
-                Code of Conduct<span className="sr-only">(current)</span>
-              </Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Link className="nav-link" to="/joinus">
-                Join Us<span className="sr-only">(current)</span>
-              </Link>
-            </Nav.Item>
+            </NavDropdown>
+            <Nav.Item></Nav.Item>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  </React.Fragment>
+      </Navbar>
+    </React.Fragment>
   );
 };
+
 export default NavBar;

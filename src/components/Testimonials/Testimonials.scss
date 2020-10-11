@@ -1,0 +1,123 @@
+.testimonial-container {
+  width: 100%;
+  height: 550px;
+}
+
+.testimonial-item {
+  padding: 20px;
+}
+
+.testimonial-card {
+  box-sizing: border-box;
+  min-height: 500px;
+  width: 320px;
+  background-color: white;
+  border: 1px solid $shadow-black;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px $shadow-black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  transform-origin: bottom;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.testimonial-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+.testimonial-card-footer-container {
+  bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
+  transition: background-color 0.3s ease-out;
+  width: 320px;
+  z-index: 1;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    padding-top: 10px;
+
+    .testimonial-card-footer {
+      height: 330px;
+    }
+
+    .testimonial-person-description {
+      color: $white;
+      display: block;
+    }
+  }
+}
+
+.testimonial-card-footer {
+  background: $black;
+  background: -moz-linear-gradient(
+    304deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 36, 122, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    304deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 36, 122, 1) 100%
+  );
+  background: linear-gradient(
+    304deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 36, 122, 1) 100%
+  );
+  border-radius: 0 0 10px 10px;
+  bottom: 0;
+  height: 150px;
+  right: 0;
+  left: 0;
+  transition: height 0.6s ease;
+  position: absolute;
+  z-index: 2;
+}
+
+.testimonial-person-name {
+  color: $white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.testimonial-person-role {
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.testimonial-image {
+  img {
+    border: 2px solid $white;
+    border-radius: 50%;
+    height: 120px;
+    left: 50%;
+    position: absolute;
+    top: -50%;
+    transform: translateX(-50%);
+    width: 120px;
+  }
+}
+
+.testimonial-person-description {
+  color: $white;
+  display: none;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 0;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
