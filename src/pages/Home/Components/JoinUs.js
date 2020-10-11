@@ -49,15 +49,19 @@ const JoinUs = () => {
         subheading="How can you join and get involved"
       />
       <Row className="about-card-container">
-        <Col sm={6}>
-          <a href="http://slack.codeuino.org/">
-            <ProgramCard program={joinUsMethods.slack} />
-          </a>
-        </Col>
-        <Col sm={6}>
-          <a href="https://github.com/codeuino">
-            <ProgramCard program={joinUsMethods.github} />
-          </a>
+        <Col md={10} className="join-container">
+          <Row>
+            <Col sm={6}>
+              <a href="http://slack.codeuino.org/">
+                <ProgramCard program={joinUsMethods.slack} />
+              </a>
+            </Col>
+            <Col sm={6}>
+              <a href="https://github.com/codeuino">
+                <ProgramCard program={joinUsMethods.github} />
+              </a>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </React.Fragment>

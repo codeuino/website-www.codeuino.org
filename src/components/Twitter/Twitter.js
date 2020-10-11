@@ -110,7 +110,7 @@ class Twitter extends React.Component {
             </div>
           </Col>
           <Col md={6} lg={4} className="twitter-column-container">
-            <div id="retweetedTweets" className="tweet-container">
+            <div id="retweetedTweets" className="twitter-container">
               {
                 <React.Fragment>
                   {this.state.retweetedTweetsDisplay.map((tweet, index) => (

@@ -1,0 +1,60 @@
+.team-content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.team-card {
+  border: 0;
+  margin-bottom: 70px;
+  text-align: center;
+
+  img {
+    border: 0;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+  }
+}
+
+.team-card-name {
+  color: $primary-blue;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.team-hr {
+  background-color: $primary-orange;
+  border: 1px solid $primary-orange;
+  height: 4px;
+  margin-top: 5px;
+  width: 30%;
+}
+
+.team-card-post {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team-contributors-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-contributor {
+  margin: 15px;
+}
+
+.team-contributor-image {
+  border: 2px solid $primary-orange;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}

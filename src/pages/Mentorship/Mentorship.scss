@@ -1,0 +1,57 @@
+.mentorship-container {
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  &:nth-child(odd) {
+    .mentorship-image-container {
+      order: 2;
+    }
+  }
+}
+
+.mentorship-mentee-image {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 100%;
+  width: 200px;
+}
+
+.mentorship-mentee-name {
+  color: $primary-blue;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mentorship-program-name {
+  font-size: 20px;
+}
+
+.mentorship-hr {
+  background-color: $primary-orange;
+  border: 1px solid $primary-orange;
+  height: 3px;
+  margin-left: 2px;
+  margin-right: auto;
+  text-align: left;
+  width: 30%;
+}
+
+.mentorship-project-name {
+  font-size: 24px;
+}
+
+.mentorship-link-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mentorship-container {
+    &:nth-child(odd) {
+      .mentorship-image-container {
+        order: 0;
+      }
+    }
+  }
+}

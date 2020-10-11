@@ -19,12 +19,12 @@ const Testimonials = () => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 768, min: 320 },
+      breakpoint: { max: 768, min: 370 },
       items: 1,
     },
   };
   return (
-    <Row>
+    <Row className="testimonials-container">
       <Col>
         <Carousel
           ssr={true}

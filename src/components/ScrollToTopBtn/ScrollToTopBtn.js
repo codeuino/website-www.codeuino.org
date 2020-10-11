@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 class ScrollToTopBtn extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      is_visible: false,
-    };
-  }
+  state = {
+    is_visible: false,
+  };
 
   componentDidMount() {
     var scrollComponent = this;

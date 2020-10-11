@@ -121,3 +121,29 @@
   padding: 10px 20px;
   transition: color 0.3s ease;
 }
+
+@media (max-width: 450px) {
+  .testimonial-container {
+    height: 700px;
+  }
+  .testimonial-card {
+    width: 270px;
+  }
+
+  .testimonial-card-footer-container {
+    width: 270px;
+
+    &:hover {
+      .testimonial-card-footer {
+        height: 380px;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  #testimonials,
+  .testimonials-container {
+    display: none;
+  }
+}

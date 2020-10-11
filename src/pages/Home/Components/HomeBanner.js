@@ -12,6 +12,7 @@ const HomeBannerComponent = () => {
           <h1 className="home-heading">
             Learn. Build. <br /> Contribute. Grow.
           </h1>
+          <hr className="home-hr" align="left" />
           <p className="home-subheading">
             An open source social networking software development community
             which accounts the house of sustainable and networking products

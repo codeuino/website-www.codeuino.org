@@ -15,8 +15,8 @@ const Updates = () => {
       <Medium />
       <Heading
         section="testimonials"
-        heading="Testimonials"
-        subheading="What others say about Coduino"
+        heading="What others say about Coduino"
+        subheading="Testimonials"
       />
       <Testimonials />
       <Heading

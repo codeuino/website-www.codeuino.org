@@ -1,27 +1,22 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-const TeamCard = props => {
+const TeamCard = (props) => {
   return (
-    <Card style={{ marginBottom: "2vh", border: "0px", textAlign: "left" }}>
-      <Card.Img
-        style={{ borderRadius: "1rem", width: "50%" }}
-        src={props.member.profile}
-        className="mx-auto"
-      />
+    <Card className="team-card">
+      <Card.Img src={props.member.profile} />
       <Card.Body>
-        <Card.Title className="team-card-name mt-4 mr-1">
-          {props.member.name}
+        <Card.Title className="team-card-name">
+          {props.member.name} <hr className="team-hr" />
         </Card.Title>
+        <Card.Text className="team-card-post">{props.member.post}</Card.Text>
+        <Card.Text>{props.member.headline}</Card.Text>
         <Card.Text>
-          <span className="team-card-post">{props.member.post}</span>
-        </Card.Text>
-        <Card.Text className="mt-2">{props.member.headline}</Card.Text>
-        <Card.Text style={{ marginTop: 20 }}>
-          <a className="custom-links mr-2 ml-2" href={props.member.github}>
+          <a className="anchor-text" href={props.member.github}>
             Github
           </a>
-          <a className="custom-links mr-2 ml-2" href={props.member.linkedin}>
+          &nbsp;&nbsp;&nbsp;
+          <a className="anchor-text" href={props.member.linkedin}>
             Linkedin
           </a>
         </Card.Text>
